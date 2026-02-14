@@ -1,0 +1,363 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// === ENUMS ===
+
+enum IeqasStatus {
+  CERTIFIED
+  PENDING
+  REVOKED
+}
+
+enum PlanType {
+  FREE_TRIAL
+  BASIC
+  STANDARD
+  PREMIUM
+}
+
+enum UserRole {
+  ADMIN
+  MANAGER
+  VIEWER
+}
+
+enum VisaType {
+  D_2_1  // 전문학사
+  D_2_2  // 학사
+  D_2_3  // 석사
+  D_2_4  // 박사
+  D_2_5  // 연구
+  D_2_6  // 교환
+  D_2_7  // 어학연수 동반
+  D_2_8  // 단기과정
+  D_4_1  // 어학연수
+  D_4_7  // 기타연수
+}
+
+enum VisaStatus {
+  ACTIVE
+  EXPIRING_SOON    // 만료 60일 이내
+  EXPIRED
+  REVOKED
+}
+
+enum EnrollmentStatus {
+  ENROLLED         // 재학
+  ON_LEAVE         // 휴학
+  EXPELLED         // 제적
+  WITHDRAWN        // 자퇴
+  GRADUATED        // 졸업
+  UNREGISTERED     // 미등록
+}
+
+enum ProgramType {
+  ASSOCIATE        // 전문학사
+  BACHELOR         // 학사
+  MASTER           // 석사
+  DOCTORATE        // 박사
+  LANGUAGE         // 어학연수
+}
+
+enum InsuranceStatus {
+  ACTIVE
+  EXPIRING
+  EXPIRED
+  NONE
+}
+
+enum FimsReportType {
+  STATUS_CHANGE    // 변동신고
+  PERIODIC         // 정기보고
+}
+
+enum FimsChangeType {
+  ON_LEAVE         // 휴학
+  EXPELLED         // 제적
+  WITHDRAWN        // 자퇴
+  GRADUATED        // 졸업
+  UNREGISTERED     // 미등록
+  TRANSFER         // 소속변경
+}
+
+enum FimsReportStatus {
+  PENDING
+  READY
+  SUBMITTED
+  OVERDUE
+}
+
+enum BatchVisaStatus {
+  PREPARING
+  READY
+  SUBMITTED
+  COMPLETED
+}
+
+enum AlertType {
+  VISA_EXPIRY      // 비자 만료 임박
+  ATTENDANCE_LOW   // 출석률 저조
+  FIMS_DEADLINE    // 변동신고 기한 임박
+  IEQAS_WARNING    // 불법체류율 경고
+  INSURANCE_EXPIRY // 보험 만료
+  DOCUMENT_REQUEST // 서류 요청
+}
+
+enum AlertChannel {
+  IN_APP
+  EMAIL
+  KAKAO
+  SMS
+}
+
+// === MODELS ===
+
+model University {
+  id                   String        @id @default(uuid())
+  name                 String        @db.VarChar(200)        // 대학명
+  region               String        @db.VarChar(50)         // 지역 (예: 충남 아산)
+  ieqasStatus          IeqasStatus   @default(PENDING)       // IEQAS 인증 상태
+  overstayRate         Decimal       @default(0) @db.Decimal(5, 2)  // 현재 불법체류율 (%)
+  planType             PlanType      @default(FREE_TRIAL)    // 요금제
+  contractStart        DateTime?     @db.Date                // 계약 시작일
+  contractEnd          DateTime?     @db.Date                // 계약 종료일
+  fimsTemplateVersion  String?       @db.VarChar(20)         // FIMS 양식 버전
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+
+  users                User[]
+  students             Student[]
+  batchVisas           BatchVisaApplication[]
+
+  @@map("universities")
+}
+
+model User {
+  id              String     @id @default(uuid())
+  universityId    String
+  email           String     @unique @db.VarChar(200)   // 학교 이메일 (로그인용)
+  name            String     @db.VarChar(100)           // 이름
+  hashedPassword  String                                 // bcrypt 해시
+  role            UserRole   @default(MANAGER)           // 권한
+  isActive        Boolean    @default(true)              // 활성 여부
+  lastLogin       DateTime?                              // 최근 로그인
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  university      University @relation(fields: [universityId], references: [id])
+  studentsCreated Student[]  @relation("CreatedBy")
+  fimsSubmitted   FimsReport[] @relation("SubmittedBy")
+  batchVisas      BatchVisaApplication[] @relation("BatchCreatedBy")
+  alertLogs       AlertLog[]
+  auditLogs       AuditLog[]
+
+  @@map("users")
+}
+
+model Student {
+  id                    String            @id @default(uuid())
+  universityId          String
+  nameKr                String?           @db.VarChar(100)     // 한글 이름
+  nameEn                String            @db.VarChar(200)     // 영문 이름 (여권 기재)
+  nationality           String            @db.VarChar(50)      // ISO 3166-1 국가코드
+  passportNumber        String            @db.VarChar(200)     // AES-256 암호화 저장
+  passportExpiry        DateTime          @db.Date
+  arcNumber             String?           @db.VarChar(200)     // 외국인등록번호 (AES-256)
+  visaType              VisaType
+  visaExpiry            DateTime          @db.Date             // 체류 만료일
+  visaStatus            VisaStatus        @default(ACTIVE)
+  enrollmentStatus      EnrollmentStatus  @default(ENROLLED)
+  programType           ProgramType
+  department            String            @db.VarChar(100)     // 소속 학과
+  semester              String?           @db.VarChar(20)      // 현재 학기
+  attendanceRate        Decimal?          @db.Decimal(5, 2)    // 출석률 (%)
+  gpa                   Decimal?          @db.Decimal(3, 2)    // 평균 학점
+  insuranceStatus       InsuranceStatus   @default(NONE)
+  insuranceExpiry       DateTime?         @db.Date
+  address               String?           @db.Text             // 체류지 주소
+  addressReported       Boolean           @default(false)      // 체류지 변경 신고 완료
+  addressChangeDate     DateTime?         @db.Date
+  partTimePermit        Boolean           @default(false)      // 시간제취업 허가
+  partTimePermitExpiry  DateTime?         @db.Date
+  phone                 String?           @db.VarChar(20)
+  email                 String?           @db.VarChar(200)
+  kakaoId               String?           @db.VarChar(100)     // 알림용
+  emergencyContact      String?           @db.VarChar(200)
+  photoUrl              String?           @db.VarChar(500)
+  notes                 String?           @db.Text             // 담당자 메모
+  isDeleted             Boolean           @default(false)      // soft delete
+  createdById           String
+  createdAt             DateTime          @default(now())
+  updatedAt             DateTime          @updatedAt
+
+  university            University        @relation(fields: [universityId], references: [id])
+  createdBy             User              @relation("CreatedBy", fields: [createdById], references: [id])
+  fimsReports           FimsReport[]
+  statusChanges         StatusChange[]
+  alertLogs             AlertLog[]
+
+  @@index([universityId])
+  @@index([visaExpiry])
+  @@index([visaStatus])
+  @@index([enrollmentStatus])
+  @@map("students")
+}
+
+model StatusChange {
+  id          String            @id @default(uuid())
+  studentId   String
+  field       String            @db.VarChar(50)     // 변경된 필드명
+  oldValue    String?           @db.Text            // 이전 값
+  newValue    String?           @db.Text            // 새 값
+  changedBy   String                                // 변경한 담당자 ID
+  createdAt   DateTime          @default(now())
+
+  student     Student           @relation(fields: [studentId], references: [id])
+
+  @@index([studentId])
+  @@map("status_changes")
+}
+
+model FimsReport {
+  id            String            @id @default(uuid())
+  studentId     String
+  reportType    FimsReportType
+  changeType    FimsChangeType?                        // 변동신고 시에만
+  detectedAt    DateTime          @default(now())      // 변동 감지 시점
+  deadline      DateTime          @db.Date             // 신고 기한 (감지일 + 15일)
+  status        FimsReportStatus  @default(PENDING)
+  submittedAt   DateTime?                              // FIMS 입력 완료 시점
+  submittedById String?
+  createdAt     DateTime          @default(now())
+
+  student       Student           @relation(fields: [studentId], references: [id])
+  submittedBy   User?             @relation("SubmittedBy", fields: [submittedById], references: [id])
+
+  @@index([studentId])
+  @@index([deadline])
+  @@index([status])
+  @@map("fims_reports")
+}
+
+model BatchVisaApplication {
+  id              String          @id @default(uuid())
+  universityId    String
+  title           String          @db.VarChar(200)    // "2026년 1학기 단체접수"
+  targetCount     Int             @default(0)         // 대상 학생 수
+  readyCount      Int             @default(0)         // 준비 완료 수
+  status          BatchVisaStatus @default(PREPARING)
+  deadline        DateTime?       @db.Date            // 접수 마감일
+  createdById     String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  university      University      @relation(fields: [universityId], references: [id])
+  createdBy       User            @relation("BatchCreatedBy", fields: [createdById], references: [id])
+
+  @@map("batch_visa_applications")
+}
+
+model AlertLog {
+  id          String       @id @default(uuid())
+  studentId   String?
+  userId      String?                              // 알림 대상 담당자
+  type        AlertType
+  channel     AlertChannel @default(IN_APP)
+  title       String       @db.VarChar(200)
+  message     String       @db.Text
+  isRead      Boolean      @default(false)
+  sentAt      DateTime     @default(now())
+  readAt      DateTime?
+
+  student     Student?     @relation(fields: [studentId], references: [id])
+  user        User?        @relation(fields: [userId], references: [id])
+
+  @@index([userId, isRead])
+  @@index([studentId])
+  @@map("alert_logs")
+}
+
+model ChatSession {
+  id              String         @id @default(uuid())
+  studentPhone    String?        @db.VarChar(20)
+  studentKakaoId  String?        @db.VarChar(100)
+  language        String         @db.VarChar(10)     // ko, en, zh, vi, uz, mn
+  isEscalated     Boolean        @default(false)
+  escalatedAt     DateTime?
+  resolvedAt      DateTime?
+  createdAt       DateTime       @default(now())
+
+  messages        ChatMessage[]
+
+  @@map("chat_sessions")
+}
+
+model ChatMessage {
+  id          String       @id @default(uuid())
+  sessionId   String
+  role        String       @db.VarChar(20)     // user, assistant, staff
+  content     String       @db.Text
+  createdAt   DateTime     @default(now())
+
+  session     ChatSession  @relation(fields: [sessionId], references: [id])
+
+  @@index([sessionId])
+  @@map("chat_messages")
+}
+
+model ImportJob {
+  id              String        @id @default(uuid())
+  universityId    String
+  fileName        String        @db.VarChar(500)
+  fileUrl         String?       @db.VarChar(1000)
+  totalRows       Int           @default(0)
+  successCount    Int           @default(0)
+  errorCount      Int           @default(0)
+  status          String        @db.VarChar(20)     // PENDING, PROCESSING, COMPLETED, FAILED
+  columnMapping   Json?                              // AI 매핑 결과 JSON
+  createdAt       DateTime      @default(now())
+  completedAt     DateTime?
+
+  errors          ImportError[]
+
+  @@map("import_jobs")
+}
+
+model ImportError {
+  id          String     @id @default(uuid())
+  importJobId String
+  rowNumber   Int
+  field       String?    @db.VarChar(100)
+  value       String?    @db.Text
+  errorType   String     @db.VarChar(50)     // VALIDATION, DUPLICATE, FORMAT
+  message     String     @db.Text
+  createdAt   DateTime   @default(now())
+
+  importJob   ImportJob  @relation(fields: [importJobId], references: [id])
+
+  @@index([importJobId])
+  @@map("import_errors")
+}
+
+model AuditLog {
+  id          String   @id @default(uuid())
+  userId      String
+  action      String   @db.VarChar(50)      // CREATE, READ, UPDATE, DELETE, EXPORT, LOGIN
+  resource    String   @db.VarChar(50)      // STUDENT, FIMS_REPORT, etc.
+  resourceId  String?
+  details     Json?                          // 변경 상세 (before/after)
+  ipAddress   String?  @db.VarChar(50)
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([resource, resourceId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
