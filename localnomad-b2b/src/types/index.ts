@@ -139,6 +139,61 @@ export interface StudentDetailResponse {
   timeline: TimelineItem[];
 }
 
+// 캘린더 관련 타입
+export interface CalendarStudent {
+  id: string;
+  nameKr: string | null;
+  nameEn: string;
+  department: string;
+  visaType: string;
+  visaExpiry: string;
+  visaStatus: string;
+  trafficLight: TrafficLightStatus;
+  daysRemaining: number;
+}
+
+export interface CalendarEvent {
+  date: string;
+  students: CalendarStudent[];
+  count: number;
+  urgency: TrafficLightStatus;
+}
+
+export interface FimsDeadline {
+  date: string;
+  type: 'PERIODIC';
+  label: string;
+}
+
+export interface CalendarSummary {
+  totalExpiring: number;
+  within30Days: number;
+  within60Days: number;
+  within90Days: number;
+}
+
+export interface CalendarData {
+  events: CalendarEvent[];
+  fimsDeadlines: FimsDeadline[];
+  summary: CalendarSummary;
+}
+
+// 임포트 관련 타입
+export interface ParseResult {
+  fileName: string;
+  totalRows: number;
+  headers: string[];
+  preview: string[][];
+  previewRowCount: number;
+}
+
+export interface ColumnMapping {
+  sourceColumn: string;
+  targetField: string | null;
+  confidence: number;
+  isManuallySet: boolean;
+}
+
 // 학생 폼 데이터 타입
 export interface StudentFormData {
   nameEn: string;

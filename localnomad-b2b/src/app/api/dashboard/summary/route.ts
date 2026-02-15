@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
+import { withRbac } from '@/lib/rbac';
 import type { ApiResponse } from '@/types';
 
 interface DashboardSummary {
@@ -18,14 +19,10 @@ interface DashboardSummary {
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
-    if (!session) {
-      return NextResponse.json(
-        { success: false, error: '인증이 필요합니다.' } satisfies ApiResponse<never>,
-        { status: 401 }
-      );
-    }
+    const rbacError = withRbac(session, 'student', 'read');
+    if (rbacError) return rbacError;
 
-    const universityId = session.user.universityId;
+    const universityId = session!.user.universityId;
     const now = new Date();
     const thirtyDays = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
     const sixtyDays = new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000);
@@ -36,7 +33,7 @@ export async function GET() {
       totalStudents,
       visaStatusGroups,
       enrollmentStatusGroups,
-      university,
+      overstayCount,
       pendingFimsReports,
       unreadAlerts,
       expiring30,
@@ -59,10 +56,17 @@ export async function GET() {
         where: { universityId, isDeleted: false },
         _count: true,
       }),
-      // University overstay rate
-      prisma.university.findUnique({
-        where: { id: universityId },
-        select: { overstayRate: true },
+      // Overstay count (EXPIRED visa or UNREGISTERED/EXPELLED enrollment)
+      prisma.student.count({
+        where: {
+          universityId,
+          isDeleted: false,
+          OR: [
+            { visaStatus: 'EXPIRED' },
+            { enrollmentStatus: 'UNREGISTERED' },
+            { enrollmentStatus: 'EXPELLED' },
+          ],
+        },
       }),
       // Pending FIMS reports
       prisma.fimsReport.count({
@@ -73,7 +77,7 @@ export async function GET() {
       }),
       // Unread alerts for the current user
       prisma.alertLog.count({
-        where: { userId: session.user.id, isRead: false },
+        where: { userId: session!.user.id, isRead: false },
       }),
       // Visa expiring within 30 days
       prisma.student.count({
@@ -116,7 +120,7 @@ export async function GET() {
       totalStudents,
       byVisaStatus,
       byEnrollmentStatus,
-      overstayRate: university?.overstayRate ? Number(university.overstayRate) : 0,
+      overstayRate: totalStudents > 0 ? Math.round((overstayCount / totalStudents) * 10000) / 100 : 0,
       pendingFimsReports,
       unreadAlerts,
       upcomingVisaExpiries: [
