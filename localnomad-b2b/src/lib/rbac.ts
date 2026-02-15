@@ -15,6 +15,8 @@ const PERMISSIONS: Record<string, Set<UserRole>> = {
   'user:delete': new Set([UserRole.ADMIN]),
   'settings:update': new Set([UserRole.ADMIN]),
   'alert:read': new Set([UserRole.ADMIN, UserRole.MANAGER, UserRole.VIEWER]),
+  'alert:create': new Set([UserRole.ADMIN]),
+  'alert:update': new Set([UserRole.ADMIN, UserRole.MANAGER]),
   'fims:export': new Set([UserRole.ADMIN, UserRole.MANAGER]),
   'import:create': new Set([UserRole.ADMIN, UserRole.MANAGER]),
   'audit_log:read': new Set([UserRole.ADMIN]),

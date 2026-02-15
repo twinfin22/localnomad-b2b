@@ -1,9 +1,8 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { Bell, Menu, ChevronRight } from 'lucide-react';
+import { Menu, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { NotificationPanel } from '@/components/alerts/notification-panel';
 
 // 페이지 경로별 제목 매핑
 const pageTitles: Record<string, string> = {
@@ -62,14 +62,8 @@ export function Header({ onMobileMenuClick }: HeaderProps) {
 
       {/* 우측: 알림 + 유저 아바타 */}
       <div className="flex items-center gap-3">
-        {/* 알림 벨 아이콘 */}
-        <Button variant="ghost" size="icon" className="relative">
-          <Bell className="h-5 w-5 text-gray-500" />
-          <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center text-[10px] bg-red-500 text-white border-2 border-white">
-            5
-          </Badge>
-          <span className="sr-only">알림</span>
-        </Button>
+        {/* 알림 패널 */}
+        <NotificationPanel />
 
         {/* 유저 드롭다운 */}
         <DropdownMenu>

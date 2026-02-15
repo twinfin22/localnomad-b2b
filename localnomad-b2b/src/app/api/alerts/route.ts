@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { AlertType } from '@prisma/client';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { withRbac } from '@/lib/rbac';
@@ -24,6 +25,13 @@ export async function GET(request: NextRequest) {
     const isReadParam: boolean | null =
       isReadRaw === 'true' ? true : isReadRaw === 'false' ? false : null;
 
+    // Parse optional type filter (validate against AlertType enum)
+    const typeParam = searchParams.get('type');
+    const validType =
+      typeParam && Object.values(AlertType).includes(typeParam as AlertType)
+        ? (typeParam as AlertType)
+        : null;
+
     // Scope alerts to user's university (via student relation) or user-level alerts
     const where = {
       OR: [
@@ -31,6 +39,7 @@ export async function GET(request: NextRequest) {
         { studentId: null, userId: user.id },
       ],
       ...(isReadParam !== null ? { isRead: isReadParam } : {}),
+      ...(validType ? { type: validType } : {}),
     };
 
     // Parallel fetch: alert list + total count
