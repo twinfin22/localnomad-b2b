@@ -192,7 +192,7 @@ const studentTemplates: StudentTemplate[] = [
   { nationality: 'MN', nameIdx: 3,  visaType: 'D_2_2', programType: 'BACHELOR',  enrollmentStatus: 'ON_LEAVE',     visaStatus: 'ACTIVE',         insuranceStatus: 'EXPIRED' },
   { nationality: 'MN', nameIdx: 4,  visaType: 'D_2_2', programType: 'BACHELOR',  enrollmentStatus: 'GRADUATED',    visaStatus: 'EXPIRED',        insuranceStatus: 'EXPIRED' },
 
-  // Other — 5 students (10%)
+  // Other — 5 students (10%) — NO passport data (위탁계약 미체결 상태 시뮬레이션)
   { nationality: 'NP', nameIdx: 0,  visaType: 'D_2_2', programType: 'BACHELOR',  enrollmentStatus: 'ENROLLED',     visaStatus: 'ACTIVE',         insuranceStatus: 'ACTIVE' },
   { nationality: 'BD', nameIdx: 1,  visaType: 'D_2_2', programType: 'BACHELOR',  enrollmentStatus: 'ENROLLED',     visaStatus: 'ACTIVE',         insuranceStatus: 'NONE' },
   { nationality: 'PH', nameIdx: 2,  visaType: 'D_4_7', programType: 'LANGUAGE',  enrollmentStatus: 'ENROLLED',     visaStatus: 'EXPIRING_SOON',  insuranceStatus: 'ACTIVE' },
@@ -347,10 +347,12 @@ async function main() {
   for (let i = 0; i < studentTemplates.length; i++) {
     const t = studentTemplates[i];
     const names = getNameForTemplate(t);
-    const passportNum = genPassport(t.nationality, i);
+    // Indices 45-49 (Other group): no passport data — simulates pre-위탁계약 onboarding
+    const noPassport = i >= 45;
+    const passportNum = noPassport ? null : genPassport(t.nationality, i);
     const arcNum = genArc(i);
     const visaExpiry = genVisaExpiry(t.visaStatus);
-    const passportExpiry = randomDate(new Date('2027-01-01'), new Date('2032-12-31'));
+    const passportExpiry = noPassport ? null : randomDate(new Date('2027-01-01'), new Date('2032-12-31'));
     const insuranceExpiry = genInsuranceExpiry(t.insuranceStatus);
 
     // attendanceRate: 70-100, some null (~10%)
@@ -367,8 +369,8 @@ async function main() {
         nameKr: names.nameKr,
         nameEn: names.nameEn,
         nationality: t.nationality,
-        passportNumber: encrypt(passportNum),
-        passportExpiry,
+        passportNumber: passportNum ? encrypt(passportNum) : null,
+        passportExpiry,  // null for noPassport students
         arcNumber: arcNum ? encrypt(arcNum) : null,
         visaType: t.visaType,
         visaExpiry,

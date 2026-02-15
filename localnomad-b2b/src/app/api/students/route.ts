@@ -114,13 +114,11 @@ export async function GET(request: NextRequest) {
 const REQUIRED_FIELDS = [
   'nameEn',
   'nationality',
-  'passportNumber',
   'visaType',
   'visaExpiry',
   'enrollmentStatus',
   'programType',
   'department',
-  'passportExpiry',
 ] as const;
 
 // POST /api/students — Create a new student
@@ -148,7 +146,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Encrypt PII fields before storage
-    const encryptedPassport = encrypt(body.passportNumber);
+    const encryptedPassport = body.passportNumber ? encrypt(body.passportNumber) : undefined;
     const encryptedArc = body.arcNumber ? encrypt(body.arcNumber) : undefined;
 
     // Strip raw PII from body to prevent accidental pass-through
@@ -157,7 +155,7 @@ export async function POST(request: NextRequest) {
     const student = await prisma.student.create({
       data: {
         ...safeBody,
-        passportNumber: encryptedPassport,
+        ...(encryptedPassport !== undefined && { passportNumber: encryptedPassport }),
         ...(encryptedArc !== undefined && { arcNumber: encryptedArc }),
         universityId: user.universityId,
         createdById: user.id,

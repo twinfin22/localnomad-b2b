@@ -52,12 +52,12 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     // Determine PII access level based on role
     const canReadPii = checkPermission(user.role, 'student_pii', 'read');
 
-    let passportDisplay: string;
+    let passportDisplay: string | null;
     let arcDisplay: string | null;
 
     if (canReadPii) {
       // ADMIN or MANAGER: decrypt and expose PII
-      passportDisplay = decrypt(student.passportNumber);
+      passportDisplay = student.passportNumber ? decrypt(student.passportNumber) : null;
       arcDisplay = student.arcNumber ? decrypt(student.arcNumber) : null;
 
       // Audit log for PII access
@@ -69,10 +69,14 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
       });
     } else {
       // VIEWER: mask PII
-      try {
-        passportDisplay = maskPii(decrypt(student.passportNumber));
-      } catch {
-        passportDisplay = '****';
+      if (student.passportNumber) {
+        try {
+          passportDisplay = maskPii(decrypt(student.passportNumber));
+        } catch {
+          passportDisplay = '****';
+        }
+      } else {
+        passportDisplay = null;
       }
       arcDisplay = student.arcNumber
         ? (() => {
@@ -142,7 +146,7 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
     const updateData: Record<string, unknown> = { ...body };
 
     if (body.passportNumber !== undefined) {
-      updateData.passportNumber = encrypt(body.passportNumber);
+      updateData.passportNumber = body.passportNumber ? encrypt(body.passportNumber) : null;
     }
     if (body.arcNumber !== undefined) {
       updateData.arcNumber = body.arcNumber ? encrypt(body.arcNumber) : null;

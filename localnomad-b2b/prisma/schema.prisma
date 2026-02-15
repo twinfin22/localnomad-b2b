@@ -165,8 +165,8 @@ model Student {
   nameKr                String?           @db.VarChar(100)     // 한글 이름
   nameEn                String            @db.VarChar(200)     // 영문 이름 (여권 기재)
   nationality           String            @db.VarChar(50)      // ISO 3166-1 국가코드
-  passportNumber        String            @db.VarChar(200)     // AES-256 암호화 저장
-  passportExpiry        DateTime          @db.Date
+  passportNumber        String?           @db.VarChar(200)     // AES-256 암호화 저장 (optional)
+  passportExpiry        DateTime?         @db.Date             // (optional)
   arcNumber             String?           @db.VarChar(200)     // 외국인등록번호 (AES-256)
   visaType              VisaType
   visaExpiry            DateTime          @db.Date             // 체류 만료일
