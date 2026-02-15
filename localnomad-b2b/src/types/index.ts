@@ -194,6 +194,47 @@ export interface ColumnMapping {
   isManuallySet: boolean;
 }
 
+// 임포트 검증/실행 관련 타입
+export interface ImportRowError {
+  field: string;
+  message: string;
+}
+
+export interface ImportDuplicateInfo {
+  existingStudentId: string;
+  existingNameEn: string;
+  matchField: 'passportNumber' | 'arcNumber' | 'nameAndNationality';
+}
+
+export interface ImportValidatedRow {
+  rowIndex: number;
+  data: Record<string, string | number | boolean | null>;
+  errors: ImportRowError[];
+  duplicate?: ImportDuplicateInfo;
+}
+
+export interface ImportValidationResult {
+  summary: { total: number; valid: number; errors: number; duplicates: number };
+  validRows: ImportValidatedRow[];
+  errorRows: ImportValidatedRow[];
+  duplicateRows: ImportValidatedRow[];
+}
+
+export interface ImportExecuteRequest {
+  fileName: string;
+  validRows: ImportValidatedRow[];
+  duplicateRows: ImportValidatedRow[];
+  duplicateAction: 'skip' | 'overwrite' | 'manual';
+}
+
+export interface ImportExecutionResult {
+  imported: number;
+  skipped: number;
+  updated: number;
+  failed: number;
+  errors: { rowIndex: number; error: string }[];
+}
+
 // 학생 폼 데이터 타입
 export interface StudentFormData {
   nameEn: string;

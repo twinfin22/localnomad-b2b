@@ -30,7 +30,7 @@ import { cn } from '@/lib/utils';
 import type { ColumnMapping as ColumnMappingType } from '@/types';
 
 // Required fields that must be mapped
-const REQUIRED_FIELDS = ['nameEn', 'visaType', 'visaExpiry', 'department'];
+const REQUIRED_FIELDS = ['nameEn', 'visaType', 'visaExpiry', 'department', 'enrollmentStatus', 'programType'];
 
 interface ColumnMappingProps {
   headers: string[];

@@ -71,6 +71,11 @@ export async function POST(request: NextRequest) {
       headers.map((_, i) => String((row as string[])[i] ?? ''))
     );
 
+    // All data rows (for validation API)
+    const allData = data.slice(1).map((row) =>
+      headers.map((_, i) => String((row as string[])[i] ?? ''))
+    );
+
     const totalRows = data.length - 1; // Exclude header row
 
     const result: ParseResult = {
@@ -81,7 +86,7 @@ export async function POST(request: NextRequest) {
       previewRowCount: Math.min(5, totalRows),
     };
 
-    return NextResponse.json({ success: true, data: result });
+    return NextResponse.json({ success: true, data: { ...result, allData } });
   } catch (error: unknown) {
     if (error instanceof Error) {
       console.error('Import parse error:', error.message);

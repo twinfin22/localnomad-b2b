@@ -1,36 +1,158 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { FileUpload } from '@/components/import/file-upload';
 import { ColumnMapping } from '@/components/import/column-mapping';
+import { ImportValidation } from '@/components/import/import-validation';
+import { ImportResult } from '@/components/import/import-result';
 import { cn } from '@/lib/utils';
-import { FileSpreadsheet, Columns3 } from 'lucide-react';
 import { toast } from 'sonner';
-import type { ParseResult, ColumnMapping as ColumnMappingType } from '@/types';
+import {
+  FileSpreadsheet,
+  Columns3,
+  CheckCircle,
+  FileCheck,
+  Loader2,
+} from 'lucide-react';
+import type {
+  ParseResult,
+  ColumnMapping as ColumnMappingType,
+  ImportValidationResult,
+  ImportExecutionResult,
+} from '@/types';
 
-type ImportStep = 'upload' | 'mapping';
+type ImportStep = 'upload' | 'mapping' | 'validation' | 'result';
+
+const STEP_ORDER: ImportStep[] = ['upload', 'mapping', 'validation', 'result'];
+
+const getStepIndex = (step: ImportStep): number => STEP_ORDER.indexOf(step);
 
 export default function ImportPage() {
-  const [step, setStep] = useState<ImportStep>('upload');
-  const [parseResult, setParseResult] = useState<ParseResult | null>(null);
+  const router = useRouter();
 
-  const handleParsed = (result: ParseResult) => {
+  const [step, setStep] = useState<ImportStep>('upload');
+  const [parseResult, setParseResult] = useState<
+    (ParseResult & { allData?: string[][] }) | null
+  >(null);
+  const [validationResult, setValidationResult] =
+    useState<ImportValidationResult | null>(null);
+  const [executionResult, setExecutionResult] =
+    useState<ImportExecutionResult | null>(null);
+  const [isValidating, setIsValidating] = useState(false);
+  const [isExecuting, setIsExecuting] = useState(false);
+
+  // Step 1: File parsed
+  const handleParsed = (result: ParseResult & { allData?: string[][] }) => {
     setParseResult(result);
     setStep('mapping');
   };
 
-  const handleConfirm = (mappings: ColumnMappingType[]) => {
-    // For now, show success toast (validation + execution deferred to later phase)
-    const mappedCount = mappings.filter((m) => m.targetField !== null).length;
-    toast.success(
-      `${mappedCount}개 필드가 매핑되었습니다. 데이터 검증 및 등록 기능은 추후 제공됩니다.`
-    );
+  // Step 2: Column mappings confirmed -> validate
+  const handleConfirm = async (confirmedMappings: ColumnMappingType[]) => {
+    if (!parseResult) return;
+
+    setIsValidating(true);
+
+    try {
+      const response = await fetch('/api/import/validate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fileName: parseResult.fileName,
+          mappings: confirmedMappings,
+          data: parseResult.allData,
+          headers: parseResult.headers,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        toast.error(result.error || '데이터 검증 중 오류가 발생했습니다.');
+        return;
+      }
+
+      setValidationResult(result.data);
+      setStep('validation');
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        toast.error(`데이터 검증 실패: ${error.message}`);
+      } else {
+        toast.error('데이터 검증 중 오류가 발생했습니다.');
+      }
+    } finally {
+      setIsValidating(false);
+    }
+  };
+
+  // Step 3: Execute import
+  const handleExecute = async (
+    duplicateAction: 'skip' | 'overwrite' | 'manual'
+  ) => {
+    if (!parseResult || !validationResult) return;
+
+    setIsExecuting(true);
+
+    try {
+      const response = await fetch('/api/import/execute', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fileName: parseResult.fileName,
+          validRows: validationResult.validRows,
+          duplicateRows:
+            duplicateAction === 'overwrite'
+              ? validationResult.duplicateRows
+              : [],
+          duplicateAction,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        toast.error(result.error || '가져오기 실행 중 오류가 발생했습니다.');
+        return;
+      }
+
+      setExecutionResult(result.data);
+      setStep('result');
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        toast.error(`가져오기 실패: ${error.message}`);
+      } else {
+        toast.error('가져오기 실행 중 오류가 발생했습니다.');
+      }
+    } finally {
+      setIsExecuting(false);
+    }
+  };
+
+  // Reset everything
+  const handleNewImport = () => {
+    setStep('upload');
+    setParseResult(null);
+
+    setValidationResult(null);
+    setExecutionResult(null);
+    setIsValidating(false);
+    setIsExecuting(false);
   };
 
   const handleReset = () => {
     setStep('upload');
     setParseResult(null);
+
+    setValidationResult(null);
+    setExecutionResult(null);
   };
+
+  const handleGoToStudents = () => {
+    router.push('/students');
+  };
+
+  const currentStepIndex = getStepIndex(step);
 
   return (
     <div className="space-y-6">
@@ -49,7 +171,7 @@ export default function ImportPage() {
           label="파일 업로드"
           icon={<FileSpreadsheet className="h-4 w-4" />}
           isActive={step === 'upload'}
-          isCompleted={step === 'mapping'}
+          isCompleted={currentStepIndex > 0}
         />
         <div className="h-px w-8 bg-gray-300" />
         <StepBadge
@@ -57,12 +179,28 @@ export default function ImportPage() {
           label="컬럼 매핑"
           icon={<Columns3 className="h-4 w-4" />}
           isActive={step === 'mapping'}
+          isCompleted={currentStepIndex > 1}
+        />
+        <div className="h-px w-8 bg-gray-300" />
+        <StepBadge
+          number={3}
+          label="데이터 검증"
+          icon={<CheckCircle className="h-4 w-4" />}
+          isActive={step === 'validation'}
+          isCompleted={currentStepIndex > 2}
+        />
+        <div className="h-px w-8 bg-gray-300" />
+        <StepBadge
+          number={4}
+          label="완료"
+          icon={<FileCheck className="h-4 w-4" />}
+          isActive={step === 'result'}
           isCompleted={false}
         />
       </div>
 
-      {/* File info summary when in mapping step */}
-      {step === 'mapping' && parseResult && (
+      {/* File info summary when in mapping or validation step */}
+      {(step === 'mapping' || step === 'validation') && parseResult && (
         <div className="rounded-md bg-indigo-50 px-4 py-3 text-sm text-indigo-800 border border-indigo-200">
           <span className="font-medium">{parseResult.fileName}</span>
           {' '}&mdash; {parseResult.totalRows.toLocaleString()}건
@@ -71,12 +209,42 @@ export default function ImportPage() {
 
       {/* Step content */}
       {step === 'upload' && <FileUpload onParsed={handleParsed} />}
+
       {step === 'mapping' && parseResult && (
-        <ColumnMapping
-          headers={parseResult.headers}
-          preview={parseResult.preview}
-          onConfirm={handleConfirm}
-          onReset={handleReset}
+        <div className="relative">
+          {isValidating && (
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg bg-white/80 backdrop-blur-sm">
+              <Loader2 className="h-8 w-8 animate-spin text-indigo-600" />
+              <p className="mt-3 text-sm font-medium text-indigo-600">
+                데이터 검증 중...
+              </p>
+            </div>
+          )}
+          <ColumnMapping
+            headers={parseResult.headers}
+            preview={parseResult.preview}
+            onConfirm={handleConfirm}
+            onReset={handleReset}
+          />
+        </div>
+      )}
+
+      {step === 'validation' && validationResult && parseResult && (
+        <ImportValidation
+          validationResult={validationResult}
+          fileName={parseResult.fileName}
+          onExecute={handleExecute}
+          onBack={() => setStep('mapping')}
+          isExecuting={isExecuting}
+        />
+      )}
+
+      {step === 'result' && executionResult && parseResult && (
+        <ImportResult
+          result={executionResult}
+          fileName={parseResult.fileName}
+          onGoToStudents={handleGoToStudents}
+          onNewImport={handleNewImport}
         />
       )}
     </div>
@@ -92,7 +260,13 @@ interface StepBadgeProps {
   isCompleted: boolean;
 }
 
-const StepBadge = ({ number, label, icon, isActive, isCompleted }: StepBadgeProps) => {
+const StepBadge = ({
+  number,
+  label,
+  icon,
+  isActive,
+  isCompleted,
+}: StepBadgeProps) => {
   return (
     <div
       className={cn(

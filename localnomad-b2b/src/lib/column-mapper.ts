@@ -18,6 +18,9 @@ export const SYSTEM_FIELD_LABELS: Record<string, string> = {
   studentId: '학번',
   arcNumber: '외국인등록번호',
   insuranceStatus: '보험 상태',
+  programType: '과정 유형',
+  semester: '학기',
+  passportExpiry: '여권 만료일',
 };
 
 export const AVAILABLE_TARGET_FIELDS = Object.keys(SYSTEM_FIELD_LABELS);
@@ -48,6 +51,9 @@ const FIELD_PATTERNS: Record<string, string[]> = {
   studentId: ['학번', 'student id', '학생번호'],
   arcNumber: ['외국인등록번호', 'arc', 'arc number', '등록번호'],
   insuranceStatus: ['보험', '보험상태', 'insurance', '건강보험'],
+  programType: ['과정', '학위과정', 'program', 'program type', '과정유형', '학위'],
+  semester: ['학기', 'semester', '현재학기'],
+  passportExpiry: ['여권만료', '여권만료일', 'passport expiry', 'passport exp'],
 };
 
 // Normalize a string for comparison
