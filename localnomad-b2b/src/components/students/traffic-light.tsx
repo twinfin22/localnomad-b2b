@@ -5,8 +5,7 @@ import type { TrafficLightStatus } from '@/types';
 const statusConfig: Record<TrafficLightStatus, { color: string; label: string }> = {
   GREEN: { color: 'bg-emerald-500', label: '정상' },
   YELLOW: { color: 'bg-amber-400', label: '주의' },
-  ORANGE: { color: 'bg-orange-500', label: '경고' },
-  RED: { color: 'bg-red-500', label: '위험' },
+  RED: { color: 'bg-red-500', label: '긴급' },
 };
 
 interface TrafficLightProps {
@@ -15,7 +14,7 @@ interface TrafficLightProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
-// 학생 상태 도트 컴포넌트 (GREEN/YELLOW/ORANGE/RED)
+// 학생 상태 도트 컴포넌트 (GREEN/YELLOW/RED)
 export function TrafficLight({ status, showLabel = false, size = 'md' }: TrafficLightProps) {
   const config = statusConfig[status];
   const sizeClasses = {

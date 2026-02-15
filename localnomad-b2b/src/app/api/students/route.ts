@@ -5,6 +5,7 @@ import { prisma } from '@/lib/prisma';
 import { withRbac } from '@/lib/rbac';
 import { createAuditLog } from '@/lib/audit';
 import { encrypt } from '@/lib/crypto';
+import { calculateTrafficLightBatch } from '@/lib/traffic-light';
 import type { ApiResponse } from '@/types';
 import {
   Prisma,
@@ -26,13 +27,13 @@ const ALLOWED_SORT_FIELDS: Set<string> = new Set([
   'nationality',
 ]);
 
-// GET /api/students — Student list with pagination and filtering
+
+// GET /api/students — Student list with pagination, filtering, and traffic light
 export async function GET(request: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
     const rbacError = withRbac(session, 'student', 'read');
     if (rbacError) return rbacError;
-    // session is guaranteed non-null after withRbac passes
     const user = session!.user;
 
     const { searchParams } = new URL(request.url);
@@ -45,6 +46,7 @@ export async function GET(request: NextRequest) {
     const enrollmentStatus = searchParams.get('enrollmentStatus') || '';
     const department = searchParams.get('department')?.trim() || '';
     const visaType = searchParams.get('visaType') || '';
+    const trafficLight = searchParams.get('trafficLight') || '';
 
     const rawSortBy = searchParams.get('sortBy') || 'createdAt';
     const sortBy = ALLOWED_SORT_FIELDS.has(rawSortBy) ? rawSortBy : 'createdAt';
@@ -83,11 +85,94 @@ export async function GET(request: NextRequest) {
       where.AND = andConditions;
     }
 
-    // Parallel fetch: student list (PII excluded) + total count
+    // When trafficLight filter is present, we need to fetch all matching students,
+    // compute TL in-memory, filter by TL status, then paginate in-memory
+    if (trafficLight) {
+      const allStudents = await prisma.student.findMany({
+        where,
+        omit: { passportNumber: true, arcNumber: true },
+        include: {
+          fimsReports: {
+            where: { status: { in: ['PENDING', 'READY'] } },
+            select: { status: true, deadline: true },
+          },
+        },
+      });
+
+      // Prepare input and compute TL for all students
+      const tlInputs = allStudents.map((s) => ({
+        id: s.id,
+        visaExpiry: s.visaExpiry,
+        visaStatus: s.visaStatus,
+        enrollmentStatus: s.enrollmentStatus,
+        attendanceRate: s.attendanceRate !== null ? Number(s.attendanceRate) : null,
+        insuranceStatus: s.insuranceStatus,
+        addressReported: s.addressReported,
+        partTimePermit: s.partTimePermit,
+        partTimePermitExpiry: s.partTimePermitExpiry,
+        fimsReports: s.fimsReports,
+      }));
+
+      const tlResults = calculateTrafficLightBatch(tlInputs);
+
+      // Filter by requested TL status
+      const filtered = allStudents.filter((s) => {
+        const result = tlResults.get(s.id);
+        return result?.status === trafficLight;
+      });
+
+      // Sort: use provided sortBy/sortOrder if explicitly set, otherwise default to visaExpiry ASC
+      const hasExplicitSort = searchParams.has('sortBy');
+      if (hasExplicitSort) {
+        filtered.sort((a, b) => {
+          const aVal = (a as Record<string, unknown>)[sortBy];
+          const bVal = (b as Record<string, unknown>)[sortBy];
+          if (aVal == null && bVal == null) return 0;
+          if (aVal == null) return sortOrder === 'asc' ? -1 : 1;
+          if (bVal == null) return sortOrder === 'asc' ? 1 : -1;
+          if (aVal < bVal) return sortOrder === 'asc' ? -1 : 1;
+          if (aVal > bVal) return sortOrder === 'asc' ? 1 : -1;
+          return 0;
+        });
+      } else {
+        // Default: visaExpiry ASC (earliest expiry first)
+        filtered.sort((a, b) =>
+          new Date(a.visaExpiry).getTime() - new Date(b.visaExpiry).getTime()
+        );
+      }
+
+      const total = filtered.length;
+      const paginated = filtered.slice(skip, skip + limit);
+
+      // Attach TL fields to each student
+      const data = paginated.map((s) => {
+        const tl = tlResults.get(s.id)!;
+        return {
+          ...s,
+          attendanceRate: s.attendanceRate !== null ? Number(s.attendanceRate) : null,
+          trafficLight: tl.status,
+          trafficLightReasons: tl.reasons,
+        };
+      });
+
+      return NextResponse.json({
+        success: true,
+        data,
+        meta: { total, page, limit },
+      });
+    }
+
+    // No trafficLight filter — standard DB-paginated path with TL computed for the page
     const [students, total] = await Promise.all([
       prisma.student.findMany({
         where,
         omit: { passportNumber: true, arcNumber: true },
+        include: {
+          fimsReports: {
+            where: { status: { in: ['PENDING', 'READY'] } },
+            select: { status: true, deadline: true },
+          },
+        },
         skip,
         take: limit,
         orderBy: { [sortBy]: sortOrder },
@@ -95,11 +180,37 @@ export async function GET(request: NextRequest) {
       prisma.student.count({ where }),
     ]);
 
+    // Compute TL for the returned page
+    const tlInputs = students.map((s) => ({
+      id: s.id,
+      visaExpiry: s.visaExpiry,
+      visaStatus: s.visaStatus,
+      enrollmentStatus: s.enrollmentStatus,
+      attendanceRate: s.attendanceRate !== null ? Number(s.attendanceRate) : null,
+      insuranceStatus: s.insuranceStatus,
+      addressReported: s.addressReported,
+      partTimePermit: s.partTimePermit,
+      partTimePermitExpiry: s.partTimePermitExpiry,
+      fimsReports: s.fimsReports,
+    }));
+
+    const tlResults = calculateTrafficLightBatch(tlInputs);
+
+    const data = students.map((s) => {
+      const tl = tlResults.get(s.id)!;
+      return {
+        ...s,
+        attendanceRate: s.attendanceRate !== null ? Number(s.attendanceRate) : null,
+        trafficLight: tl.status,
+        trafficLightReasons: tl.reasons,
+      };
+    });
+
     return NextResponse.json({
       success: true,
-      data: students,
+      data,
       meta: { total, page, limit },
-    } satisfies ApiResponse<typeof students>);
+    } satisfies ApiResponse<typeof data>);
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : '학생 목록 조회에 실패했습니다.';

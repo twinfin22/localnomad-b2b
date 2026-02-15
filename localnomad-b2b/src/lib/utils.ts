@@ -23,24 +23,3 @@ export function getDaysUntil(targetDate: Date | string): number {
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
-// 트래픽 라이트 상태 결정
-export function getTrafficLight(
-  visaExpiryDays: number,
-  enrollmentStatus: string,
-  attendanceRate?: number | null,
-): 'GREEN' | 'YELLOW' | 'ORANGE' | 'RED' {
-  // RED: 불법체류 위험 (만료, 제적, 미등록)
-  if (visaExpiryDays <= 0) return 'RED';
-  if (['EXPELLED', 'UNREGISTERED'].includes(enrollmentStatus)) return 'RED';
-
-  // ORANGE: 경고 (만료 30일 이내, 출석률 70% 미만)
-  if (visaExpiryDays <= 30) return 'ORANGE';
-  if (attendanceRate !== null && attendanceRate !== undefined && attendanceRate < 70) return 'ORANGE';
-
-  // YELLOW: 주의 (만료 60일 이내, 휴학)
-  if (visaExpiryDays <= 60) return 'YELLOW';
-  if (enrollmentStatus === 'ON_LEAVE') return 'YELLOW';
-
-  // GREEN: 정상
-  return 'GREEN';
-}

@@ -41,7 +41,29 @@ export interface ApiResponse<T> {
 }
 
 // 트래픽 라이트 상태 타입
-export type TrafficLightStatus = 'GREEN' | 'YELLOW' | 'ORANGE' | 'RED';
+export type TrafficLightStatus = 'GREEN' | 'YELLOW' | 'RED';
+
+// 트래픽 라이트 엔진 입력 타입
+export interface TrafficLightInput {
+  visaExpiry: Date | string;
+  visaStatus: string;
+  enrollmentStatus: string;
+  attendanceRate: number | null;
+  insuranceStatus: string;
+  addressReported: boolean;
+  partTimePermit: boolean;
+  partTimePermitExpiry: Date | string | null;
+  fimsReports?: {
+    status: string;
+    deadline: Date | string;
+  }[];
+}
+
+// 트래픽 라이트 엔진 결과 타입
+export interface TrafficLightResult {
+  status: TrafficLightStatus;
+  reasons: string[];
+}
 
 // 학생 + 트래픽 라이트 상태 포함 타입
 export interface StudentWithStatus {
@@ -57,4 +79,10 @@ export interface StudentWithStatus {
   department: string;
   attendanceRate: number | null;
   trafficLight: TrafficLightStatus;
+}
+
+// 학생 + 트래픽 라이트 상태 + 사유 포함 타입
+export interface StudentWithTrafficLight extends StudentWithStatus {
+  insuranceStatus: string;
+  trafficLightReasons: string[];
 }
