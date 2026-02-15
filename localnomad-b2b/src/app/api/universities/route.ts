@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
+import { withRbac } from '@/lib/rbac';
+import { createAuditLog } from '@/lib/audit';
 import type { ApiResponse } from '@/types';
 import type { University } from '@prisma/client';
 
