@@ -5,7 +5,18 @@ import { prisma } from '@/lib/prisma';
 import { withRbac, checkPermission } from '@/lib/rbac';
 import { createAuditLog } from '@/lib/audit';
 import { encrypt, decrypt } from '@/lib/crypto';
-import type { ApiResponse } from '@/types';
+import { calculateTrafficLight } from '@/lib/traffic-light';
+import {
+  STATUS_CHANGE_FIELD_LABELS,
+  ENROLLMENT_STATUS_LABELS,
+  VISA_STATUS_LABELS,
+  VISA_TYPE_LABELS,
+  FIMS_REPORT_TYPE_LABELS,
+  FIMS_CHANGE_TYPE_LABELS,
+  FIMS_REPORT_STATUS_LABELS,
+  ALERT_TYPE_LABELS,
+} from '@/lib/constants';
+import type { ApiResponse, TimelineItem } from '@/types';
 
 // Next.js 16: params is an async Promise
 type RouteParams = { params: Promise<{ id: string }> };
@@ -48,6 +59,100 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
         { status: 404 }
       );
     }
+
+    // Parallel queries for related data
+    const [statusChanges, fimsReports, alertLogs, fimsForTl, createdByUser] =
+      await Promise.all([
+        prisma.statusChange.findMany({
+          where: { studentId: id },
+          orderBy: { createdAt: 'desc' },
+          take: 20,
+        }),
+        prisma.fimsReport.findMany({
+          where: { studentId: id },
+          orderBy: { createdAt: 'desc' },
+          take: 20,
+        }),
+        prisma.alertLog.findMany({
+          where: { studentId: id },
+          orderBy: { sentAt: 'desc' },
+          take: 20,
+        }),
+        prisma.fimsReport.findMany({
+          where: {
+            studentId: id,
+            status: { in: ['PENDING', 'READY'] },
+          },
+          select: { status: true, deadline: true },
+        }),
+        prisma.user.findUnique({
+          where: { id: student.createdById },
+          select: { name: true },
+        }),
+      ]);
+
+    // Compute traffic light
+    const tlResult = calculateTrafficLight({
+      visaExpiry: student.visaExpiry,
+      visaStatus: student.visaStatus,
+      enrollmentStatus: student.enrollmentStatus,
+      attendanceRate: student.attendanceRate ? Number(student.attendanceRate) : null,
+      insuranceStatus: student.insuranceStatus,
+      addressReported: student.addressReported,
+      partTimePermit: student.partTimePermit,
+      partTimePermitExpiry: student.partTimePermitExpiry,
+      fimsReports: fimsForTl.map((r) => ({
+        status: r.status,
+        deadline: r.deadline,
+      })),
+    });
+
+    // Build timeline from 3 sources
+    const scTimeline: TimelineItem[] = statusChanges.map((sc) => {
+      const fieldLabel = STATUS_CHANGE_FIELD_LABELS[sc.field] || sc.field;
+      const oldLabel = getFieldValueLabel(sc.field, sc.oldValue);
+      const newLabel = getFieldValueLabel(sc.field, sc.newValue);
+      return {
+        id: sc.id,
+        type: 'STATUS_CHANGE',
+        date: sc.createdAt.toISOString(),
+        title: `${fieldLabel} 변경`,
+        description: `${oldLabel} → ${newLabel}`,
+        metadata: { field: sc.field, oldValue: sc.oldValue ?? '', newValue: sc.newValue ?? '' },
+      };
+    });
+
+    const fimsTimeline: TimelineItem[] = fimsReports.map((fr) => {
+      const reportType = FIMS_REPORT_TYPE_LABELS[fr.reportType] || fr.reportType;
+      const changeType = fr.changeType
+        ? FIMS_CHANGE_TYPE_LABELS[fr.changeType] || fr.changeType
+        : null;
+      const statusLabel = FIMS_REPORT_STATUS_LABELS[fr.status] || fr.status;
+      return {
+        id: fr.id,
+        type: 'FIMS_REPORT',
+        date: fr.createdAt.toISOString(),
+        title: `FIMS ${reportType}${changeType ? ` (${changeType})` : ''}`,
+        description: `상태: ${statusLabel}`,
+        metadata: { reportType: fr.reportType, status: fr.status },
+      };
+    });
+
+    const alertTimeline: TimelineItem[] = alertLogs.map((al) => {
+      const typeLabel = ALERT_TYPE_LABELS[al.type] || al.type;
+      return {
+        id: al.id,
+        type: 'ALERT',
+        date: al.sentAt.toISOString(),
+        title: typeLabel,
+        description: al.message,
+      };
+    });
+
+    // Merge, sort by date DESC, take 20
+    const timeline = [...scTimeline, ...fimsTimeline, ...alertTimeline]
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 20);
 
     // Determine PII access level based on role
     const canReadPii = checkPermission(user.role, 'student_pii', 'read');
@@ -95,6 +200,11 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
       ...rest,
       passportNumber: passportDisplay,
       arcNumber: arcDisplay,
+      trafficLight: tlResult.status,
+      trafficLightReasons: tlResult.reasons,
+      createdByName: createdByUser?.name ?? null,
+      canReadPii,
+      timeline,
     };
 
     return NextResponse.json({
@@ -108,6 +218,21 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
       { success: false, error: message } satisfies ApiResponse<never>,
       { status: 500 }
     );
+  }
+}
+
+// Helper to resolve label for a field value change
+function getFieldValueLabel(field: string, value: string | null | undefined): string {
+  if (!value) return '-';
+  switch (field) {
+    case 'enrollmentStatus':
+      return ENROLLMENT_STATUS_LABELS[value] || value;
+    case 'visaStatus':
+      return VISA_STATUS_LABELS[value] || value;
+    case 'visaType':
+      return VISA_TYPE_LABELS[value] || value;
+    default:
+      return value;
   }
 }
 

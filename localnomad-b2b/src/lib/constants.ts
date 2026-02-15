@@ -58,3 +58,43 @@ export const ALERT_TYPE_LABELS: Record<string, string> = {
   INSURANCE_EXPIRY: '보험 만료',
   DOCUMENT_REQUEST: '서류 요청',
 };
+
+// StatusChange field → Korean labels
+export const STATUS_CHANGE_FIELD_LABELS: Record<string, string> = {
+  enrollmentStatus: '학적 상태',
+  visaStatus: '비자 상태',
+  visaType: '비자 유형',
+  department: '소속 학과',
+};
+
+// FIMS report type → Korean labels
+export const FIMS_REPORT_TYPE_LABELS: Record<string, string> = {
+  STATUS_CHANGE: '변동신고',
+  PERIODIC: '정기보고',
+};
+
+// FIMS change type → Korean labels
+export const FIMS_CHANGE_TYPE_LABELS: Record<string, string> = {
+  ON_LEAVE: '휴학',
+  EXPELLED: '제적',
+  WITHDRAWN: '자퇴',
+  GRADUATED: '졸업',
+  UNREGISTERED: '미등록',
+  TRANSFER: '소속변경',
+};
+
+// FIMS report status → Korean labels
+export const FIMS_REPORT_STATUS_LABELS: Record<string, string> = {
+  PENDING: '대기',
+  READY: '준비 완료',
+  SUBMITTED: '제출 완료',
+  OVERDUE: '기한 초과',
+};
+
+// Alert channel → Korean labels
+export const ALERT_CHANNEL_LABELS: Record<string, string> = {
+  IN_APP: '앱 내',
+  EMAIL: '이메일',
+  KAKAO: '카카오톡',
+  SMS: 'SMS',
+};
