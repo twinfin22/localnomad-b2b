@@ -106,6 +106,7 @@ enum AlertType {
   IEQAS_WARNING    // 불법체류율 경고
   INSURANCE_EXPIRY // 보험 만료
   DOCUMENT_REQUEST // 서류 요청
+  CHAT_ESCALATION  // AI 상담 에스컬레이션
 }
 
 enum AlertChannel {
@@ -302,6 +303,11 @@ model ChatMessage {
   sessionId   String
   role        String       @db.VarChar(20)     // user, assistant, staff
   content     String       @db.Text
+  intent      String?      @db.VarChar(50)     // classified intent
+  confidence  Float?                            // classification confidence
+  language    String?      @db.VarChar(10)      // detected language
+  isEscalated Boolean      @default(false)      // escalation flag
+  sources     Json?                             // source citations array
   createdAt   DateTime     @default(now())
 
   session     ChatSession  @relation(fields: [sessionId], references: [id])

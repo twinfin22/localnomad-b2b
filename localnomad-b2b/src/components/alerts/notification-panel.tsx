@@ -12,6 +12,7 @@ import {
   Heart,
   FileText,
   Check,
+  MessageCircle,
 } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { ko } from 'date-fns/locale';
@@ -34,6 +35,7 @@ const ALERT_TYPE_ICONS: Record<string, typeof Clock> = {
   IEQAS_WARNING: Shield,
   INSURANCE_EXPIRY: Heart,
   DOCUMENT_REQUEST: FileText,
+  CHAT_ESCALATION: MessageCircle,
 };
 
 // Map alert type to badge color classes
@@ -44,6 +46,7 @@ const ALERT_TYPE_BADGE_COLORS: Record<string, string> = {
   IEQAS_WARNING: 'bg-amber-100 text-amber-700',
   INSURANCE_EXPIRY: 'bg-pink-100 text-pink-700',
   DOCUMENT_REQUEST: 'bg-blue-100 text-blue-700',
+  CHAT_ESCALATION: 'bg-purple-100 text-purple-700',
 };
 
 export const NotificationPanel = () => {

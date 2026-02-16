@@ -57,6 +57,7 @@ export const ALERT_TYPE_LABELS: Record<string, string> = {
   IEQAS_WARNING: 'IEQAS 경고',
   INSURANCE_EXPIRY: '보험 만료',
   DOCUMENT_REQUEST: '서류 요청',
+  CHAT_ESCALATION: 'AI 상담 에스컬레이션',
 };
 
 // StatusChange field → Korean labels

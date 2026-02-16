@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Sidebar } from '@/components/layout/sidebar';
 import { Header } from '@/components/layout/header';
 import { MobileNav } from '@/components/layout/mobile-nav';
+import { ChatWidget } from '@/components/chat/chat-widget';
 
 // 대시보드 레이아웃: 좌측 사이드바(240px) + 상단 헤더(64px) + 메인 콘텐츠
 export default function DashboardLayout({
@@ -30,6 +31,9 @@ export default function DashboardLayout({
           {children}
         </main>
       </div>
+
+      {/* AI 상담 채팅 위젯 */}
+      <ChatWidget />
     </div>
   );
 }
