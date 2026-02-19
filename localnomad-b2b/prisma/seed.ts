@@ -286,8 +286,8 @@ async function main() {
   // -----------------------------------------------------------------------
   const university = await prisma.university.create({
     data: {
-      name: '호서대학교',
-      region: '충남 아산',
+      name: '비캠대학교',
+      region: '서울 성동구',
       ieqasStatus: 'CERTIFIED',
       overstayRate: 1.2,
       planType: 'STANDARD',
@@ -304,7 +304,7 @@ async function main() {
   const adminUser = await prisma.user.create({
     data: {
       universityId: university.id,
-      email: 'admin@hoseo.edu',
+      email: 'admin@visacampus.org',
       name: '김현정',
       hashedPassword: bcrypt.hashSync('admin1234!', 10),
       role: 'ADMIN',
@@ -316,7 +316,7 @@ async function main() {
   const managerUser = await prisma.user.create({
     data: {
       universityId: university.id,
-      email: 'manager@hoseo.edu',
+      email: 'manager@visacampus.org',
       name: '박지수',
       hashedPassword: bcrypt.hashSync('manager1234!', 10),
       role: 'MANAGER',
@@ -328,7 +328,7 @@ async function main() {
   const viewerUser = await prisma.user.create({
     data: {
       universityId: university.id,
-      email: 'viewer@hoseo.edu',
+      email: 'viewer@visacampus.org',
       name: '이민호',
       hashedPassword: bcrypt.hashSync('viewer1234!', 10),
       role: 'VIEWER',
@@ -337,7 +337,20 @@ async function main() {
     },
   });
 
-  console.log('   ✓ Users created: 3');
+  // Test account (test@visacampus.org / test1234)
+  await prisma.user.create({
+    data: {
+      universityId: university.id,
+      email: 'test@visacampus.org',
+      name: '테스트관리자',
+      hashedPassword: bcrypt.hashSync('test1234', 10),
+      role: 'ADMIN',
+      isActive: true,
+      lastLogin: new Date('2026-02-15T10:00:00Z'),
+    },
+  });
+
+  console.log('   ✓ Users created: 4 (including test account)');
 
   // -----------------------------------------------------------------------
   // 3. Students (50)
@@ -383,10 +396,10 @@ async function main() {
         gpa,
         insuranceStatus: t.insuranceStatus,
         insuranceExpiry,
-        address: i % 3 === 0 ? `충남 아산시 배방읍 호서로 ${79 + i}` : null,
+        address: i % 3 === 0 ? `서울 성동구 왕십리로 ${79 + i}` : null,
         addressReported: i % 3 === 0,
         phone: hasPhone ? `010-${String(1000 + i).slice(0, 4)}-${String(5000 + i * 7).slice(0, 4)}` : null,
-        email: hasEmail ? `student${i + 1}@hoseo.edu` : null,
+        email: hasEmail ? `student${i + 1}@visacampus.org` : null,
         partTimePermit: i % 8 === 0,
         partTimePermitExpiry: i % 8 === 0 ? new Date('2026-08-31') : null,
         isDeleted: false,
