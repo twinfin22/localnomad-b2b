@@ -90,41 +90,51 @@ const evaluateInsuranceExpiry = (student: StudentForAlert): AlertRuleResult | nu
 
 const RULES = [evaluateVisaExpiry, evaluateAttendanceLow, evaluateFimsDeadline, evaluateInsuranceExpiry];
 
-// Check whether a duplicate alert already exists within the last 7 days
-const isDuplicate = async (studentId: string, type: AlertType): Promise<boolean> => {
-  const sevenDaysAgo = new Date();
-  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-
-  const existing = await prisma.alertLog.findFirst({
-    where: {
-      studentId,
-      type,
-      sentAt: { gte: sevenDaysAgo },
-    },
-  });
-  return existing !== null;
-};
-
 /**
  * Generate alerts for all non-deleted students in a university.
- * Evaluates all rules, deduplicates against recent alerts, and creates AlertLog records.
+ * Evaluates all rules, batch-deduplicates against recent alerts, and creates AlertLog records.
  */
 export const generateAlerts = async (
   universityId: string,
   userId: string,
 ): Promise<{ generated: number; skipped: number }> => {
-  // Fetch all active students with pending/ready FIMS reports
-  const students = await prisma.student.findMany({
-    where: { universityId, isDeleted: false },
-    include: {
-      fimsReports: {
-        where: { status: { in: ['PENDING', 'READY'] } },
-        select: { status: true, deadline: true },
-      },
-    },
-  });
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
-  let generated = 0;
+  // Fetch students and recent alerts in parallel (batch instead of N+1)
+  const [students, recentAlerts] = await Promise.all([
+    prisma.student.findMany({
+      where: { universityId, isDeleted: false },
+      include: {
+        fimsReports: {
+          where: { status: { in: ['PENDING', 'READY'] } },
+          select: { status: true, deadline: true },
+        },
+      },
+    }),
+    prisma.alertLog.findMany({
+      where: {
+        sentAt: { gte: sevenDaysAgo },
+        student: { universityId },
+      },
+      select: { studentId: true, type: true },
+    }),
+  ]);
+
+  // Build a Set of "studentId:type" keys for O(1) duplicate lookup
+  const existingAlertKeys = new Set(
+    recentAlerts.map((a) => `${a.studentId}:${a.type}`),
+  );
+
+  // Evaluate all rules and collect new alerts
+  const newAlerts: {
+    studentId: string;
+    userId: string;
+    type: AlertType;
+    channel: 'IN_APP';
+    title: string;
+    message: string;
+  }[] = [];
   let skipped = 0;
 
   for (const student of students) {
@@ -132,25 +142,26 @@ export const generateAlerts = async (
       const result = rule(student as unknown as StudentForAlert);
       if (!result) continue;
 
-      const duplicate = await isDuplicate(student.id, result.type);
-      if (duplicate) {
+      if (existingAlertKeys.has(`${student.id}:${result.type}`)) {
         skipped++;
         continue;
       }
 
-      await prisma.alertLog.create({
-        data: {
-          studentId: student.id,
-          userId,
-          type: result.type,
-          channel: 'IN_APP',
-          title: result.title,
-          message: result.message,
-        },
+      newAlerts.push({
+        studentId: student.id,
+        userId,
+        type: result.type,
+        channel: 'IN_APP',
+        title: result.title,
+        message: result.message,
       });
-      generated++;
     }
   }
 
-  return { generated, skipped };
+  // Batch insert all new alerts at once
+  if (newAlerts.length > 0) {
+    await prisma.alertLog.createMany({ data: newAlerts });
+  }
+
+  return { generated: newAlerts.length, skipped };
 };

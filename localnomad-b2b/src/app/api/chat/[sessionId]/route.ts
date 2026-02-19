@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
+import { withRbac } from '@/lib/rbac';
 import type { ApiResponse } from '@/types';
 
 interface ChatMessageData {
@@ -19,6 +22,10 @@ export async function GET(
   { params }: { params: Promise<{ sessionId: string }> },
 ) {
   try {
+    const authSession = await getServerSession(authOptions);
+    const rbacError = withRbac(authSession, 'chat', 'read');
+    if (rbacError) return rbacError;
+
     const { sessionId } = await params;
 
     if (!sessionId) {
@@ -29,11 +36,11 @@ export async function GET(
     }
 
     // Verify session exists
-    const session = await prisma.chatSession.findUnique({
+    const chatSession = await prisma.chatSession.findUnique({
       where: { id: sessionId },
     });
 
-    if (!session) {
+    if (!chatSession) {
       return NextResponse.json(
         { success: false, error: '세션을 찾을 수 없습니다.' } satisfies ApiResponse<never>,
         { status: 404 },
@@ -70,8 +77,8 @@ export async function GET(
       success: true,
       data: {
         sessionId,
-        language: session.language,
-        isEscalated: session.isEscalated,
+        language: chatSession.language,
+        isEscalated: chatSession.isEscalated,
         messages: messages as ChatMessageData[],
       },
       meta: { total, page, limit },

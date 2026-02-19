@@ -24,6 +24,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
+import { useShallow } from 'zustand/react/shallow';
 import { useAlertStore } from '@/store/alert-store';
 import { ALERT_TYPE_LABELS } from '@/lib/constants';
 
@@ -62,7 +63,18 @@ export const NotificationPanel = () => {
     markAsRead,
     markAllAsRead,
     startPolling,
-  } = useAlertStore();
+  } = useAlertStore(useShallow((s) => ({
+    unreadCount: s.unreadCount,
+    alerts: s.alerts,
+    isLoading: s.isLoading,
+    isPanelOpen: s.isPanelOpen,
+    setIsPanelOpen: s.setIsPanelOpen,
+    fetchUnreadCount: s.fetchUnreadCount,
+    fetchRecentAlerts: s.fetchRecentAlerts,
+    markAsRead: s.markAsRead,
+    markAllAsRead: s.markAllAsRead,
+    startPolling: s.startPolling,
+  })));
 
   useEffect(() => {
     void fetchUnreadCount();

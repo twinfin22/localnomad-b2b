@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Globe, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useShallow } from 'zustand/react/shallow';
 import { useChatStore } from '@/store/chat-store';
 
 const LANGUAGES = [
@@ -36,7 +37,17 @@ export const ChatWidget = () => {
     setLanguage,
     sendMessage,
     clearSession,
-  } = useChatStore();
+  } = useChatStore(useShallow((s) => ({
+    messages: s.messages,
+    language: s.language,
+    isOpen: s.isOpen,
+    isTyping: s.isTyping,
+    error: s.error,
+    setIsOpen: s.setIsOpen,
+    setLanguage: s.setLanguage,
+    sendMessage: s.sendMessage,
+    clearSession: s.clearSession,
+  })));
 
   const [input, setInput] = useState('');
   const [showLangSelector, setShowLangSelector] = useState(false);

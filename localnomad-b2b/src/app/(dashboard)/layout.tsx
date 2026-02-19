@@ -1,19 +1,13 @@
-'use client';
-
-import { useState } from 'react';
 import { Sidebar } from '@/components/layout/sidebar';
-import { Header } from '@/components/layout/header';
-import { MobileNav } from '@/components/layout/mobile-nav';
-import { ChatWidget } from '@/components/chat/chat-widget';
+import { DashboardShell } from '@/components/layout/dashboard-shell';
 
 // 대시보드 레이아웃: 좌측 사이드바(240px) + 상단 헤더(64px) + 메인 콘텐츠
+// Server Component — interactive parts are in DashboardShell (client)
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 데스크톱 사이드바 */}
@@ -21,19 +15,7 @@ export default function DashboardLayout({
         <Sidebar />
       </aside>
 
-      {/* 모바일 네비게이션 */}
-      <MobileNav open={mobileNavOpen} onOpenChange={setMobileNavOpen} />
-
-      {/* 메인 콘텐츠 영역 */}
-      <div className="lg:pl-60">
-        <Header onMobileMenuClick={() => setMobileNavOpen(true)} />
-        <main className="p-6">
-          {children}
-        </main>
-      </div>
-
-      {/* AI 상담 채팅 위젯 */}
-      <ChatWidget />
+      <DashboardShell>{children}</DashboardShell>
     </div>
   );
 }

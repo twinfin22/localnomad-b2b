@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
+import { withRbac } from '@/lib/rbac';
 import type { ApiResponse } from '@/types';
 
 interface EscalateRequest {
@@ -11,6 +14,11 @@ interface EscalateRequest {
 // POST /api/chat/escalate — Create an escalation alert from a chat session
 export async function POST(request: NextRequest) {
   try {
+    const authSession = await getServerSession(authOptions);
+    const rbacError = withRbac(authSession, 'chat', 'escalate');
+    if (rbacError) return rbacError;
+    const user = authSession!.user;
+
     const body = (await request.json()) as EscalateRequest;
     const { sessionId, reason, urgent } = body;
 
@@ -40,15 +48,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Update session escalation status
-    await prisma.chatSession.update({
-      where: { id: sessionId },
-      data: {
-        isEscalated: true,
-        escalatedAt: new Date(),
-      },
-    });
-
     // Build alert message from recent messages
     const recentContext = session.messages
       .reverse()
@@ -61,27 +60,26 @@ export async function POST(request: NextRequest) {
       ? `${reason}\n\n--- 최근 대화 ---\n${recentContext}`
       : `AI 상담에서 담당자 연결이 요청되었습니다.\n\n--- 최근 대화 ---\n${recentContext}`;
 
-    // Create AlertLog for CHAT_ESCALATION
-    const alert = await prisma.alertLog.create({
-      data: {
-        type: 'CHAT_ESCALATION',
-        channel: 'IN_APP',
-        title: alertTitle,
-        message: alertMessage,
-      },
-    });
+    // Create AlertLog for CHAT_ESCALATION (with userId for visibility in alerts list)
+    const alertData = {
+      type: 'CHAT_ESCALATION' as const,
+      title: alertTitle,
+      message: alertMessage,
+      userId: user.id,
+    };
 
-    // If urgent, also create an EMAIL channel alert
-    if (urgent) {
-      await prisma.alertLog.create({
-        data: {
-          type: 'CHAT_ESCALATION',
-          channel: 'EMAIL',
-          title: alertTitle,
-          message: alertMessage,
-        },
-      });
-    }
+    const [alert] = await Promise.all([
+      prisma.alertLog.create({
+        data: { ...alertData, channel: 'IN_APP' as const },
+      }),
+      ...(urgent
+        ? [prisma.alertLog.create({ data: { ...alertData, channel: 'EMAIL' as const } })]
+        : []),
+      prisma.chatSession.update({
+        where: { id: sessionId },
+        data: { isEscalated: true, escalatedAt: new Date() },
+      }),
+    ]);
 
     return NextResponse.json(
       {

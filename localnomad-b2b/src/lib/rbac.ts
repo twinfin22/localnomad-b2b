@@ -20,7 +20,10 @@ const PERMISSIONS: Record<string, Set<UserRole>> = {
   'fims:export': new Set([UserRole.ADMIN, UserRole.MANAGER]),
   'import:create': new Set([UserRole.ADMIN, UserRole.MANAGER]),
   'audit_log:read': new Set([UserRole.ADMIN]),
+  'chat:read': new Set([UserRole.ADMIN, UserRole.MANAGER, UserRole.VIEWER]),
+  'chat:create': new Set([UserRole.ADMIN, UserRole.MANAGER, UserRole.VIEWER]),
   'chat:reply': new Set([UserRole.ADMIN, UserRole.MANAGER]),
+  'chat:escalate': new Set([UserRole.ADMIN, UserRole.MANAGER, UserRole.VIEWER]),
 };
 
 /**

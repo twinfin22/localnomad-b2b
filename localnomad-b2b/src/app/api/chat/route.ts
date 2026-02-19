@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
+import { withRbac } from '@/lib/rbac';
 import { maskPii, unmaskPii } from '@/lib/pii-masker';
 import { classifyUserIntent } from '@/lib/chatbot/intent-classifier';
 import { checkSafety } from '@/lib/chatbot/safety-filter';
@@ -49,6 +52,11 @@ interface ChatResponse {
 // POST /api/chat — Main chat endpoint
 export async function POST(request: NextRequest) {
   try {
+    const authSession = await getServerSession(authOptions);
+    const rbacError = withRbac(authSession, 'chat', 'create');
+    if (rbacError) return rbacError;
+    const user = authSession!.user;
+
     const body = (await request.json()) as ChatRequest;
     const { message, language } = body;
 
