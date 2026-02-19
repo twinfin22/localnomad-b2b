@@ -1,13 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { PageHeader } from '@/components/layout/page-header';
 
 // 설정 페이지 — 대학 설정, 알림 설정
 export default function SettingsPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">설정</h1>
-        <p className="text-sm text-gray-500 mt-1">대학 정보, 알림 설정, 계정 관리를 합니다.</p>
-      </div>
+      <PageHeader
+        title="설정"
+        subtitle="대학 정보, 알림 설정, 계정 관리를 합니다."
+      />
       <Card>
         <CardHeader>
           <CardTitle>대학 정보</CardTitle>

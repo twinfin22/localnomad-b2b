@@ -111,9 +111,9 @@ export function StudentTable() {
       return <ArrowUpDown className="h-3.5 w-3.5 ml-1 text-gray-400" />;
     }
     return filters.sortOrder === 'asc' ? (
-      <ArrowUp className="h-3.5 w-3.5 ml-1 text-indigo-600" />
+      <ArrowUp className="h-3.5 w-3.5 ml-1 text-brand-600" />
     ) : (
-      <ArrowDown className="h-3.5 w-3.5 ml-1 text-indigo-600" />
+      <ArrowDown className="h-3.5 w-3.5 ml-1 text-brand-600" />
     );
   };
 
@@ -358,7 +358,7 @@ export function StudentTable() {
                       onTouchStart={header.getResizeHandler()}
                       className={`absolute right-0 top-0 h-full w-1 cursor-col-resize select-none touch-none ${
                         header.column.getIsResizing()
-                          ? 'bg-indigo-500'
+                          ? 'bg-brand-500'
                           : 'hover:bg-gray-300'
                       }`}
                     />

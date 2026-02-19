@@ -165,7 +165,7 @@ export const ImportResult = ({
           )}
           <Button
             onClick={onGoToStudents}
-            className="bg-indigo-600 hover:bg-indigo-700"
+            className="bg-brand-600 hover:bg-brand-700"
           >
             <Users className="mr-1 h-4 w-4" />
             학생 목록으로 이동

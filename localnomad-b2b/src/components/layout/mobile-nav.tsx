@@ -10,8 +10,8 @@ import {
   Download,
   Bell,
   Settings,
-  GraduationCap,
 } from 'lucide-react';
+import { Logo } from '@/components/brand/logo';
 import { cn } from '@/lib/utils';
 import {
   Sheet,
@@ -44,9 +44,9 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent side="left" className="w-72 p-0">
-        <SheetHeader className="flex h-16 items-center gap-2 px-6 flex-row">
-          <GraduationCap className="h-6 w-6 text-indigo-600" />
-          <SheetTitle className="text-lg font-bold text-indigo-600">로컬노마드</SheetTitle>
+        <SheetHeader className="flex h-16 items-center px-6 flex-row">
+          <Logo size={28} />
+          <SheetTitle className="sr-only">로컬노마드</SheetTitle>
         </SheetHeader>
         <Separator />
         <nav className="space-y-1 px-3 py-4">
@@ -61,11 +61,11 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
                 className={cn(
                   'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
                   isActive
-                    ? 'bg-indigo-50 text-indigo-600'
+                    ? 'bg-brand-50 text-brand-600'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 )}
               >
-                <item.icon className={cn('h-5 w-5', isActive ? 'text-indigo-600' : 'text-gray-400')} />
+                <item.icon className={cn('h-5 w-5', isActive ? 'text-brand-600' : 'text-gray-400')} />
                 {item.label}
               </Link>
             );

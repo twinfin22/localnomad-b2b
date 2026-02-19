@@ -140,7 +140,7 @@ export const ColumnMapping = ({
         {/* Summary */}
         <div className="flex items-center justify-between">
           <p className="text-sm text-gray-600">
-            <span className="font-semibold text-indigo-600">{mappedCount}</span>
+            <span className="font-semibold text-brand-600">{mappedCount}</span>
             개 중{' '}
             <span className="font-semibold">{totalCount}</span>개 매핑됨
           </p>
@@ -241,7 +241,7 @@ export const ColumnMapping = ({
           <Button
             onClick={() => onConfirm(mappings)}
             disabled={hasUnmappedRequired}
-            className="bg-indigo-600 hover:bg-indigo-700"
+            className="bg-brand-600 hover:bg-brand-700"
           >
             <Check className="mr-1 h-4 w-4" />
             매핑 확인

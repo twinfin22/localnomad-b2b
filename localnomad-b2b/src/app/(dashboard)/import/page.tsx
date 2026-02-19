@@ -8,6 +8,7 @@ import { ImportValidation } from '@/components/import/import-validation';
 import { ImportResult } from '@/components/import/import-result';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
+import { PageHeader } from '@/components/layout/page-header';
 import {
   FileSpreadsheet,
   Columns3,
@@ -156,13 +157,10 @@ export default function ImportPage() {
 
   return (
     <div className="space-y-6">
-      {/* Page header */}
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">데이터 가져오기</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          엑셀 또는 CSV 파일을 업로드하여 학생 데이터를 일괄 등록합니다.
-        </p>
-      </div>
+      <PageHeader
+        title="데이터 가져오기"
+        subtitle="엑셀 또는 CSV 파일을 업로드하여 학생 데이터를 일괄 등록합니다."
+      />
 
       {/* Step indicator */}
       <div className="flex items-center gap-4">
@@ -201,7 +199,7 @@ export default function ImportPage() {
 
       {/* File info summary when in mapping or validation step */}
       {(step === 'mapping' || step === 'validation') && parseResult && (
-        <div className="rounded-md bg-indigo-50 px-4 py-3 text-sm text-indigo-800 border border-indigo-200">
+        <div className="rounded-md bg-brand-50 px-4 py-3 text-sm text-brand-800 border border-brand-200">
           <span className="font-medium">{parseResult.fileName}</span>
           {' '}&mdash; {parseResult.totalRows.toLocaleString()}건
         </div>
@@ -214,8 +212,8 @@ export default function ImportPage() {
         <div className="relative">
           {isValidating && (
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg bg-white/80 backdrop-blur-sm">
-              <Loader2 className="h-8 w-8 animate-spin text-indigo-600" />
-              <p className="mt-3 text-sm font-medium text-indigo-600">
+              <Loader2 className="h-8 w-8 animate-spin text-brand-600" />
+              <p className="mt-3 text-sm font-medium text-brand-600">
                 데이터 검증 중...
               </p>
             </div>
@@ -272,7 +270,7 @@ const StepBadge = ({
       className={cn(
         'flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors',
         isActive
-          ? 'bg-indigo-600 text-white'
+          ? 'bg-brand-600 text-white'
           : isCompleted
             ? 'bg-emerald-100 text-emerald-700'
             : 'bg-gray-100 text-gray-500'
@@ -282,7 +280,7 @@ const StepBadge = ({
         className={cn(
           'flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold',
           isActive
-            ? 'bg-white text-indigo-600'
+            ? 'bg-white text-brand-600'
             : isCompleted
               ? 'bg-emerald-600 text-white'
               : 'bg-gray-300 text-white'

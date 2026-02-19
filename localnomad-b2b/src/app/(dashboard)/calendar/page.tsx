@@ -59,7 +59,7 @@ export default function CalendarPage() {
       {/* Header row */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900">
             비자 만료 캘린더
           </h1>
           <p className="text-sm text-gray-500 mt-1">
@@ -74,7 +74,7 @@ export default function CalendarPage() {
               size="sm"
               className={cn(
                 view === option.value &&
-                  'bg-indigo-600 text-white hover:bg-indigo-700 hover:text-white border-indigo-600'
+                  'bg-brand-600 text-white hover:bg-brand-700 hover:text-white border-brand-600'
               )}
               onClick={() => setView(option.value)}
             >

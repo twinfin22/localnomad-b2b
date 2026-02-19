@@ -164,7 +164,7 @@ export const FileUpload = ({ onParsed }: FileUploadProps) => {
           className={cn(
             'flex flex-col items-center justify-center rounded-lg border-2 border-dashed p-12 transition-colors',
             isDragOver
-              ? 'border-indigo-500 bg-indigo-50'
+              ? 'border-brand-500 bg-brand-50'
               : 'border-gray-300 hover:border-gray-400',
             file && 'border-solid border-gray-200 bg-gray-50'
           )}
@@ -172,8 +172,8 @@ export const FileUpload = ({ onParsed }: FileUploadProps) => {
           {!file ? (
             // Default state: no file selected
             <>
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50">
-                <Upload className="h-8 w-8 text-indigo-600" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-50">
+                <Upload className="h-8 w-8 text-brand-600" />
               </div>
               <p className="mt-4 text-sm text-gray-600">
                 파일을 드래그하여 놓거나
@@ -227,7 +227,7 @@ export const FileUpload = ({ onParsed }: FileUploadProps) => {
             <Button
               onClick={handleUpload}
               disabled={isUploading}
-              className="bg-indigo-600 hover:bg-indigo-700"
+              className="bg-brand-600 hover:bg-brand-700"
             >
               {isUploading ? (
                 <>

@@ -249,7 +249,7 @@ export const ImportValidation = ({
           <Button
             onClick={() => onExecute(duplicateAction)}
             disabled={!canExecute || isExecuting}
-            className="bg-indigo-600 hover:bg-indigo-700"
+            className="bg-brand-600 hover:bg-brand-700"
           >
             {isExecuting ? (
               <>

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Users, AlertTriangle, TrendingUp, Bell } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
+import { useCountUp } from '@/hooks/use-count-up';
 import type { LucideIcon } from 'lucide-react';
 
 interface SummaryCardsProps {
@@ -24,6 +25,7 @@ interface CardItem {
   icon: LucideIcon;
   iconColor: string;
   iconBg: string;
+  borderColor: string;
 }
 
 // 대시보드 요약 카드 4개 — API에서 실시간 데이터 조회
@@ -31,6 +33,13 @@ export function SummaryCards({ overstayRate }: SummaryCardsProps) {
   const [data, setData] = useState<DashboardSummaryData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Counter animations — called unconditionally (React hooks rules)
+  const totalCount = useCountUp(data?.totalStudents ?? 0);
+  const visaCount = useCountUp(
+    data?.upcomingVisaExpiries.find((v) => v.period === '30일 이내')?.count ?? 0,
+  );
+  const alertCount = useCountUp(data?.unreadAlerts ?? 0);
 
   useEffect(() => {
     const fetchSummary = async () => {
@@ -90,11 +99,6 @@ export function SummaryCards({ overstayRate }: SummaryCardsProps) {
 
   if (!data) return null;
 
-  // Calculate visa expiring within 30 days from the upcomingVisaExpiries array
-  const visaExpiring30 =
-    data.upcomingVisaExpiries.find((v) => v.period === '30일 이내')?.count ?? 0;
-
-  // Use prop overstayRate if provided, otherwise use API data
   const displayRate = overstayRate ?? data.overstayRate;
 
   const rateDescription =
@@ -107,19 +111,21 @@ export function SummaryCards({ overstayRate }: SummaryCardsProps) {
   const summaryCards: CardItem[] = [
     {
       title: '전체 학생',
-      value: data.totalStudents.toLocaleString(),
+      value: totalCount.toLocaleString(),
       description: '등록된 유학생 수',
       icon: Users,
-      iconColor: 'text-indigo-600',
-      iconBg: 'bg-indigo-50',
+      iconColor: 'text-brand-600',
+      iconBg: 'bg-brand-50',
+      borderColor: 'border-l-brand-500',
     },
     {
       title: '비자 만료 임박',
-      value: String(visaExpiring30),
+      value: String(visaCount),
       description: '30일 이내 만료 예정',
       icon: AlertTriangle,
-      iconColor: 'text-amber-600',
-      iconBg: 'bg-amber-50',
+      iconColor: 'text-warning-600',
+      iconBg: 'bg-warning-50',
+      borderColor: 'border-l-warning-600',
     },
     {
       title: '불법체류율',
@@ -131,31 +137,43 @@ export function SummaryCards({ overstayRate }: SummaryCardsProps) {
       icon: TrendingUp,
       iconColor:
         displayRate < 1
-          ? 'text-emerald-600'
+          ? 'text-success-600'
           : displayRate < 2
-            ? 'text-amber-600'
-            : 'text-red-600',
+            ? 'text-warning-600'
+            : 'text-danger-600',
       iconBg:
         displayRate < 1
-          ? 'bg-emerald-50'
+          ? 'bg-success-50'
           : displayRate < 2
-            ? 'bg-amber-50'
-            : 'bg-red-50',
+            ? 'bg-warning-50'
+            : 'bg-danger-50',
+      borderColor:
+        displayRate < 1
+          ? 'border-l-success-600'
+          : displayRate < 2
+            ? 'border-l-warning-600'
+            : 'border-l-danger-600',
     },
     {
       title: '미확인 알림',
-      value: String(data.unreadAlerts),
+      value: String(alertCount),
       description: '확인이 필요한 알림',
       icon: Bell,
-      iconColor: data.unreadAlerts > 0 ? 'text-red-600' : 'text-gray-400',
-      iconBg: data.unreadAlerts > 0 ? 'bg-red-50' : 'bg-gray-50',
+      iconColor: data.unreadAlerts > 0 ? 'text-danger-600' : 'text-gray-400',
+      iconBg: data.unreadAlerts > 0 ? 'bg-danger-50' : 'bg-gray-50',
+      borderColor:
+        data.unreadAlerts > 0 ? 'border-l-danger-600' : 'border-l-gray-300',
     },
   ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      {summaryCards.map((item) => (
-        <Card key={item.title}>
+      {summaryCards.map((item, i) => (
+        <Card
+          key={item.title}
+          className={`border-l-4 ${item.borderColor} animate-fade-up`}
+          style={{ animationDelay: `${i * 75}ms` }}
+        >
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
               <div className={`rounded-lg p-3 ${item.iconBg}`}>
@@ -163,7 +181,9 @@ export function SummaryCards({ overstayRate }: SummaryCardsProps) {
               </div>
               <div>
                 <p className="text-sm text-gray-500">{item.title}</p>
-                <p className="text-2xl font-bold text-gray-900">{item.value}</p>
+                <p className="text-2xl font-bold tracking-tight text-gray-900">
+                  {item.value}
+                </p>
                 <p className="text-xs text-gray-400 mt-0.5">
                   {item.description}
                 </p>

@@ -171,7 +171,7 @@ export const EscalationList = () => {
                     </Badge>
                     <span className="text-xs text-gray-400">{timeAgo}</span>
                     {!alert.isRead && (
-                      <div className="h-2 w-2 rounded-full bg-indigo-500" />
+                      <div className="h-2 w-2 rounded-full bg-brand-500" />
                     )}
                   </div>
                   <p className="mt-0.5 text-sm font-medium text-gray-800">
@@ -212,7 +212,7 @@ export const EscalationList = () => {
                       });
                     }}
                     placeholder="답변을 입력하세요..."
-                    className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-indigo-300"
+                    className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-brand-300"
                     disabled={replying === alert.id}
                   />
                   <Button

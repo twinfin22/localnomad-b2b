@@ -11,8 +11,8 @@ import {
   Bell,
   Settings,
   LogOut,
-  GraduationCap,
 } from 'lucide-react';
+import { Logo } from '@/components/brand/logo';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
@@ -34,9 +34,8 @@ export function Sidebar() {
   return (
     <div className="flex h-full flex-col border-r bg-white">
       {/* 로고 영역 */}
-      <div className="flex h-16 items-center gap-2 px-6">
-        <GraduationCap className="h-6 w-6 text-indigo-600" />
-        <span className="text-lg font-bold text-indigo-600">로컬노마드</span>
+      <div className="flex h-16 items-center px-6">
+        <Logo size={28} />
       </div>
 
       <Separator />
@@ -53,11 +52,11 @@ export function Sidebar() {
               className={cn(
                 'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
                 isActive
-                  ? 'bg-indigo-50 text-indigo-600'
+                  ? 'bg-brand-50 text-brand-600'
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               )}
             >
-              <item.icon className={cn('h-5 w-5', isActive ? 'text-indigo-600' : 'text-gray-400')} />
+              <item.icon className={cn('h-5 w-5', isActive ? 'text-brand-600' : 'text-gray-400')} />
               {item.label}
             </Link>
           );

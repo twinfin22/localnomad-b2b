@@ -98,7 +98,7 @@ export function CalendarMonth() {
                 className={cn(
                   'min-h-[100px] border-b border-r p-2 relative',
                   !sameMonth && 'bg-gray-50',
-                  today && 'bg-indigo-50'
+                  today && 'bg-brand-50'
                 )}
               >
                 {/* Date number */}
@@ -106,7 +106,7 @@ export function CalendarMonth() {
                   className={cn(
                     'text-sm',
                     !sameMonth && 'text-gray-300',
-                    today && 'font-bold text-indigo-600',
+                    today && 'font-bold text-brand-600',
                     !today && sameMonth && 'text-gray-700'
                   )}
                 >
@@ -117,7 +117,7 @@ export function CalendarMonth() {
                 {fims && (
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-indigo-500" />
+                      <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-brand-500" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>정기보고 마감</p>

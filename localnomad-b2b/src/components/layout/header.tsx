@@ -70,7 +70,7 @@ export function Header({ onMobileMenuClick }: HeaderProps) {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="flex items-center gap-2 px-2">
               <Avatar className="h-8 w-8">
-                <AvatarFallback className="bg-indigo-100 text-indigo-600 text-sm font-medium">
+                <AvatarFallback className="bg-brand-100 text-brand-600 text-sm font-medium">
                   관
                 </AvatarFallback>
               </Avatar>

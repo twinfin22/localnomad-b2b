@@ -20,7 +20,7 @@ interface TlCardConfig {
   label: string;
   icon: LucideIcon;
   bgColor: string;
-  borderColor: string;
+  leftBorder: string;
   iconColor: string;
   countColor: string;
 }
@@ -30,28 +30,28 @@ const TL_CARDS: TlCardConfig[] = [
     status: 'RED',
     label: '긴급',
     icon: AlertOctagon,
-    bgColor: 'bg-red-50',
-    borderColor: 'border-red-200',
-    iconColor: 'text-red-600',
-    countColor: 'text-red-700',
+    bgColor: 'bg-danger-50',
+    leftBorder: 'border-l-danger-600',
+    iconColor: 'text-danger-600',
+    countColor: 'text-danger-700',
   },
   {
     status: 'YELLOW',
     label: '주의',
     icon: AlertTriangle,
-    bgColor: 'bg-amber-50',
-    borderColor: 'border-amber-200',
-    iconColor: 'text-amber-600',
-    countColor: 'text-amber-700',
+    bgColor: 'bg-warning-50',
+    leftBorder: 'border-l-warning-600',
+    iconColor: 'text-warning-600',
+    countColor: 'text-warning-700',
   },
   {
     status: 'GREEN',
     label: '정상',
     icon: CheckCircle,
-    bgColor: 'bg-emerald-50',
-    borderColor: 'border-emerald-200',
-    iconColor: 'text-emerald-600',
-    countColor: 'text-emerald-700',
+    bgColor: 'bg-success-50',
+    leftBorder: 'border-l-success-600',
+    iconColor: 'text-success-600',
+    countColor: 'text-success-700',
   },
 ];
 
@@ -123,13 +123,14 @@ export function TrafficLightSummary() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      {TL_CARDS.map((card) => {
+      {TL_CARDS.map((card, i) => {
         const count = summary[card.status];
         const Icon = card.icon;
         return (
           <Card
             key={card.status}
-            className={`${card.bgColor} ${card.borderColor} cursor-pointer transition-shadow hover:shadow-md`}
+            className={`${card.bgColor} border-l-4 ${card.leftBorder} cursor-pointer transition-shadow hover:shadow-md animate-fade-up`}
+            style={{ animationDelay: `${i * 75}ms` }}
             onClick={() =>
               router.push(`/students?trafficLight=${card.status}`)
             }

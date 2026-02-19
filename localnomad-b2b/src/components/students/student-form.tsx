@@ -630,7 +630,7 @@ export function StudentForm({ mode, studentId }: StudentFormProps) {
                 type="checkbox"
                 checked={formData.addressReported}
                 onChange={(e) => handleCheckbox('addressReported', e.target.checked)}
-                className="size-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                className="size-4 rounded border-gray-300 text-brand-600 focus:ring-brand-500"
               />
               <Label htmlFor="addressReported">체류지 신고 완료</Label>
             </div>
@@ -641,7 +641,7 @@ export function StudentForm({ mode, studentId }: StudentFormProps) {
                 type="checkbox"
                 checked={formData.partTimePermit}
                 onChange={(e) => handleCheckbox('partTimePermit', e.target.checked)}
-                className="size-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                className="size-4 rounded border-gray-300 text-brand-600 focus:ring-brand-500"
               />
               <Label htmlFor="partTimePermit">시간제 취업 허가</Label>
             </div>
@@ -685,7 +685,7 @@ export function StudentForm({ mode, studentId }: StudentFormProps) {
         <Button
           onClick={handleSubmit}
           disabled={isSubmitting}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white"
+          className="bg-brand-600 hover:bg-brand-700 text-white"
         >
           {isSubmitting && <Loader2 className="mr-2 size-4 animate-spin" />}
           저장

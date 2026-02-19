@@ -56,20 +56,20 @@ export function CalendarWeek() {
               key={dateStr}
               className={cn(
                 'border-r last:border-r-0 min-h-[300px]',
-                today && 'bg-indigo-50'
+                today && 'bg-brand-50'
               )}
             >
               {/* Day header */}
               <div
                 className={cn(
                   'px-3 py-2 border-b text-center',
-                  today ? 'bg-indigo-100' : 'bg-gray-50'
+                  today ? 'bg-brand-100' : 'bg-gray-50'
                 )}
               >
                 <p
                   className={cn(
                     'text-xs font-medium',
-                    today ? 'text-indigo-600' : 'text-gray-500'
+                    today ? 'text-brand-600' : 'text-gray-500'
                   )}
                 >
                   {DAY_NAMES[idx]}
@@ -77,7 +77,7 @@ export function CalendarWeek() {
                 <p
                   className={cn(
                     'text-lg font-bold',
-                    today ? 'text-indigo-700' : 'text-gray-900'
+                    today ? 'text-brand-700' : 'text-gray-900'
                   )}
                 >
                   {format(day, 'M/d')}

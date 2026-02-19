@@ -68,7 +68,7 @@ export function IeqasGauge({ overstayRate }: IeqasGaugeProps) {
             className="absolute inset-y-0 flex items-center"
             style={{ left: `${position}%`, transform: 'translateX(-50%)' }}
           >
-            <div className="w-1.5 h-full bg-indigo-600 rounded-full shadow-md" />
+            <div className="w-1.5 h-full bg-brand-600 rounded-full shadow-md" />
           </div>
         </div>
 

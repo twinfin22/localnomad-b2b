@@ -238,7 +238,7 @@ export default function AlertsPage() {
       {/* Page header */}
       <div className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">알림</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900">알림</h1>
           <p className="mt-1 text-sm text-gray-500">
             비자 만료, 출석률 저조, FIMS 기한 등 주요 알림을 확인합니다.
           </p>
@@ -246,7 +246,7 @@ export default function AlertsPage() {
         <Button
           onClick={() => void handleGenerate()}
           disabled={isGenerating}
-          className="bg-indigo-600 hover:bg-indigo-700"
+          className="bg-brand-600 hover:bg-brand-700"
         >
           <Zap className="mr-2 h-4 w-4" />
           {isGenerating ? '생성 중...' : '알림 생성'}
@@ -438,7 +438,7 @@ const AlertTable = ({
                   <TableRow
                     key={alert.id}
                     className={`cursor-pointer transition-colors hover:bg-gray-50 ${
-                      !alert.isRead ? 'bg-indigo-50/40' : ''
+                      !alert.isRead ? 'bg-brand-50/40' : ''
                     }`}
                     onClick={() => onRowClick(alert)}
                   >
@@ -496,7 +496,7 @@ const AlertTable = ({
                         <Button
                           variant="ghost"
                           size="sm"
-                          className="h-7 text-xs text-indigo-600 hover:text-indigo-700"
+                          className="h-7 text-xs text-brand-600 hover:text-brand-700"
                           onClick={(e) => {
                             e.stopPropagation();
                             void onMarkAsRead(alert.id);

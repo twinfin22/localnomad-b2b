@@ -12,7 +12,7 @@ interface StudentTimelineProps {
 // Timeline type → dot color mapping
 const DOT_COLORS: Record<TimelineItem['type'], string> = {
   STATUS_CHANGE: 'bg-blue-500',
-  FIMS_REPORT: 'bg-indigo-500',
+  FIMS_REPORT: 'bg-brand-500',
   ALERT: 'bg-amber-500',
 };
 

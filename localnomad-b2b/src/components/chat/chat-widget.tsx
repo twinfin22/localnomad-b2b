@@ -16,7 +16,7 @@ const LANGUAGES = [
 ];
 
 const ROLE_STYLES: Record<string, string> = {
-  user: 'bg-indigo-500 text-white ml-8',
+  user: 'bg-brand-500 text-white ml-8',
   assistant: 'bg-gray-100 text-gray-800 mr-8',
   staff: 'bg-emerald-50 text-emerald-800 mr-8 border border-emerald-200',
 };
@@ -85,7 +85,7 @@ export const ChatWidget = () => {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-indigo-600 text-white shadow-lg transition-transform hover:scale-105 hover:bg-indigo-700"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 text-white shadow-lg transition-transform hover:scale-105 hover:bg-brand-700"
         aria-label="상담하기"
       >
         <MessageCircle className="h-6 w-6" />
@@ -96,7 +96,7 @@ export const ChatWidget = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex h-[500px] w-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
       {/* Header */}
-      <div className="flex items-center justify-between bg-indigo-600 px-4 py-3 text-white">
+      <div className="flex items-center justify-between bg-brand-600 px-4 py-3 text-white">
         <div className="flex items-center gap-2">
           <MessageCircle className="h-5 w-5" />
           <span className="text-sm font-semibold">AI 유학생 상담</span>
@@ -107,7 +107,7 @@ export const ChatWidget = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="h-8 w-8 text-white hover:bg-indigo-500"
+              className="h-8 w-8 text-white hover:bg-brand-500"
               onClick={() => setShowLangSelector(!showLangSelector)}
             >
               <Globe className="h-4 w-4" />
@@ -119,7 +119,7 @@ export const ChatWidget = () => {
                     key={lang.code}
                     type="button"
                     className={`flex w-full px-3 py-1.5 text-left text-sm hover:bg-gray-50 ${
-                      language === lang.code ? 'font-semibold text-indigo-600' : 'text-gray-700'
+                      language === lang.code ? 'font-semibold text-brand-600' : 'text-gray-700'
                     }`}
                     onClick={() => {
                       setLanguage(lang.code);
@@ -136,7 +136,7 @@ export const ChatWidget = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="h-8 w-8 text-white hover:bg-indigo-500"
+            className="h-8 w-8 text-white hover:bg-brand-500"
             onClick={clearSession}
             title="새 대화"
           >
@@ -146,7 +146,7 @@ export const ChatWidget = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="h-8 w-8 text-white hover:bg-indigo-500"
+            className="h-8 w-8 text-white hover:bg-brand-500"
             onClick={() => setIsOpen(false)}
           >
             <X className="h-4 w-4" />
@@ -230,13 +230,13 @@ export const ChatWidget = () => {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="질문을 입력하세요..."
-            className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none transition-colors focus:border-indigo-300 focus:bg-white"
+            className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none transition-colors focus:border-brand-300 focus:bg-white"
             maxLength={2000}
             disabled={isTyping}
           />
           <Button
             size="icon"
-            className="h-9 w-9 rounded-lg bg-indigo-600 hover:bg-indigo-700"
+            className="h-9 w-9 rounded-lg bg-brand-600 hover:bg-brand-700"
             onClick={handleSend}
             disabled={!input.trim() || isTyping}
           >

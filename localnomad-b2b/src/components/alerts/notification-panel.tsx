@@ -116,7 +116,7 @@ export const NotificationPanel = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="h-auto px-2 py-1 text-xs text-indigo-600 hover:text-indigo-700"
+              className="h-auto px-2 py-1 text-xs text-brand-600 hover:text-brand-700"
               onClick={() => void markAllAsRead()}
             >
               <Check className="mr-1 h-3 w-3" />
@@ -166,7 +166,7 @@ export const NotificationPanel = () => {
                   key={alert.id}
                   type="button"
                   className={`flex w-full items-start gap-3 px-4 py-3 text-left transition-colors hover:bg-gray-50 ${
-                    !alert.isRead ? 'bg-indigo-50/50' : ''
+                    !alert.isRead ? 'bg-brand-50/50' : ''
                   }`}
                   onClick={() => handleAlertClick(alert.id, alert.studentId)}
                 >
@@ -196,7 +196,7 @@ export const NotificationPanel = () => {
                   </div>
                   {!alert.isRead && (
                     <div className="mt-2 shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-indigo-500" />
+                      <div className="h-2 w-2 rounded-full bg-brand-500" />
                     </div>
                   )}
                 </button>
@@ -208,7 +208,7 @@ export const NotificationPanel = () => {
         <div className="border-t px-4 py-2.5">
           <Link
             href="/alerts"
-            className="block text-center text-xs font-medium text-indigo-600 hover:text-indigo-700"
+            className="block text-center text-xs font-medium text-brand-600 hover:text-brand-700"
             onClick={() => setIsPanelOpen(false)}
           >
             모든 알림 보기

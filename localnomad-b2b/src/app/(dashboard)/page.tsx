@@ -1,5 +1,6 @@
 'use client';
 
+import { PageHeader } from '@/components/layout/page-header';
 import { SummaryCards } from '@/components/dashboard/summary-cards';
 import { TrafficLightSummary } from '@/components/dashboard/traffic-light-summary';
 import { RecentAlerts } from '@/components/dashboard/recent-alerts';
@@ -9,12 +10,10 @@ import { IeqasGauge } from '@/components/dashboard/ieqas-gauge';
 export default function DashboardPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">대시보드</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          유학생 비자 관리 현황을 한눈에 확인하세요.
-        </p>
-      </div>
+      <PageHeader
+        title="대시보드"
+        subtitle="유학생 비자 관리 현황을 한눈에 확인하세요."
+      />
 
       {/* 요약 카드 4개 */}
       <SummaryCards />
