@@ -98,7 +98,7 @@ export function StudentDetail({ studentId }: StudentDetailProps) {
       <div className="space-y-4">
         <Link
           href="/students"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="size-4" />
           목록으로
@@ -131,7 +131,7 @@ export function StudentDetail({ studentId }: StudentDetailProps) {
         <div className="flex items-center gap-4">
           <Link
             href="/students"
-            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="size-4" />
             목록으로
@@ -415,7 +415,7 @@ export function StudentDetail({ studentId }: StudentDetailProps) {
 
         {/* Right: Timeline */}
         <div className="lg:col-span-1">
-          <Card className="sticky top-6">
+          <Card className="sticky top-[88px]">
             <CardHeader>
               <CardTitle>활동 기록</CardTitle>
             </CardHeader>

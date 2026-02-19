@@ -13,6 +13,7 @@ import { formatDistanceToNow } from 'date-fns';
 import { ko } from 'date-fns/locale';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Skeleton } from '@/components/ui/skeleton';
 
 interface EscalationAlert {
   id: string;
@@ -54,8 +55,8 @@ export const EscalationList = () => {
           })),
         );
       }
-    } catch {
-      // Silently fail
+    } catch (err: unknown) {
+      console.error('Failed to fetch escalations:', err);
     } finally {
       setIsLoading(false);
     }
@@ -101,8 +102,8 @@ export const EscalationList = () => {
         });
         void fetchEscalations();
       }
-    } catch {
-      // Error handled silently
+    } catch (err: unknown) {
+      console.error('Failed to send reply:', err);
     } finally {
       setReplying(null);
     }
@@ -112,7 +113,7 @@ export const EscalationList = () => {
     return (
       <div className="space-y-3">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="h-20 animate-pulse rounded-lg bg-gray-100" />
+          <Skeleton key={i} className="h-20 rounded-lg" />
         ))}
       </div>
     );
@@ -148,7 +149,7 @@ export const EscalationList = () => {
             {/* Header */}
             <button
               type="button"
-              className="flex w-full items-center justify-between px-4 py-3 text-left"
+              className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors cursor-pointer"
               onClick={() => void toggleExpand(alert.id)}
             >
               <div className="flex items-center gap-3">
@@ -212,7 +213,7 @@ export const EscalationList = () => {
                       });
                     }}
                     placeholder="답변을 입력하세요..."
-                    className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-brand-300"
+                    className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus-visible:border-brand-300"
                     disabled={replying === alert.id}
                   />
                   <Button

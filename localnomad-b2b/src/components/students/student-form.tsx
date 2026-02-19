@@ -709,12 +709,18 @@ function FormField({
 }) {
   return (
     <div className="space-y-2">
-      <Label>
-        {label}
-        {required && <span className="text-red-500 ml-1">*</span>}
-      </Label>
-      {children}
-      {error && <p className="text-sm text-red-500">{error}</p>}
+      <label className="block space-y-2">
+        <span className="text-sm font-medium leading-none">
+          {label}
+          {required && <span className="text-red-500 ml-1">*</span>}
+        </span>
+        {children}
+      </label>
+      {error && (
+        <p className="text-sm text-red-500" role="alert">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

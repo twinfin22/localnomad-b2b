@@ -389,7 +389,7 @@ const AlertTable = ({
 
   return (
     <Card>
-      <CardContent className="p-0">
+      <CardContent className="p-0 overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>
@@ -440,7 +440,14 @@ const AlertTable = ({
                     className={`cursor-pointer transition-colors hover:bg-gray-50 ${
                       !alert.isRead ? 'bg-brand-50/40' : ''
                     }`}
+                    tabIndex={0}
                     onClick={() => onRowClick(alert)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onRowClick(alert);
+                      }
+                    }}
                   >
                     <TableCell>
                       <div className="flex items-center gap-2">

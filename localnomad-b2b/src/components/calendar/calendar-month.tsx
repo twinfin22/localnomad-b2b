@@ -105,7 +105,7 @@ export function CalendarMonth() {
                 <span
                   className={cn(
                     'text-sm',
-                    !sameMonth && 'text-gray-300',
+                    !sameMonth && 'text-gray-400',
                     today && 'font-bold text-brand-600',
                     !today && sameMonth && 'text-gray-700'
                   )}

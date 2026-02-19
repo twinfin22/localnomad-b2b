@@ -24,11 +24,9 @@ export function TrafficLight({ status, showLabel = false, size = 'md' }: Traffic
   };
 
   return (
-    <div className="flex items-center gap-2">
-      <span className={cn('rounded-full inline-block', sizeClasses[size], config.color)} />
-      {showLabel && (
-        <span className="text-sm text-gray-600">{config.label}</span>
-      )}
+    <div className="flex items-center gap-2" role="status" aria-label={config.label}>
+      <span className={cn('rounded-full inline-block', sizeClasses[size], config.color)} aria-hidden="true" />
+      <span className={cn('text-sm text-gray-600', !showLabel && 'sr-only')}>{config.label}</span>
     </div>
   );
 }

@@ -94,7 +94,7 @@ export const ChatWidget = () => {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex h-[500px] w-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
+    <div className="fixed bottom-6 right-6 z-50 flex h-[500px] w-[min(400px,calc(100vw-48px))] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
       {/* Header */}
       <div className="flex items-center justify-between bg-brand-600 px-4 py-3 text-white">
         <div className="flex items-center gap-2">
@@ -118,7 +118,7 @@ export const ChatWidget = () => {
                   <button
                     key={lang.code}
                     type="button"
-                    className={`flex w-full px-3 py-1.5 text-left text-sm hover:bg-gray-50 ${
+                    className={`flex w-full px-3 py-1.5 text-left text-sm hover:bg-gray-50 transition-colors ${
                       language === lang.code ? 'font-semibold text-brand-600' : 'text-gray-700'
                     }`}
                     onClick={() => {
@@ -230,7 +230,7 @@ export const ChatWidget = () => {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="질문을 입력하세요..."
-            className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none transition-colors focus:border-brand-300 focus:bg-white"
+            className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none transition-colors focus-visible:border-brand-300 focus-visible:bg-white"
             maxLength={2000}
             disabled={isTyping}
           />

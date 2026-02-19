@@ -78,7 +78,14 @@ export function CalendarList() {
                 <TableRow
                   key={student.id}
                   onClick={() => router.push(`/students/${student.id}`)}
-                  className="cursor-pointer hover:bg-gray-50"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      router.push(`/students/${student.id}`);
+                    }
+                  }}
+                  tabIndex={0}
+                  className="cursor-pointer hover:bg-gray-50 transition-colors"
                 >
                   <TableCell className="font-medium">
                     {student.nameKr || student.nameEn}

@@ -329,6 +329,7 @@ export function StudentTable() {
         </div>
 
         {/* Table */}
+        <div className="overflow-x-auto">
         <Table style={{ width: table.getCenterTotalSize() }}>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -342,7 +343,7 @@ export function StudentTable() {
                     {header.isPlaceholder ? null : (
                       <button
                         type="button"
-                        className="flex items-center cursor-pointer hover:text-gray-900"
+                        className="flex items-center cursor-pointer hover:text-gray-900 transition-colors"
                         onClick={() => handleSort(header.column.id)}
                       >
                         {flexRender(
@@ -356,7 +357,7 @@ export function StudentTable() {
                     <div
                       onMouseDown={header.getResizeHandler()}
                       onTouchStart={header.getResizeHandler()}
-                      className={`absolute right-0 top-0 h-full w-1 cursor-col-resize select-none touch-none ${
+                      className={`absolute right-0 top-0 h-full w-1 cursor-col-resize select-none touch-none transition-colors ${
                         header.column.getIsResizing()
                           ? 'bg-brand-500'
                           : 'hover:bg-gray-300'
@@ -382,10 +383,17 @@ export function StudentTable() {
               table.getRowModel().rows.map((row) => (
                 <TableRow
                   key={row.id}
-                  className="cursor-pointer"
+                  className="cursor-pointer hover:bg-gray-50 transition-colors"
+                  tabIndex={0}
                   onClick={() =>
                     router.push(`/students/${row.original.id}`)
                   }
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      router.push(`/students/${row.original.id}`);
+                    }
+                  }}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell
@@ -403,6 +411,7 @@ export function StudentTable() {
             )}
           </TableBody>
         </Table>
+        </div>
 
         {/* Pagination */}
         {total > 0 && (

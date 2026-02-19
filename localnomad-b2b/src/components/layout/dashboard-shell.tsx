@@ -24,7 +24,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
       {/* 메인 콘텐츠 영역 */}
       <div className="lg:pl-60">
         <Header onMobileMenuClick={() => setMobileNavOpen(true)} />
-        <main className="p-6">
+        <main className="p-6 max-w-7xl mx-auto">
           {children}
         </main>
       </div>
