@@ -68,7 +68,7 @@ export function TrafficLightSummary() {
         setIsLoading(true);
         setError(null);
 
-        const res = await fetch('/api/students/traffic-light');
+        const res = await fetch('/api/students/traffic-light?summaryOnly=true');
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}`);
         }

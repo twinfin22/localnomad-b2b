@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCalendarStore } from '@/store/calendar-store';
+import { useShallow } from 'zustand/react/shallow';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Table,
@@ -26,7 +27,11 @@ const FILTER_OPTIONS = [
 
 export function CalendarList() {
   const router = useRouter();
-  const { events, listFilter, setListFilter } = useCalendarStore();
+  const { events, listFilter, setListFilter } = useCalendarStore(useShallow((s) => ({
+    events: s.events,
+    listFilter: s.listFilter,
+    setListFilter: s.setListFilter,
+  })));
 
   // Flatten all events' students into a single sorted array
   const students = useMemo(() => {

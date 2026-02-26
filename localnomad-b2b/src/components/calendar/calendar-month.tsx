@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCalendarStore } from '@/store/calendar-store';
+import { useShallow } from 'zustand/react/shallow';
 import {
   startOfMonth,
   endOfMonth,
@@ -38,7 +39,12 @@ const URGENCY_COLORS: Record<string, string> = {
 
 export function CalendarMonth() {
   const router = useRouter();
-  const { year, month, events, fimsDeadlines } = useCalendarStore();
+  const { year, month, events, fimsDeadlines } = useCalendarStore(useShallow((s) => ({
+    year: s.year,
+    month: s.month,
+    events: s.events,
+    fimsDeadlines: s.fimsDeadlines,
+  })));
 
   // Build a map of date string -> CalendarEvent for fast lookups
   const eventMap = useMemo(() => {

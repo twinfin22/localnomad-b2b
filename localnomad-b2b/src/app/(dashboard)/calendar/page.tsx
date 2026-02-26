@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useCalendarStore } from '@/store/calendar-store';
+import { useShallow } from 'zustand/react/shallow';
 import { CalendarMonth } from '@/components/calendar/calendar-month';
 import { CalendarWeek } from '@/components/calendar/calendar-week';
 import { CalendarList } from '@/components/calendar/calendar-list';
@@ -29,7 +30,18 @@ export default function CalendarPage() {
     navigateMonth,
     navigateWeek,
     fetchCalendarData,
-  } = useCalendarStore();
+  } = useCalendarStore(useShallow((s) => ({
+    view: s.view,
+    year: s.year,
+    month: s.month,
+    week: s.week,
+    summary: s.summary,
+    isLoading: s.isLoading,
+    setView: s.setView,
+    navigateMonth: s.navigateMonth,
+    navigateWeek: s.navigateWeek,
+    fetchCalendarData: s.fetchCalendarData,
+  })));
 
   useEffect(() => {
     fetchCalendarData();

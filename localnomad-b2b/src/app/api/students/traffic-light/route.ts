@@ -14,12 +14,14 @@ const TL_SORT_PRIORITY: Record<TrafficLightStatus, number> = {
 };
 
 // GET /api/students/traffic-light — Traffic Light summary with sorted student list
-export async function GET(_request: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
     const rbacError = withRbac(session, 'student', 'read');
     if (rbacError) return rbacError;
     const user = session!.user;
+
+    const { searchParams } = new URL(request.url);
 
     // Fetch all non-deleted students for this university, with pending/ready FIMS reports
     const students = await prisma.student.findMany({
@@ -56,6 +58,12 @@ export async function GET(_request: NextRequest) {
     const summary = { GREEN: 0, YELLOW: 0, RED: 0, total: students.length };
     for (const result of tlResults.values()) {
       summary[result.status]++;
+    }
+
+    // Early return for summary-only requests (dashboard widget)
+    const summaryOnly = searchParams.get('summaryOnly') === 'true';
+    if (summaryOnly) {
+      return NextResponse.json({ success: true, data: { summary } });
     }
 
     // Build student list with TL info, sorted by RED -> YELLOW -> GREEN, then visaExpiry ASC

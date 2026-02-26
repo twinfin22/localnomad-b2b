@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCalendarStore } from '@/store/calendar-store';
+import { useShallow } from 'zustand/react/shallow';
 import { addDays, format } from 'date-fns';
 import { Badge } from '@/components/ui/badge';
 import { VISA_TYPE_LABELS } from '@/lib/constants';
@@ -25,7 +26,11 @@ const getWeekStartDate = (year: number, week: number): Date => {
 
 export function CalendarWeek() {
   const router = useRouter();
-  const { year, week, events } = useCalendarStore();
+  const { year, week, events } = useCalendarStore(useShallow((s) => ({
+    year: s.year,
+    week: s.week,
+    events: s.events,
+  })));
 
   // Generate the 7 days for this week
   const weekDays = useMemo(() => {

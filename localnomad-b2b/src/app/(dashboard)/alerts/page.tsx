@@ -40,6 +40,7 @@ import {
 import { Skeleton } from '@/components/ui/skeleton';
 import { ALERT_TYPE_LABELS } from '@/lib/constants';
 import { useAlertStore } from '@/store/alert-store';
+import { useShallow } from 'zustand/react/shallow';
 
 // Alert type from API response
 interface AlertData {
@@ -127,7 +128,12 @@ export default function AlertsPage() {
   const [isGenerating, setIsGenerating] = useState(false);
 
   const { unreadCount, fetchUnreadCount, markAsRead, markAllAsRead } =
-    useAlertStore();
+    useAlertStore(useShallow((s) => ({
+      unreadCount: s.unreadCount,
+      fetchUnreadCount: s.fetchUnreadCount,
+      markAsRead: s.markAsRead,
+      markAllAsRead: s.markAllAsRead,
+    })));
 
   const fetchAlerts = useCallback(async () => {
     setIsLoading(true);

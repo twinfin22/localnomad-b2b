@@ -1,5 +1,3 @@
-'use client';
-
 import { PageHeader } from '@/components/layout/page-header';
 import { SummaryCards } from '@/components/dashboard/summary-cards';
 import { TrafficLightSummary } from '@/components/dashboard/traffic-light-summary';
