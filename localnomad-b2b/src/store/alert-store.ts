@@ -104,7 +104,7 @@ export const useAlertStore = create<AlertStore>((set, get) => ({
     const { fetchUnreadCount } = get();
     const interval = setInterval(() => {
       void fetchUnreadCount();
-    }, 30000);
+    }, 60000);
     return () => clearInterval(interval);
   },
 }));

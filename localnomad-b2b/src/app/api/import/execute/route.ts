@@ -90,36 +90,49 @@ export async function POST(request: NextRequest) {
     let failed = 0;
     const errors: { rowIndex: number; error: string }[] = [];
 
-    // Process valid rows — individual creates for per-row error isolation
-    for (const row of validRows) {
-      try {
-        const { data } = row;
+    // Process valid rows — chunked createMany for performance
+    const CHUNK_SIZE = 50;
 
-        // Encrypt PII fields
-        const encryptedPassport = data.passportNumber
-          ? encrypt(data.passportNumber as string)
-          : null;
-        const encryptedArc = data.arcNumber
-          ? encrypt(data.arcNumber as string)
-          : null;
+    // Step A: Pre-encrypt all PII fields and build create data
+    const bulkCreateData = validRows.map((row) => {
+      const { data } = row;
+      const encryptedPassport = data.passportNumber
+        ? encrypt(data.passportNumber as string)
+        : null;
+      const encryptedArc = data.arcNumber
+        ? encrypt(data.arcNumber as string)
+        : null;
 
-        const createData = buildStudentData(
+      return {
+        rowIndex: row.rowIndex,
+        createData: buildStudentData(
           data,
           encryptedPassport,
           encryptedArc,
           user.universityId,
           user.id
-        );
+        ),
+      };
+    });
 
-        await prisma.student.create({ data: createData });
-        imported++;
+    // Step B: Insert in chunks of 50 for partial-success isolation
+    for (let i = 0; i < bulkCreateData.length; i += CHUNK_SIZE) {
+      const chunk = bulkCreateData.slice(i, i + CHUNK_SIZE);
+      try {
+        const result = await prisma.student.createMany({
+          data: chunk.map((c) => c.createData),
+          skipDuplicates: false,
+        });
+        imported += result.count;
       } catch (error: unknown) {
-        failed++;
+        failed += chunk.length;
         const errorMessage =
           error instanceof Error
             ? error.message
-            : '학생 데이터 저장 중 오류가 발생했습니다.';
-        errors.push({ rowIndex: row.rowIndex, error: errorMessage });
+            : '학생 데이터 일괄 저장 중 오류가 발생했습니다.';
+        for (const item of chunk) {
+          errors.push({ rowIndex: item.rowIndex, error: errorMessage });
+        }
       }
     }
 

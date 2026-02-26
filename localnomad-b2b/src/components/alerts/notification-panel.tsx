@@ -78,10 +78,15 @@ export const NotificationPanel = () => {
 
   useEffect(() => {
     void fetchUnreadCount();
-    void fetchRecentAlerts();
     const cleanup = startPolling();
     return cleanup;
-  }, [fetchUnreadCount, fetchRecentAlerts, startPolling]);
+  }, [fetchUnreadCount, startPolling]);
+
+  useEffect(() => {
+    if (isPanelOpen) {
+      void fetchRecentAlerts();
+    }
+  }, [isPanelOpen, fetchRecentAlerts]);
 
   const handleAlertClick = useCallback((alertId: string, studentId: string | null) => {
     void markAsRead(alertId);
