@@ -192,12 +192,7 @@ export const EscalationList = () => {
               <div className="border-t px-4 pb-4 pt-3">
                 {/* Alert message (contains recent conversation context) */}
                 <div className="mb-3 rounded-lg bg-gray-50 p-3 text-sm text-gray-600">
-                  {alert.message.split('\n').map((line, i) => (
-                    <span key={i}>
-                      {line}
-                      {i < alert.message.split('\n').length - 1 && <br />}
-                    </span>
-                  ))}
+                  <span className="whitespace-pre-wrap">{alert.message}</span>
                 </div>
 
                 {/* Reply input */}

@@ -20,6 +20,7 @@ export const useCountUp = (end: number, duration = 800): number => {
     }
 
     const startTime = performance.now();
+    let frameId: number;
 
     const animate = (now: number) => {
       const elapsed = now - startTime;
@@ -29,11 +30,13 @@ export const useCountUp = (end: number, duration = 800): number => {
       setCount(Math.round(end * eased));
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        frameId = requestAnimationFrame(animate);
       }
     };
 
-    requestAnimationFrame(animate);
+    frameId = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(frameId);
   }, [end, duration]);
 
   return count;

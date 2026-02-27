@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useStudentStore } from '@/store/student-store';
+import { useStudentStore, type StudentFilters as StudentFiltersType } from '@/store/student-store';
 import {
   TRAFFIC_LIGHT_LABELS,
   VISA_STATUS_LABELS,
@@ -32,11 +32,14 @@ export function StudentFilters() {
   const initializedRef = useRef(false);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Sync URL params to store on mount (one-time)
+  // Sync URL params to store on mount (one-time batch to avoid N redundant API calls)
   useEffect(() => {
     if (initializedRef.current) return;
     initializedRef.current = true;
 
+    const batchSetFilters = useStudentStore.getState().batchSetFilters;
+
+    const partial: Partial<StudentFiltersType> = {};
     const urlSearch = searchParams.get('search') ?? '';
     const urlTrafficLight = searchParams.get('trafficLight') ?? '';
     const urlVisaStatus = searchParams.get('visaStatus') ?? '';
@@ -46,21 +49,24 @@ export function StudentFilters() {
     const urlSortBy = searchParams.get('sortBy') ?? '';
     const urlSortOrder = searchParams.get('sortOrder') ?? '';
 
-    if (urlSearch) {
-      setFilter('search', urlSearch);
-      // Sync DOM input value directly via ref (no setState needed)
-      if (searchInputRef.current) {
-        searchInputRef.current.value = urlSearch;
-      }
+    if (urlSearch) partial.search = urlSearch;
+    if (urlTrafficLight) partial.trafficLight = urlTrafficLight;
+    if (urlVisaStatus) partial.visaStatus = urlVisaStatus;
+    if (urlEnrollmentStatus) partial.enrollmentStatus = urlEnrollmentStatus;
+    if (urlVisaType) partial.visaType = urlVisaType;
+    if (urlDepartment) partial.department = urlDepartment;
+    if (urlSortBy) partial.sortBy = urlSortBy;
+    if (urlSortOrder) partial.sortOrder = urlSortOrder as 'asc' | 'desc';
+
+    // Sync DOM input value
+    if (urlSearch && searchInputRef.current) {
+      searchInputRef.current.value = urlSearch;
     }
-    if (urlTrafficLight) setFilter('trafficLight', urlTrafficLight);
-    if (urlVisaStatus) setFilter('visaStatus', urlVisaStatus);
-    if (urlEnrollmentStatus) setFilter('enrollmentStatus', urlEnrollmentStatus);
-    if (urlVisaType) setFilter('visaType', urlVisaType);
-    if (urlDepartment) setFilter('department', urlDepartment);
-    if (urlSortBy) setFilter('sortBy', urlSortBy);
-    if (urlSortOrder) setFilter('sortOrder', urlSortOrder);
-  }, [searchParams, setFilter]);
+
+    if (Object.keys(partial).length > 0) {
+      batchSetFilters(partial);
+    }
+  }, [searchParams]);
 
   // Cleanup debounce timer on unmount
   useEffect(() => {

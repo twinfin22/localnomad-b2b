@@ -50,11 +50,12 @@ export function CalendarWeek() {
   return (
     <div className="border rounded-lg overflow-hidden">
       <div className="grid grid-cols-7">
-        {weekDays.map((day, idx) => {
+        {(() => {
+          const todayStr = format(new Date(), 'yyyy-MM-dd');
+          return weekDays.map((day, idx) => {
           const dateStr = format(day, 'yyyy-MM-dd');
           const event = eventMap.get(dateStr);
-          const today =
-            format(new Date(), 'yyyy-MM-dd') === dateStr;
+          const today = todayStr === dateStr;
 
           return (
             <div
@@ -125,7 +126,8 @@ export function CalendarWeek() {
               </div>
             </div>
           );
-        })}
+        });
+        })()}
       </div>
     </div>
   );

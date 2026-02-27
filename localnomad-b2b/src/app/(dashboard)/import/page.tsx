@@ -2,10 +2,21 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import { FileUpload } from '@/components/import/file-upload';
-import { ColumnMapping } from '@/components/import/column-mapping';
-import { ImportValidation } from '@/components/import/import-validation';
-import { ImportResult } from '@/components/import/import-result';
+
+const ColumnMapping = dynamic(
+  () => import('@/components/import/column-mapping').then((m) => ({ default: m.ColumnMapping })),
+  { ssr: false }
+);
+const ImportValidation = dynamic(
+  () => import('@/components/import/import-validation').then((m) => ({ default: m.ImportValidation })),
+  { ssr: false }
+);
+const ImportResult = dynamic(
+  () => import('@/components/import/import-result').then((m) => ({ default: m.ImportResult })),
+  { ssr: false }
+);
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
 import { PageHeader } from '@/components/layout/page-header';

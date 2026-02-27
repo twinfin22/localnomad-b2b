@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, memo } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   AlertTriangle,
@@ -189,13 +189,13 @@ export default function AlertsPage() {
     setPage(1);
   };
 
-  const handleMarkAsRead = async (id: string) => {
+  const handleMarkAsRead = useCallback(async (id: string) => {
     await markAsRead(id);
     setAlerts((prev) =>
       prev.map((a) => (a.id === id ? { ...a, isRead: true } : a)),
     );
     void fetchUnreadCount();
-  };
+  }, [markAsRead, fetchUnreadCount]);
 
   const handleMarkAllAsRead = async () => {
     await markAllAsRead();
@@ -203,14 +203,14 @@ export default function AlertsPage() {
     void fetchUnreadCount();
   };
 
-  const handleRowClick = (alert: AlertData) => {
+  const handleRowClick = useCallback((alert: AlertData) => {
     if (!alert.isRead) {
       void handleMarkAsRead(alert.id);
     }
     if (alert.studentId) {
       router.push(`/students/${alert.studentId}`);
     }
-  };
+  }, [router, handleMarkAsRead]);
 
   const handleGenerate = async () => {
     setIsGenerating(true);
@@ -372,7 +372,7 @@ interface AlertTableProps {
   onMarkAsRead: (id: string) => Promise<void>;
 }
 
-const AlertTable = ({
+const AlertTable = memo(({
   alerts,
   isLoading,
   error,
@@ -527,4 +527,5 @@ const AlertTable = ({
       </CardContent>
     </Card>
   );
-};
+});
+AlertTable.displayName = 'AlertTable';

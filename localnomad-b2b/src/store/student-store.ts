@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import type { StudentWithTrafficLight } from '@/types';
 
-interface StudentFilters {
+export interface StudentFilters {
   search: string;
   trafficLight: string; // '' | 'GREEN' | 'YELLOW' | 'RED'
   visaStatus: string;
@@ -23,6 +23,7 @@ interface StudentStore {
   fetchStudents: () => Promise<void>;
   setPage: (page: number) => void;
   setFilter: (key: keyof StudentFilters, value: string) => void;
+  batchSetFilters: (partial: Partial<StudentFilters>) => void;
   resetFilters: () => void;
 }
 
@@ -97,6 +98,14 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   setFilter: (key: keyof StudentFilters, value: string) => {
     set((state) => ({
       filters: { ...state.filters, [key]: value },
+      page: 1,
+    }));
+    get().fetchStudents();
+  },
+
+  batchSetFilters: (partial: Partial<StudentFilters>) => {
+    set((state) => ({
+      filters: { ...state.filters, ...partial },
       page: 1,
     }));
     get().fetchStudents();

@@ -182,13 +182,7 @@ export const ChatWidget = () => {
                   ROLE_STYLES[msg.role] ?? ROLE_STYLES['assistant']
                 } ${msg.isEscalated ? 'border-2 border-amber-300 bg-amber-50 text-amber-800' : ''}`}
               >
-                {/* Render with line breaks */}
-                {msg.content.split('\n').map((line, i) => (
-                  <span key={i}>
-                    {line}
-                    {i < msg.content.split('\n').length - 1 && <br />}
-                  </span>
-                ))}
+                <span className="whitespace-pre-wrap">{msg.content}</span>
               </div>
               {msg.sources && msg.sources.length > 0 && (
                 <div className="mt-1 text-[10px] text-gray-400">
