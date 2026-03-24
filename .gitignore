@@ -15,3 +15,8 @@ node_modules/
 
 # Next.js (handled by localnomad-b2b/.gitignore too)
 .next/
+memory/
+
+# Sensitive data (PII, email lists)
+docs/founder/sales/
+research/
