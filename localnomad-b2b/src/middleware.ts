@@ -5,9 +5,9 @@ export default withAuth({
   pages: { signIn: '/login' },
 });
 
-// 보호 라우트 매처 (로그인, API 인증, 정적 파일 제외)
+// 보호 라우트 매처 (로그인, xray, API 인증, 정적 파일 제외)
 export const config = {
   matcher: [
-    '/((?!login|api/auth|_next/static|_next/image|favicon.ico).*)',
+    '/((?!login|xray|api/auth|_next/static|_next/image|favicon.ico).*)',
   ],
 };

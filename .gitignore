@@ -20,3 +20,7 @@ memory/
 # Sensitive data (PII, email lists)
 docs/founder/sales/
 research/
+
+# Agent tooling (not project-specific)
+.agent/
+.agents/

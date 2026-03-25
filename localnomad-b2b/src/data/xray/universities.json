@@ -1,0 +1,4377 @@
+[
+  {
+    "name": "한양대학교",
+    "total": 7724,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "고려대학교",
+    "total": 5420,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경희대학교",
+    "total": 5418,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "가천대학교",
+    "total": 5102,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "중앙대학교",
+    "total": 4741,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서정대학교",
+    "total": 4707,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "연세대학교",
+    "total": 4412,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "세종대학교",
+    "total": 4345,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동국대학교",
+    "total": 4138,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "성균관대학교",
+    "total": 4104,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "청주대학교",
+    "total": 3806,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "계명대학교",
+    "total": 3746,
+    "region": "Daegu",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국외국어대학교",
+    "total": 3224,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "건국대학교",
+    "total": 3036,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "영남대학교",
+    "total": 2767,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "우송대학교",
+    "total": 2729,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "선문대학교",
+    "total": 2727,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "이화여자대학교",
+    "total": 2705,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "신한대학교",
+    "total": 2515,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대구대학교",
+    "total": 2433,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인하대학교",
+    "total": 2393,
+    "region": "Incheon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대구가톨릭대학교",
+    "total": 2281,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서강대학교",
+    "total": 2261,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "명지대학교",
+    "total": 2250,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경북대학교",
+    "total": 2248,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국민대학교",
+    "total": 2244,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대신대학교",
+    "total": 2243,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울대학교",
+    "total": 2148,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "우석대학교",
+    "total": 2109,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "아주대학교",
+    "total": 2090,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대구한의대학교",
+    "total": 2088,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "남서울대학교",
+    "total": 2072,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "홍익대학교",
+    "total": 2072,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전북대학교",
+    "total": 2043,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "가톨릭대학교(성심교정)",
+    "total": 1989,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강원대학교",
+    "total": 1931,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동신대학교",
+    "total": 1872,
+    "region": "Jeollanam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한남대학교",
+    "total": 1827,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동아대학교",
+    "total": 1821,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "호남대학교",
+    "total": 1715,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동서대학교",
+    "total": 1692,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동명대학교",
+    "total": 1689,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경성대학교",
+    "total": 1681,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "부산대학교",
+    "total": 1655,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경운대학교",
+    "total": 1574,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "숭실대학교",
+    "total": 1568,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전남대학교",
+    "total": 1555,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "단국대학교",
+    "total": 1550,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "영산대학교",
+    "total": 1541,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중부대학교",
+    "total": 1537,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "신라대학교",
+    "total": 1522,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "강릉영동대학",
+    "total": 1436,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국립부경대학교",
+    "total": 1436,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "부산외국어대학교",
+    "total": 1415,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대전과학기술대학교",
+    "total": 1402,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "칼빈대학교",
+    "total": 1400,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "성신여자대학교",
+    "total": 1392,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경일대학교",
+    "total": 1341,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "혜전대학교",
+    "total": 1332,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "충북대학교",
+    "total": 1326,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "신안산대학교",
+    "total": 1314,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "목원대학교",
+    "total": 1300,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대경대학교",
+    "total": 1288,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서경대학교",
+    "total": 1250,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "군장대학교",
+    "total": 1190,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서원대학교",
+    "total": 1152,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경민대학교",
+    "total": 1124,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울과학기술대학교",
+    "total": 1099,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "백석대학교",
+    "total": 1092,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "호서대학교",
+    "total": 1088,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "배재대학교",
+    "total": 1083,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국과학기술원",
+    "total": 1076,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "충북보건과학대학교",
+    "total": 1068,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "충남대학교",
+    "total": 1061,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "장안대학",
+    "total": 1052,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인제대학교",
+    "total": 1044,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대원대학교",
+    "total": 1037,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "인천대학교",
+    "total": 1029,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "부산과학기술대학교",
+    "total": 1010,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동국대학교 WISE(와이즈)캠퍼스",
+    "total": 1000,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교미래캠퍼스",
+    "total": 982,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "순천향대학교",
+    "total": 958,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울여자대학교",
+    "total": 950,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "숙명여자대학교",
+    "total": 928,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경기대학교",
+    "total": 916,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동의대학교",
+    "total": 905,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동원대학교",
+    "total": 892,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "원광대학교",
+    "total": 885,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "김천대학교",
+    "total": 864,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국립군산대학교",
+    "total": 853,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한성대학교",
+    "total": 836,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전주비전대학교",
+    "total": 822,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대진대학교",
+    "total": 820,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서영대학교",
+    "total": 806,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경복대학교",
+    "total": 793,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "충청대학교",
+    "total": 781,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울시립대학교",
+    "total": 772,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "신경주대학교",
+    "total": 749,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광주대학교",
+    "total": 739,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "영진전문대학",
+    "total": 733,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "나주대학교",
+    "total": 728,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "호원대학교",
+    "total": 709,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "상명대학교",
+    "total": 689,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구공업대학교",
+    "total": 682,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광주여자대학교",
+    "total": 671,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "삼육대학교",
+    "total": 663,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "예원예술대학교(양주캠퍼스)",
+    "total": 663,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "백석문화대학교",
+    "total": 658,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "광운대학교",
+    "total": 656,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경남대학교",
+    "total": 640,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "조선대학교",
+    "total": 638,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전주대학교",
+    "total": 632,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아주자동차대학교",
+    "total": 624,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경남정보대학교",
+    "total": 623,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동의과학대학교",
+    "total": 623,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "덕성여자대학교",
+    "total": 613,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "청운대학교 인천캠퍼스",
+    "total": 610,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부천대학교",
+    "total": 577,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "호산대학교",
+    "total": 577,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전주기전대학",
+    "total": 574,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "세명대학교",
+    "total": 571,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "강남대학교",
+    "total": 564,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "중부대학교(고양캠퍼스)",
+    "total": 561,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경상국립대학교",
+    "total": 556,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "극동대학교",
+    "total": 555,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "울산대학교",
+    "total": 553,
+    "region": "Ulsan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "건양대학교",
+    "total": 549,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한림대학교",
+    "total": 546,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "제주대학교",
+    "total": 541,
+    "region": "Jeju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "강원대학교삼척캠퍼스",
+    "total": 534,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울한영대학교",
+    "total": 528,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "창신대학교",
+    "total": 516,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산가톨릭대학교",
+    "total": 511,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울신학대학교",
+    "total": 508,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중원대학교",
+    "total": 508,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "순천대학교",
+    "total": 505,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국공학대학교",
+    "total": 497,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국립공주대학교",
+    "total": 495,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "김포대학교",
+    "total": 494,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "송원대학교",
+    "total": 493,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한밭대학교",
+    "total": 486,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동양대학교",
+    "total": 483,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한서대학교",
+    "total": 480,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한영대학",
+    "total": 476,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "여주대학교",
+    "total": 473,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울기독대학교",
+    "total": 472,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "평택대학교",
+    "total": 469,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경동대학교",
+    "total": 463,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "초당대학교",
+    "total": 460,
+    "region": "Jeollanam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "나사렛대학교",
+    "total": 447,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "성운대학교",
+    "total": 444,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "영남이공대학",
+    "total": 436,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한일장신대학교",
+    "total": 429,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "김해대학",
+    "total": 418,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동남보건대학교",
+    "total": 408,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국립강릉원주대학교",
+    "total": 403,
+    "region": "Gangwon-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "마산대학",
+    "total": 399,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "과학기술연합대학원대학교",
+    "total": 395,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "안양대학교",
+    "total": 390,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대덕대학교",
+    "total": 384,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경기과학기술대학교",
+    "total": 383,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "남부대학교",
+    "total": 383,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국립한국해양대학교",
+    "total": 377,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "명지전문대학",
+    "total": 372,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "수도국제대학원대학교",
+    "total": 370,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동양대학교 동두천캠퍼스",
+    "total": 369,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국영상대학교",
+    "total": 367,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "창원대학교",
+    "total": 364,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전북과학대학교",
+    "total": 357,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경인여자대학교",
+    "total": 345,
+    "region": "Incheon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "세한대학교",
+    "total": 343,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "신성대학",
+    "total": 342,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한동대학교",
+    "total": 341,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "거제대학교",
+    "total": 340,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "포항대학교",
+    "total": 337,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "용인대학교",
+    "total": 336,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한라대학교",
+    "total": 323,
+    "region": "Gangwon-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경동대학교양주캠퍼스",
+    "total": 322,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대전대학교",
+    "total": 322,
+    "region": "Daejeon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국항공대학교",
+    "total": 320,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강서대학교",
+    "total": 315,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "인천가톨릭학원 가톨릭관동대학교",
+    "total": 309,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구예술대학교",
+    "total": 308,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "순천제일대학교",
+    "total": 305,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "울산과학대학교",
+    "total": 296,
+    "region": "Ulsan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "조선이공대학",
+    "total": 296,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "목포과학대학교",
+    "total": 288,
+    "region": "Jeollanam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "계명문화대학교",
+    "total": 281,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "상지대학교",
+    "total": 281,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "용인예술과학대학교",
+    "total": 276,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "구미대학교",
+    "total": 260,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "추계예술대학교",
+    "total": 259,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울과학종합대학원대학교",
+    "total": 258,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "울산과학기술원",
+    "total": 256,
+    "region": "Ulsan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경상대학교",
+    "total": 254,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "목포해양대학교",
+    "total": 248,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "송곡대학교",
+    "total": 245,
+    "region": "Gangwon-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "대구과학대학교",
+    "total": 241,
+    "region": "Daegu",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "안산대학교",
+    "total": 235,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "제주국제대학교",
+    "total": 235,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한경대학교",
+    "total": 234,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인덕대학교",
+    "total": 233,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동원과학기술대학교",
+    "total": 230,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "오산대학",
+    "total": 229,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성공회대학교",
+    "total": 228,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "가톨릭상지대학교",
+    "total": 227,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "고신대학교",
+    "total": 226,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "선린대학교",
+    "total": 226,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "제주관광대학",
+    "total": 226,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울미디어대학원대학교",
+    "total": 220,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "유원대학교",
+    "total": 218,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "영남외국어대학",
+    "total": 217,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "우송정보대학",
+    "total": 216,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "목포대학교",
+    "total": 213,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "개신대학원대학교",
+    "total": 209,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동덕여자대학교",
+    "total": 208,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "삼육보건대학교",
+    "total": 207,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "청암대학",
+    "total": 206,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강동대학교",
+    "total": 205,
+    "region": "Chungcheongbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서일대학교",
+    "total": 204,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "전남과학대학교",
+    "total": 202,
+    "region": "Jeollanam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "수원대학교",
+    "total": 201,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국제언어대학원대학교",
+    "total": 199,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "재능대학교",
+    "total": 197,
+    "region": "Incheon",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "경북과학대학",
+    "total": 194,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연성대학교",
+    "total": 191,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "온석대학원대학교",
+    "total": 190,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "원광보건대학교",
+    "total": 188,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국국제대학교",
+    "total": 184,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "협성대학교",
+    "total": 183,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "송호대학교",
+    "total": 182,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국제법률경영대학원대학교",
+    "total": 178,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "금오공과대학교",
+    "total": 172,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "위덕대학교",
+    "total": 172,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "서울장신대학교",
+    "total": 166,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대한신학대학원대학교",
+    "total": 165,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광주과학기술원",
+    "total": 164,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국제대학교",
+    "total": 159,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국교통대학교",
+    "total": 153,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한세대학교",
+    "total": 153,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광신대학교",
+    "total": 149,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "제주한라대학교",
+    "total": 145,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한신대학교",
+    "total": 144,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "예명대학원대학교",
+    "total": 138,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동아방송예술대학",
+    "total": 136,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동강대학교",
+    "total": 135,
+    "region": "Gwangju",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "성산효대학원대학교",
+    "total": 130,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "차의과학대학교",
+    "total": 128,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국개발연구원국제정책대학원대학교",
+    "total": 128,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "두원공과대학",
+    "total": 126,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울사회복지대학원대학교",
+    "total": 125,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국학중앙연구원",
+    "total": 124,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "포항공과대학교",
+    "total": 117,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국기술교육대학교",
+    "total": 117,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아신대학교",
+    "total": 113,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한림국제대학원대학교",
+    "total": 112,
+    "region": "Jeollabuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국성서대학교",
+    "total": 111,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세경대학교",
+    "total": 106,
+    "region": "Gangwon-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "국립경국대학교",
+    "total": 103,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "재단법인대구경북과학기술원",
+    "total": 100,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "웨스트민스터신학대학원대학교",
+    "total": 99,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "청운대학교",
+    "total": 97,
+    "region": "Chungcheongnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "춘해보건대학교",
+    "total": 95,
+    "region": "Ulsan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동방문화대학원대학교",
+    "total": 94,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "총신대학교",
+    "total": 88,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "영남신학대학교",
+    "total": 87,
+    "region": "Gyeongsangbuk-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "유타대학교아시아캠퍼스",
+    "total": 84,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한양여자대학교",
+    "total": 83,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산여자대학",
+    "total": 80,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "수성대학교",
+    "total": 79,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "웅지세무대학교",
+    "total": 79,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "예원예술대학교",
+    "total": 78,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "인하공업전문대학",
+    "total": 75,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가야대학교",
+    "total": 73,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국예술종합학교",
+    "total": 73,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "을지대학교",
+    "total": 71,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충북도립대학",
+    "total": 70,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북전문대학",
+    "total": 69,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울불교대학원대학교",
+    "total": 68,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울벤처대학원대학교",
+    "total": 67,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구보건대학교",
+    "total": 63,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대림대학교",
+    "total": 63,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국뉴욕주립대학교",
+    "total": 63,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "선학유피대학원대학교",
+    "total": 62,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북대학교상주캠퍼스",
+    "total": 56,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국전력 국제원자력대학원대학교",
+    "total": 52,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울외국어대학원대학교",
+    "total": 51,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국승강기대학",
+    "total": 42,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "횃불트리니티신학대학원대학교",
+    "total": 42,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강원도립대학",
+    "total": 40,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국교원대학교",
+    "total": 40,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국조지메이슨대학교",
+    "total": 40,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "안동과학대학교",
+    "total": 39,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "신구대학교",
+    "total": 38,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "동양미래대학",
+    "total": 36,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경남도립남해대학",
+    "total": 33,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "수원여자대학교",
+    "total": 33,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한반도국제대학원대학교",
+    "total": 33,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "을지대학교(의정부캠퍼스)",
+    "total": 30,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "태재대학교",
+    "total": 28,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구외국어대학교",
+    "total": 26,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울성경신학대학원대학교",
+    "total": 25,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서라벌대학교",
+    "total": 24,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성균관대학교 자연과학캠퍼스",
+    "total": 24,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육군사관학교",
+    "total": 24,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경남도립거창대학",
+    "total": 23,
+    "region": "Gyeongsangnam-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "성균관대학교산학협력단",
+    "total": 23,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국과학기술연구원",
+    "total": 23,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "숭의여자대학교",
+    "total": 22,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구미래대학",
+    "total": 21,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울예술대학교",
+    "total": 21,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "공군사관학교",
+    "total": 20,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북보건대학교",
+    "total": 17,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산보건대학교",
+    "total": 17,
+    "region": "Busan",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "장로회신학대학교",
+    "total": 17,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중앙대학교 산학협력단",
+    "total": 17,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "해군사관학교",
+    "total": 17,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국외국어대학교 연구산학협력단",
+    "total": 16,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국에너지공과대학교",
+    "total": 14,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한려대학교",
+    "total": 14,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한영신학대학교",
+    "total": 14,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "공주교육대학교",
+    "total": 13,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부경대학교",
+    "total": 13,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 산학협력단",
+    "total": 13,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국재료연구원",
+    "total": 13,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "문경대학",
+    "total": 12,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국전통문화대학교",
+    "total": 12,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경희대학교 산학협력단",
+    "total": 11,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서일대학교 한국어교육원",
+    "total": 11,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교 산학협력단",
+    "total": 11,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경찰대학",
+    "total": 10,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구경북과학기술원부설한국뇌연구원",
+    "total": 10,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울교육대학교",
+    "total": 10,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "이화여자대학교 산학협력단",
+    "total": 9,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "금오공과대학교산학협력단",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "기초과학연구원",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "용인송담대학",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "포항공과대학교 산학협력단",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국농수산대학교",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국체육대학교",
+    "total": 8,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한양대학교산학협력단",
+    "total": 8,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가톨릭대학교성신교정",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경남과학기술대학교",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "교촌치킨대학로점",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동부산대학교",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인하대학교 산학협력단",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "지에스25 중대학사",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "지에스25대전대학사점",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍I성남대학",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한림성심대학교",
+    "total": 7,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강릉원주대학교(원주캠퍼스)",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국제신학대학원대학교",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대전보건대학",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성균관대학교천천동",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "씨유 홍대대학로캠퍼스점",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "청강문화산업대학교",
+    "total": 6,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "한국골프대학",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국생명공학연구원",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한양대학교에리카산학협력단",
+    "total": 6,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가톨릭관동대학교 산학협력단",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건동대학교",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북대학교농업과학기술연구소",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동서울대학교",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "북한대학원대학교",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전북대학교병원 의생명연구원",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국기계연구원",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국생산기술연구원 전북본부",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국표준과학연구원",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국해양과학기술원",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "합동신학대학원대학교",
+    "total": 5,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "감리교신학대학교",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "겐트대학교",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고려신학대학원",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국군간호사관학교",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국립순천대학교산학협력단",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국방대학교",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대학로 아리랑",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산대학교병원",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성결대학교",
+    "total": 4,
+    "region": "Gyeonggi-do",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "세븐일레븐 전주대학로점",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세종대학교 산학협력단",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아주대학교산학협력단",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 부천상동점",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "청주새날학교",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국기초과학지원연구원",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국외국어대학교 외국어연수평가원",
+    "total": 4,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가천대학교 산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건국대학교 산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경희사이버대학교",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국민대학교산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "목포대학교산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산대학교산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "비비큐 대학로점",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "사이버한국외국어대학교",
+    "total": 3,
+    "region": "Seoul",
+    "hasData": true,
+    "kediAvailable": true
+  },
+  {
+    "name": "수원가톨릭대학교",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아주대학교의료원",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 수원영통점",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 울산 일산점",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육화.가야국밥.냉면사관학교.일품죽.팔공삼계탕",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전남대학교병원 의생명연구원",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전북대학교 산학협력단",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍여자대학",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한양대학교국제어학원",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "합동군사대학교",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "호남신학대학교",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "화순전남대학교병원",
+    "total": 3,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건국대학교 언어교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건국대학교글로컬산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건국대학교외국어연수원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건국대학교행정대학원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북직업전문학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고려대학교 국제어학원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고려직업전문학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광운대학교 언어교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광주보건대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "긴자료코 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구대학국제교류센터",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동국대학교경주캠퍼스",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "돼봉삼겹살 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "디에프에스(주)한서대학교 서산점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "백소정 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산교육대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "부산장신대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "비에이치씨(BHC)대학동점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "삼육대학교 국제문화교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "상명대학교 한국언어문화교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "상지영서대학",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 글로벌R&DB센터",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 기초과학연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 아시아연구소",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 언어교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "선문대학교 산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성민대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성서침례대학원대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세한대학교산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "압구정편의점 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "역전할머니맥주 서울대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교한국어학당",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "영산선학대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 광주경안점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 부산개금점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 온천점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 평택비전점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전남대학교산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "주식회사 한국패션심리연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중앙대학교 대학원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중앙신학대학원대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "청년밥상문간 이화여자대학교점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충남대학교 국제언어교육원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충남대학교병원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충북대학교의과대학",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충북대학교인문대학",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "치치 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "타코로 대학로점",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국개발연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국관광대학",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국기술교육대학교 산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국에너지기술연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국지질자원연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국침례신학대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍4대학",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국행정연구원",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한중대학교",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "홍익대학교 세종캠퍼스 산학협력단",
+    "total": 2,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "(주) 네오영 대학로2호점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가산불교문화연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가천의과대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "가톨릭대학교 대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강서대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "강원대학교 삼척산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "건신대학원대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북대학교 건설환경에너지융합기술원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경북대학교 상주문화연구소",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경상대학교사범대부설고등학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경인교육대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "경희대학교소비사생활협동조하",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "계원예술대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고려대학교 의료원 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고봉민 김밥인 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "고신대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광양보건대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "광운대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "교촌치킨 동양미래대학점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "구세군사관대학원대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국립군산대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국립암센터국제암대학원대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "국밥대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "금강대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "금복주류 울산대학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "김치돼학교 건대점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "꽃동네대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "노랑통닭 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "노모어피자 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "노브랜드버거 연세대학교 SK국제학사점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "농협대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "뉴욕야시장 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "단골손님 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "단국대학교 산학협련단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구교육대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대구한의대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대전남선중학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "대학로 고래",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동국대학교 WISE캠퍼스 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동국대학교 바이오메디캠퍼스",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동국대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동덕여자대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동아인재대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "동주대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "두끼 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "만권화밥 아주대학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "맘스터치 대학동점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "명신대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "명지대학교 국제교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "명지학원관동대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "무모한초밥 신성초등학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "미정국수0410대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "불닭발 동대문 엽기떡볶이 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "블루포트 건국대학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "비비큐(BBQ)부산대학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "빽다방 신림대학점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "상명대학교대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "생마차 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서강대학교 한국어교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울고려신학교신학대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울기독대학교 대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 경영대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 공과대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 공학연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 국제농업기술대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 규장각한국학연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 사범대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 시흥캠퍼스본부",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교 통일평화연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교간호대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교국제지역원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교병원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교생활협동조합",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교언어교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울대학교치의학대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "서울용곡초등학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성균관대학교 성균어학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "성균관대학교 인문과학연구소",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세븐일레븐 대학로카페점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세븐일레븐 신당성동고등학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세븐일레븐 한양대학교병원점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세종대학교국제어학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "세종문화연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "숭실대학교 대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "스텔라떡볶이 서울대학동점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "신안산대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "실천신학대학원대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아세아연합신학연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "아시아대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교 원주산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교언어연구교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "연세대학교의과대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "오리학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "오산대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "와플대학 돈암캠퍼스",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "원광보건대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "원불교대학원대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "월성중학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "유자유 김치 떡볶이 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 고양화정점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 광주상무점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 남구점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 노원역점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 부산대연점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 부산연산점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 분당야탑점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 수원매탄점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 용산점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 울산울주점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "육식사관학교 해운대점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "이마트24 R유성대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "이마트24 홍성대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "이화여자대학교언어교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인생건어물맥주 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인천가톨릭대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "인천대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "재단법인 서울문화유산연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전남대학교병원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전남대학교언어교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전민초등학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "전북대학교소비자생활협동조합",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "제주대학교 소비자생활협동조합",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "제주대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "주식회사 더홀릭보드게임카페대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "주안대학원대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "중앙승가대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "창원대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "청란여자중학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충남도립대학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "충북대학교 G테크벤처센터",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "커피니 서강대학교점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "코리아외국인학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "코코버블티 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "플로어칠주식회사 대학로점",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한경대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국건설기술연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국공학대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국교원대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국국제조리고등학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국디지털미디어고등학교",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국산업기술대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국외국어대학교한국어문화교육원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국원자력연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국전자통신연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국천문연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍 IV 대학 아산캠퍼스",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍2 대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍V대학 목포캠퍼스",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국폴리텍대학울산캠퍼스",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국학중앙연구원 한국학대학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국해양과학기술원 부설 극지연구소",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한국환경연구원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한남대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한동대학교 복지회",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한림대학교산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한민대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "한양대학교 안산캠퍼스 국제어학원",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "항공기능대학",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  },
+  {
+    "name": "호서대학교 산학협력단",
+    "total": 1,
+    "region": "",
+    "hasData": true,
+    "kediAvailable": false
+  }
+]
