@@ -4,29 +4,47 @@ import type {
   UniversitySearchItem,
 } from './types';
 
-import nationalityProfilesJson from '@/data/xray/nationality-profiles.json';
-import monthlyTrendsJson from '@/data/xray/monthly-trends.json';
+// Universities (84KB) stays eager — needed for instant search
 import universitiesJson from '@/data/xray/universities.json';
-
-// Type assertions for JSON imports
-const nationalityProfiles = nationalityProfilesJson as Record<string, UniversityProfile>;
-const monthlyTrends = monthlyTrendsJson as MonthlyTrendsData;
 const universities = universitiesJson as UniversitySearchItem[];
 
-export function getUniversityProfile(name: string): UniversityProfile | null {
-  return nationalityProfiles[name] ?? null;
+// Lazy-loaded data (nationality-profiles 970KB, monthly-trends 717KB)
+let _nationalityProfiles: Record<string, UniversityProfile> | null = null;
+let _monthlyTrends: MonthlyTrendsData | null = null;
+
+export async function loadNationalityProfiles() {
+  if (!_nationalityProfiles) {
+    const mod = await import('@/data/xray/nationality-profiles.json');
+    _nationalityProfiles = mod.default as Record<string, UniversityProfile>;
+  }
+  return _nationalityProfiles;
 }
 
-export function getMonthlyTrends(): MonthlyTrendsData {
-  return monthlyTrends;
+async function loadMonthlyTrends() {
+  if (!_monthlyTrends) {
+    const mod = await import('@/data/xray/monthly-trends.json');
+    _monthlyTrends = mod.default as MonthlyTrendsData;
+  }
+  return _monthlyTrends;
 }
 
-export function getNationalTrend(nationality: string) {
-  return monthlyTrends.timeSeries[nationality] ?? null;
+export async function getUniversityProfile(name: string): Promise<UniversityProfile | null> {
+  const profiles = await loadNationalityProfiles();
+  return profiles[name] ?? null;
 }
 
-export function getGrowthRate(nationality: string) {
-  return monthlyTrends.growthRates[nationality] ?? null;
+export async function getMonthlyTrends(): Promise<MonthlyTrendsData> {
+  return loadMonthlyTrends();
+}
+
+export async function getNationalTrend(nationality: string) {
+  const trends = await loadMonthlyTrends();
+  return trends.timeSeries[nationality] ?? null;
+}
+
+export async function getGrowthRate(nationality: string) {
+  const trends = await loadMonthlyTrends();
+  return trends.growthRates[nationality] ?? null;
 }
 
 export function getAllUniversities(): UniversitySearchItem[] {

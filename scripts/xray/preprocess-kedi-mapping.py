@@ -73,7 +73,20 @@ def safe_int(val, default=0):
         return default
 
 
+def load_manual_mapping() -> dict:
+    """Load manually curated English → Korean name mapping."""
+    mapping_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kedi-manual-mapping.json')
+    if os.path.exists(mapping_path):
+        with open(mapping_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+
 def main():
+    # ── Load manual mapping ──
+    manual_map = load_manual_mapping()
+    print(f"Manual mapping entries: {len(manual_map)}")
+
     # ── Load 대학알리미 (Korean university names = ground truth) ──
     print("Loading 대학알리미 data...")
     alimi = pd.read_excel(ALIMI, engine='openpyxl')
@@ -155,9 +168,17 @@ def main():
         dorm_total = safe_int(row.get(dorm_total_col))
         dorm_accepted = safe_int(row.get(dorm_accepted_col))
 
-        # Try to match via foreign student count
+        # Try to match: 1) manual mapping, 2) foreign student count
         matched_korean = None
-        if total_foreign > 0 and total_foreign in alimi_by_count:
+
+        # Layer 1: Manual mapping (highest priority)
+        if base_name in manual_map:
+            candidate = manual_map[base_name]
+            if candidate in alimi_lookup:
+                matched_korean = candidate
+
+        # Layer 2: Exact count match (original logic)
+        if not matched_korean and total_foreign > 0 and total_foreign in alimi_by_count:
             candidates = alimi_by_count[total_foreign]
             if len(candidates) == 1:
                 matched_korean = candidates[0]

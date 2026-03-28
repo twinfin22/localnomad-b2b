@@ -1,13 +1,17 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, memo } from 'react';
 import type { UniversityProfile } from '../lib/types';
 import {
   getHHILevel, getHHIColor, getHHIEmoji,
   getConcentrationMessage, formatNumber, formatPercent,
 } from '../lib/calculations';
 import { trackPanelView, trackCtaClick } from '../lib/analytics';
-import NationalityDonut from './charts/NationalityDonut';
+import dynamic from 'next/dynamic';
+const NationalityDonut = dynamic(() => import('./charts/NationalityDonut'), {
+  loading: () => <div className="h-[300px] bg-gray-50 rounded-xl animate-pulse" />,
+  ssr: false,
+});
 
 interface Props {
   profile: UniversityProfile;
@@ -15,7 +19,7 @@ interface Props {
   onCtaClick: () => void;
 }
 
-export default function NationalityPanel({ profile, universityName, onCtaClick }: Props) {
+function NationalityPanel({ profile, universityName, onCtaClick }: Props) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -158,3 +162,5 @@ export default function NationalityPanel({ profile, universityName, onCtaClick }
     </div>
   );
 }
+
+export default memo(NationalityPanel);

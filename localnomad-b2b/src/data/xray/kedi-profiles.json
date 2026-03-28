@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "_unmapped_ACTS University": {
+    "아신대학교": {
       "kediEnglishName": "ACTS University_Principal university",
       "kediBaseName": "ACTS University",
       "region": "Gyeonggi-do",
@@ -9,7 +9,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "아신대학교",
+      "totalStudents": 236,
+      "tuition": 6900,
+      "employmentRate": 0.0,
+      "dormitoryRate": 47.4,
+      "competitionRate": ".8",
+      "fillRate": 38.5
     },
     "아주대학교": {
       "kediEnglishName": "Ajou University_Principal university",
@@ -96,7 +102,7 @@
       "competitionRate": "1.1",
       "fillRate": 82.2
     },
-    "_unmapped_CHA University": {
+    "차의과학대학교": {
       "kediEnglishName": "CHA University_Principal university",
       "kediBaseName": "CHA University",
       "region": "Gyeonggi-do",
@@ -105,7 +111,13 @@
       "dormitoryTotal": 29,
       "dormitoryAccepted": 28,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "차의과학대학교",
+      "totalStudents": 2154,
+      "tuition": 7622,
+      "employmentRate": 72.5,
+      "dormitoryRate": 24.1,
+      "competitionRate": "7.1",
+      "fillRate": 100.0
     },
     "칼빈대학교": {
       "kediEnglishName": "Calvin University_Principal university",
@@ -124,7 +136,7 @@
       "competitionRate": "3.2",
       "fillRate": 100.0
     },
-    "_unmapped_Catholic Kkottongnae University": {
+    "가톨릭꽃동네대학교": {
       "kediEnglishName": "Catholic Kkottongnae University_Principal university",
       "kediBaseName": "Catholic Kkottongnae University",
       "region": "Chungcheongbuk-do",
@@ -133,9 +145,15 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "가톨릭꽃동네대학교",
+      "totalStudents": 418,
+      "tuition": 7506,
+      "employmentRate": 74.7,
+      "dormitoryRate": 43.5,
+      "competitionRate": "5.3",
+      "fillRate": 96.4
     },
-    "_unmapped_Catholic Kwandong University": {
+    "가톨릭관동대학교": {
       "kediEnglishName": "Catholic Kwandong University_Principal university",
       "kediBaseName": "Catholic Kwandong University",
       "region": "Gangwon-do",
@@ -144,7 +162,13 @@
       "dormitoryTotal": 32,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "가톨릭관동대학교",
+      "totalStudents": 5229,
+      "tuition": 7505,
+      "employmentRate": 62.1,
+      "dormitoryRate": 42.8,
+      "competitionRate": "4.9",
+      "fillRate": 82.7
     },
     "부산가톨릭대학교": {
       "kediEnglishName": "Catholic University Of Pusan_Principal university",
@@ -163,7 +187,7 @@
       "competitionRate": "7.1",
       "fillRate": 99.4
     },
-    "_unmapped_Changshin University": {
+    "창신대학교": {
       "kediEnglishName": "Changshin University_Principal university",
       "kediBaseName": "Changshin University",
       "region": "Gyeongsangnam-do",
@@ -172,7 +196,13 @@
       "dormitoryTotal": 158,
       "dormitoryAccepted": 77,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "창신대학교",
+      "totalStudents": 1582,
+      "tuition": 6752,
+      "employmentRate": 71.6,
+      "dormitoryRate": 52.4,
+      "competitionRate": "7.4",
+      "fillRate": 100.0
     },
     "국립창원대학교": {
       "kediEnglishName": "Changwon National University_Principal university",
@@ -225,7 +255,7 @@
       "competitionRate": "2.7",
       "fillRate": 70.0
     },
-    "_unmapped_Chongshin University": {
+    "총신대학교": {
       "kediEnglishName": "Chongshin University_Principal university",
       "kediBaseName": "Chongshin University",
       "region": "Seoul",
@@ -234,18 +264,13 @@
       "dormitoryTotal": 7,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
-    },
-    "_unmapped_Chonnam National University": {
-      "kediEnglishName": "Chonnam National University_Campus 2",
-      "kediBaseName": "Chonnam National University",
-      "region": "Jeollanam-do",
-      "totalForeignStudents": 149,
-      "topikSatisfactionRate": 58.3,
-      "dormitoryTotal": 144,
-      "dormitoryAccepted": 40,
-      "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "총신대학교",
+      "totalStudents": 1398,
+      "tuition": 7336,
+      "employmentRate": 58.3,
+      "dormitoryRate": 45.8,
+      "competitionRate": "5.3",
+      "fillRate": 100.0
     },
     "전남대학교": {
       "kediEnglishName": "Chonnam National University_Principal university",
@@ -297,17 +322,6 @@
       "dormitoryRate": 14.5,
       "competitionRate": "11.1",
       "fillRate": 100.0
-    },
-    "_unmapped_Chung-Ang University": {
-      "kediEnglishName": "Chung-Ang University_Campus 2",
-      "kediBaseName": "Chung-Ang University",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 678,
-      "topikSatisfactionRate": 47.2,
-      "dormitoryTotal": 618,
-      "dormitoryAccepted": 59,
-      "kediAvailable": true,
-      "koreanName": null
     },
     "중앙대학교": {
       "kediEnglishName": "Chung-Ang University_Principal university",
@@ -479,7 +493,7 @@
       "competitionRate": "6",
       "fillRate": 99.9
     },
-    "_unmapped_Daegu National University Of Education": {
+    "대구교육대학교": {
       "kediEnglishName": "Daegu National University Of Education_Principal university",
       "kediBaseName": "Daegu National University Of Education",
       "region": "Daegu",
@@ -488,9 +502,15 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대구교육대학교",
+      "totalStudents": 1514,
+      "tuition": 3896,
+      "employmentRate": 62.6,
+      "dormitoryRate": 28.5,
+      "competitionRate": "5.8",
+      "fillRate": 99.7
     },
-    "_unmapped_Daegu University": {
+    "대구대학교": {
       "kediEnglishName": "Daegu University_Principal university",
       "kediBaseName": "Daegu University",
       "region": "Gyeongsangbuk-do",
@@ -499,7 +519,13 @@
       "dormitoryTotal": 1446,
       "dormitoryAccepted": 309,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대구대학교",
+      "totalStudents": 15459,
+      "tuition": 7324,
+      "employmentRate": 55.3,
+      "dormitoryRate": 26.4,
+      "competitionRate": "5.3",
+      "fillRate": 99.8
     },
     "대전대학교": {
       "kediEnglishName": "Daejeon University_Principal university",
@@ -518,7 +544,7 @@
       "competitionRate": "6.8",
       "fillRate": 99.9
     },
-    "_unmapped_Daejeoncatholicuniversity": {
+    "대전가톨릭대학교": {
       "kediEnglishName": "Daejeoncatholicuniversity_Principal university",
       "kediBaseName": "Daejeoncatholicuniversity",
       "region": "Sejong",
@@ -527,7 +553,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대전가톨릭대학교",
+      "totalStudents": 35,
+      "tuition": 5760,
+      "employmentRate": 0.0,
+      "dormitoryRate": 943.6,
+      "competitionRate": ".4",
+      "fillRate": 30.0
     },
     "대진대학교": {
       "kediEnglishName": "Daejin University_Principal university",
@@ -564,13 +596,13 @@
       "fillRate": 100.0
     },
     "단국대학교": {
-      "kediEnglishName": "Dankook University_Campus 2",
+      "kediEnglishName": "Dankook University_Principal university",
       "kediBaseName": "Dankook University",
-      "region": "Chungcheongnam-do",
-      "totalForeignStudents": 147,
-      "topikSatisfactionRate": 40.6,
-      "dormitoryTotal": 96,
-      "dormitoryAccepted": 29,
+      "region": "Gyeonggi-do",
+      "totalForeignStudents": 956,
+      "topikSatisfactionRate": 31.6,
+      "dormitoryTotal": 713,
+      "dormitoryAccepted": 387,
       "kediAvailable": true,
       "koreanName": "단국대학교",
       "totalStudents": 10548,
@@ -580,18 +612,7 @@
       "competitionRate": "10.1",
       "fillRate": 99.5
     },
-    "_unmapped_Dankook University": {
-      "kediEnglishName": "Dankook University_Principal university",
-      "kediBaseName": "Dankook University",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 956,
-      "topikSatisfactionRate": 31.6,
-      "dormitoryTotal": 713,
-      "dormitoryAccepted": 387,
-      "kediAvailable": true,
-      "koreanName": null
-    },
-    "_unmapped_Digital Seoul Culture Arts University": {
+    "디지털서울문화예술대학교": {
       "kediEnglishName": "Digital Seoul Culture Arts University_Principal university",
       "kediBaseName": "Digital Seoul Culture Arts University",
       "region": "Seoul",
@@ -600,7 +621,13 @@
       "dormitoryTotal": 34,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "디지털서울문화예술대학교",
+      "totalStudents": 2854,
+      "tuition": 3042,
+      "employmentRate": 71.6,
+      "dormitoryRate": 0.0,
+      "competitionRate": "3.1",
+      "fillRate": 80.1
     },
     "동아대학교": {
       "kediEnglishName": "Dong-A University_Principal university",
@@ -619,7 +646,7 @@
       "competitionRate": "6.3",
       "fillRate": 99.9
     },
-    "_unmapped_Dong-Eui University": {
+    "동의대학교": {
       "kediEnglishName": "Dong-Eui University_Principal university",
       "kediBaseName": "Dong-Eui University",
       "region": "Busan",
@@ -628,7 +655,13 @@
       "dormitoryTotal": 541,
       "dormitoryAccepted": 13,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "동의대학교",
+      "totalStudents": 14302,
+      "tuition": 7346,
+      "employmentRate": 59.5,
+      "dormitoryRate": 20.9,
+      "competitionRate": "5.2",
+      "fillRate": 100.0
     },
     "동덕여자대학교": {
       "kediEnglishName": "Dongduk Women's University_Principal university",
@@ -715,7 +748,7 @@
       "competitionRate": "4",
       "fillRate": 93.5
     },
-    "_unmapped_Dongyang University": {
+    "동양대학교": {
       "kediEnglishName": "Dongyang University_Principal university",
       "kediBaseName": "Dongyang University",
       "region": "Gyeongsangbuk-do",
@@ -724,7 +757,13 @@
       "dormitoryTotal": 416,
       "dormitoryAccepted": 52,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "동양대학교",
+      "totalStudents": 4241,
+      "tuition": 7706,
+      "employmentRate": 65.3,
+      "dormitoryRate": 33.4,
+      "competitionRate": "5.4",
+      "fillRate": 100.0
     },
     "덕성여자대학교": {
       "kediEnglishName": "Duksung Women's University_Principal university",
@@ -743,24 +782,7 @@
       "competitionRate": "15.5",
       "fillRate": 100.0
     },
-    "수원여자대학교": {
-      "kediEnglishName": "Suwon Women'S University_Principal university",
-      "kediBaseName": "Suwon Women'S University",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 18,
-      "topikSatisfactionRate": 0.0,
-      "dormitoryTotal": 5,
-      "dormitoryAccepted": 0,
-      "kediAvailable": true,
-      "koreanName": "수원여자대학교",
-      "totalStudents": 3672,
-      "tuition": 6998,
-      "employmentRate": 72.3,
-      "dormitoryRate": 0.0,
-      "competitionRate": "7.4",
-      "fillRate": 93.7
-    },
-    "_unmapped_Eulji University": {
+    "을지대학교": {
       "kediEnglishName": "Eulji University_Principal university",
       "kediBaseName": "Eulji University",
       "region": "Daejeon",
@@ -769,7 +791,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "을지대학교",
+      "totalStudents": 357,
+      "tuition": 10969,
+      "employmentRate": 69.7,
+      "dormitoryRate": 33.6,
+      "competitionRate": "13",
+      "fillRate": 100.0
     },
     "이화여자대학교": {
       "kediEnglishName": "Ewha Womans University_Principal university",
@@ -839,17 +867,6 @@
       "competitionRate": "22.9",
       "fillRate": 100.0
     },
-    "_unmapped_Gangneung Wonju National University": {
-      "kediEnglishName": "Gangneung Wonju National University_Campus 2",
-      "kediBaseName": "Gangneung Wonju National University",
-      "region": "Gangwon-do",
-      "totalForeignStudents": 8,
-      "topikSatisfactionRate": 50.0,
-      "dormitoryTotal": 8,
-      "dormitoryAccepted": 1,
-      "kediAvailable": true,
-      "koreanName": null
-    },
     "국립강릉원주대학교": {
       "kediEnglishName": "Gangneung Wonju National University_Principal university",
       "kediBaseName": "Gangneung Wonju National University",
@@ -884,7 +901,7 @@
       "competitionRate": "4.3",
       "fillRate": 97.2
     },
-    "_unmapped_Global Cyber University": {
+    "글로벌사이버대학교": {
       "kediEnglishName": "Global Cyber University_Principal university",
       "kediBaseName": "Global Cyber University",
       "region": "Chungcheongnam-do",
@@ -893,9 +910,15 @@
       "dormitoryTotal": 168,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "글로벌사이버대학교",
+      "totalStudents": 2457,
+      "tuition": 2443,
+      "employmentRate": 69.7,
+      "dormitoryRate": 0.0,
+      "competitionRate": ".9",
+      "fillRate": 67.6
     },
-    "_unmapped_Gukje Cyber University": {
+    "국제사이버대학교": {
       "kediEnglishName": "Gukje Cyber University_Principal university",
       "kediBaseName": "Gukje Cyber University",
       "region": "Gyeonggi-do",
@@ -904,9 +927,15 @@
       "dormitoryTotal": 9,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국제사이버대학교",
+      "totalStudents": 3649,
+      "tuition": 2557,
+      "employmentRate": 74.9,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.4",
+      "fillRate": 100.0
     },
-    "_unmapped_Gwangju Catholic University": {
+    "광주가톨릭대학교": {
       "kediEnglishName": "Gwangju Catholic University_Principal university",
       "kediBaseName": "Gwangju Catholic University",
       "region": "Jeollanam-do",
@@ -915,7 +944,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "광주가톨릭대학교",
+      "totalStudents": 61,
+      "tuition": 0,
+      "employmentRate": 0.0,
+      "dormitoryRate": 218.6,
+      "competitionRate": ".6",
+      "fillRate": 50.0
     },
     "광주과학기술원": {
       "kediEnglishName": "Gwangju Institute Of Science And Technology_Principal university",
@@ -951,7 +986,7 @@
       "competitionRate": "5.7",
       "fillRate": 90.6
     },
-    "_unmapped_Gyeongguk National University": {
+    "국립경국대학교": {
       "kediEnglishName": "Gyeongguk National University_Principal university",
       "kediBaseName": "Gyeongguk National University",
       "region": "Gyeongsangbuk-do",
@@ -960,9 +995,15 @@
       "dormitoryTotal": 25,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국립경국대학교",
+      "totalStudents": 4602,
+      "tuition": 3787,
+      "employmentRate": 56.9,
+      "dormitoryRate": 31.3,
+      "competitionRate": "3.6",
+      "fillRate": 90.3
     },
-    "_unmapped_Gyeongin National University Of Education": {
+    "경인교육대학교": {
       "kediEnglishName": "Gyeongin National University Of Education_Principal university",
       "kediBaseName": "Gyeongin National University Of Education",
       "region": "Incheon",
@@ -971,7 +1012,13 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경인교육대학교",
+      "totalStudents": 1161,
+      "tuition": 0,
+      "employmentRate": 59.1,
+      "dormitoryRate": 62.5,
+      "competitionRate": "0",
+      "fillRate": 0.0
     },
     "경상국립대학교": {
       "kediEnglishName": "Gyeongsang National University_Principal university",
@@ -990,7 +1037,7 @@
       "competitionRate": "6.9",
       "fillRate": 100.0
     },
-    "_unmapped_HWASUNG MEDI-SCIENCE UNIVERSITY": {
+    "화성의과학대학교": {
       "kediEnglishName": "HWASUNG MEDI-SCIENCE UNIVERSITY_Principal university",
       "kediBaseName": "HWASUNG MEDI-SCIENCE UNIVERSITY",
       "region": "Gyeonggi-do",
@@ -999,9 +1046,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "화성의과학대학교",
+      "totalStudents": 533,
+      "tuition": 7704,
+      "employmentRate": 57.5,
+      "dormitoryRate": 61.9,
+      "competitionRate": "5.6",
+      "fillRate": 81.3
     },
-    "_unmapped_HYUPSUNG UNIVERSITY": {
+    "협성대학교": {
       "kediEnglishName": "HYUPSUNG UNIVERSITY_Principal university",
       "kediBaseName": "HYUPSUNG UNIVERSITY",
       "region": "Gyeonggi-do",
@@ -1010,7 +1063,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "협성대학교",
+      "totalStudents": 3773,
+      "tuition": 7896,
+      "employmentRate": 58.1,
+      "dormitoryRate": 12.5,
+      "competitionRate": "8.3",
+      "fillRate": 100.0
     },
     "한라대학교": {
       "kediEnglishName": "Halla University_Principal university",
@@ -1029,7 +1088,7 @@
       "competitionRate": "5.2",
       "fillRate": 98.0
     },
-    "_unmapped_Hallym University": {
+    "한림대학교": {
       "kediEnglishName": "Hallym University_Principal university",
       "kediBaseName": "Hallym University",
       "region": "Gangwon-do",
@@ -1038,9 +1097,15 @@
       "dormitoryTotal": 113,
       "dormitoryAccepted": 33,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한림대학교",
+      "totalStudents": 7575,
+      "tuition": 7971,
+      "employmentRate": 62.6,
+      "dormitoryRate": 33.1,
+      "competitionRate": "5.4",
+      "fillRate": 99.9
     },
-    "_unmapped_Hanbat National University": {
+    "국립한밭대학교": {
       "kediEnglishName": "Hanbat National University_Principal university",
       "kediBaseName": "Hanbat National University",
       "region": "Daejeon",
@@ -1049,7 +1114,13 @@
       "dormitoryTotal": 74,
       "dormitoryAccepted": 4,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국립한밭대학교",
+      "totalStudents": 8243,
+      "tuition": 4479,
+      "employmentRate": 59.7,
+      "dormitoryRate": 17.8,
+      "competitionRate": "8.7",
+      "fillRate": 98.8
     },
     "한동대학교": {
       "kediEnglishName": "Handong Global University_Principal university",
@@ -1102,7 +1173,7 @@
       "competitionRate": "14.3",
       "fillRate": 99.9
     },
-    "_unmapped_Hankyong National University": {
+    "한경국립대학교": {
       "kediEnglishName": "Hankyong National University_Principal university",
       "kediBaseName": "Hankyong National University",
       "region": "Gyeonggi-do",
@@ -1111,7 +1182,13 @@
       "dormitoryTotal": 78,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한경국립대학교",
+      "totalStudents": 5428,
+      "tuition": 4020,
+      "employmentRate": 63.0,
+      "dormitoryRate": 24.7,
+      "competitionRate": "7.2",
+      "fillRate": 100.0
     },
     "한남대학교": {
       "kediEnglishName": "Hannam University_Principal university",
@@ -1130,7 +1207,7 @@
       "competitionRate": "5.1",
       "fillRate": 100.0
     },
-    "_unmapped_Hansei University": {
+    "한세대학교": {
       "kediEnglishName": "Hansei University_Principal university",
       "kediBaseName": "Hansei University",
       "region": "Gyeonggi-do",
@@ -1139,9 +1216,15 @@
       "dormitoryTotal": 14,
       "dormitoryAccepted": 6,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한세대학교",
+      "totalStudents": 2509,
+      "tuition": 8598,
+      "employmentRate": 71.0,
+      "dormitoryRate": 12.2,
+      "competitionRate": "11.7",
+      "fillRate": 99.8
     },
-    "_unmapped_Hanseo University": {
+    "한서대학교": {
       "kediEnglishName": "Hanseo University_Principal university",
       "kediBaseName": "Hanseo University",
       "region": "Chungcheongnam-do",
@@ -1150,7 +1233,13 @@
       "dormitoryTotal": 119,
       "dormitoryAccepted": 18,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한서대학교",
+      "totalStudents": 6117,
+      "tuition": 8366,
+      "employmentRate": 70.0,
+      "dormitoryRate": 29.4,
+      "competitionRate": "7.4",
+      "fillRate": 99.9
     },
     "한신대학교": {
       "kediEnglishName": "Hanshin University_Principal university",
@@ -1237,7 +1326,7 @@
       "competitionRate": "22",
       "fillRate": 99.3
     },
-    "_unmapped_Honam Theological University & Seminary": {
+    "호남신학대학교": {
       "kediEnglishName": "Honam Theological University & Seminary_Principal university",
       "kediBaseName": "Honam Theological University & Seminary",
       "region": "Gwangju",
@@ -1246,7 +1335,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "호남신학대학교",
+      "totalStudents": 396,
+      "tuition": 6938,
+      "employmentRate": 62.2,
+      "dormitoryRate": 40.2,
+      "competitionRate": "1.2",
+      "fillRate": 100.0
     },
     "호남대학교": {
       "kediEnglishName": "Honam University_Principal university",
@@ -1333,7 +1428,7 @@
       "competitionRate": "10.2",
       "fillRate": 97.0
     },
-    "_unmapped_Hwashin Cyber University": {
+    "화신사이버대학교": {
       "kediEnglishName": "Hwashin Cyber University_Principal university",
       "kediBaseName": "Hwashin Cyber University",
       "region": "Busan",
@@ -1342,9 +1437,15 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "화신사이버대학교",
+      "totalStudents": 2093,
+      "tuition": 2527,
+      "employmentRate": 70.6,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.5",
+      "fillRate": 100.0
     },
-    "_unmapped_Incheon Catholic University": {
+    "인천가톨릭대학교": {
       "kediEnglishName": "Incheon Catholic University_Principal university",
       "kediBaseName": "Incheon Catholic University",
       "region": "Incheon",
@@ -1353,16 +1454,22 @@
       "dormitoryTotal": 6,
       "dormitoryAccepted": 6,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "인천가톨릭대학교",
+      "totalStudents": 657,
+      "tuition": 8842,
+      "employmentRate": 57.1,
+      "dormitoryRate": 0.0,
+      "competitionRate": "7.5",
+      "fillRate": 100.0
     },
     "인천대학교": {
-      "kediEnglishName": "Konyang University_Principal university",
-      "kediBaseName": "Konyang University",
-      "region": "Chungcheongnam-do",
+      "kediEnglishName": "Incheon National University_Principal university",
+      "kediBaseName": "Incheon National University",
+      "region": "Incheon",
       "totalForeignStudents": 430,
-      "topikSatisfactionRate": 80.4,
-      "dormitoryTotal": 92,
-      "dormitoryAccepted": 48,
+      "topikSatisfactionRate": 84.8,
+      "dormitoryTotal": 210,
+      "dormitoryAccepted": 54,
       "kediAvailable": true,
       "koreanName": "인천대학교",
       "totalStudents": 11247,
@@ -1423,7 +1530,7 @@
       "competitionRate": "6.5",
       "fillRate": 99.9
     },
-    "_unmapped_Jejuinternationaluniversity": {
+    "제주국제대학교": {
       "kediEnglishName": "Jejuinternationaluniversity_Principal university",
       "kediBaseName": "Jejuinternationaluniversity",
       "region": "Jeju",
@@ -1432,7 +1539,13 @@
       "dormitoryTotal": 164,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "제주국제대학교",
+      "totalStudents": 263,
+      "tuition": 5824,
+      "employmentRate": 72.2,
+      "dormitoryRate": 45.6,
+      "competitionRate": ".1",
+      "fillRate": 2.7
     },
     "전북대학교": {
       "kediEnglishName": "Jeonbuk National University_Principal university",
@@ -1451,7 +1564,7 @@
       "competitionRate": "7.4",
       "fillRate": 99.9
     },
-    "_unmapped_Jeonju University": {
+    "전주대학교": {
       "kediEnglishName": "Jeonju University_Principal university",
       "kediBaseName": "Jeonju University",
       "region": "Jeollabuk-do",
@@ -1460,9 +1573,15 @@
       "dormitoryTotal": 234,
       "dormitoryAccepted": 15,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "전주대학교",
+      "totalStudents": 10147,
+      "tuition": 7326,
+      "employmentRate": 60.1,
+      "dormitoryRate": 18.1,
+      "competitionRate": "4.7",
+      "fillRate": 99.6
     },
-    "_unmapped_Joong-Ang Sangha University": {
+    "중앙승가대학교": {
       "kediEnglishName": "Joong-Ang Sangha University_Principal university",
       "kediBaseName": "Joong-Ang Sangha University",
       "region": "Gyeonggi-do",
@@ -1471,7 +1590,13 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 4,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "중앙승가대학교",
+      "totalStudents": 53,
+      "tuition": 1820,
+      "employmentRate": 0.0,
+      "dormitoryRate": 300.9,
+      "competitionRate": ".1",
+      "fillRate": 10.0
     },
     "중부대학교": {
       "kediEnglishName": "Joongbu University_Principal university",
@@ -1490,7 +1615,7 @@
       "competitionRate": "7.5",
       "fillRate": 100.1
     },
-    "_unmapped_Jungwon University": {
+    "중원대학교": {
       "kediEnglishName": "Jungwon University_Principal university",
       "kediBaseName": "Jungwon University",
       "region": "Chungcheongbuk-do",
@@ -1499,7 +1624,13 @@
       "dormitoryTotal": 154,
       "dormitoryAccepted": 51,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "중원대학교",
+      "totalStudents": 3324,
+      "tuition": 7423,
+      "employmentRate": 68.7,
+      "dormitoryRate": 60.8,
+      "competitionRate": "3.6",
+      "fillRate": 98.1
     },
     "강남대학교": {
       "kediEnglishName": "Kangnam University_Principal university",
@@ -1518,7 +1649,7 @@
       "competitionRate": "8.4",
       "fillRate": 100.0
     },
-    "_unmapped_Kangwon National University": {
+    "강원대학교": {
       "kediEnglishName": "Kangwon National University_Principal university",
       "kediBaseName": "Kangwon National University",
       "region": "Gangwon-do",
@@ -1527,9 +1658,15 @@
       "dormitoryTotal": 731,
       "dormitoryAccepted": 133,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "강원대학교",
+      "totalStudents": 0,
+      "tuition": 0,
+      "employmentRate": 0.0,
+      "dormitoryRate": 0.0,
+      "competitionRate": "0",
+      "fillRate": 0.0
     },
-    "_unmapped_Kaya University": {
+    "가야대학교(김해)": {
       "kediEnglishName": "Kaya University_Principal university",
       "kediBaseName": "Kaya University",
       "region": "Gyeongsangnam-do",
@@ -1538,7 +1675,13 @@
       "dormitoryTotal": 12,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "가야대학교(김해)",
+      "totalStudents": 1610,
+      "tuition": 7239,
+      "employmentRate": 74.2,
+      "dormitoryRate": 29.8,
+      "competitionRate": "5.2",
+      "fillRate": 95.1
     },
     "계명대학교": {
       "kediEnglishName": "Keimyung University_Principal university",
@@ -1608,7 +1751,7 @@
       "competitionRate": "21.7",
       "fillRate": 99.9
     },
-    "_unmapped_Konyang Cyber University": {
+    "건양사이버대학교": {
       "kediEnglishName": "Konyang Cyber University_Principal university",
       "kediBaseName": "Konyang Cyber University",
       "region": "Daejeon",
@@ -1617,18 +1760,30 @@
       "dormitoryTotal": 13,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "건양사이버대학교",
+      "totalStudents": 4078,
+      "tuition": 2541,
+      "employmentRate": 74.3,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.2",
+      "fillRate": 77.1
     },
-    "_unmapped_Konyang University": {
-      "kediEnglishName": "Konyang University_Campus 2",
+    "건양대학교": {
+      "kediEnglishName": "Konyang University_Principal university",
       "kediBaseName": "Konyang University",
-      "region": "Daejeon",
-      "totalForeignStudents": 42,
-      "topikSatisfactionRate": 57.1,
-      "dormitoryTotal": 42,
-      "dormitoryAccepted": 22,
+      "region": "Chungcheongnam-do",
+      "totalForeignStudents": 430,
+      "topikSatisfactionRate": 80.4,
+      "dormitoryTotal": 92,
+      "dormitoryAccepted": 48,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "건양대학교",
+      "totalStudents": 3841,
+      "tuition": 7641,
+      "employmentRate": 78.2,
+      "dormitoryRate": 32.3,
+      "competitionRate": "6.8",
+      "fillRate": 99.8
     },
     "국민대학교": {
       "kediEnglishName": "Kookmin University_Principal university",
@@ -1664,7 +1819,7 @@
       "competitionRate": "10.2",
       "fillRate": 101.2
     },
-    "_unmapped_Korea Aerospace University": {
+    "한국항공대학교": {
       "kediEnglishName": "Korea Aerospace University_Principal university",
       "kediBaseName": "Korea Aerospace University",
       "region": "Gyeonggi-do",
@@ -1673,9 +1828,15 @@
       "dormitoryTotal": 191,
       "dormitoryAccepted": 94,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국항공대학교",
+      "totalStudents": 4255,
+      "tuition": 8935,
+      "employmentRate": 69.2,
+      "dormitoryRate": 16.4,
+      "competitionRate": "13.5",
+      "fillRate": 100.2
     },
-    "_unmapped_Korea Baptist Theological University/Seminary": {
+    "한국침례신학대학교": {
       "kediEnglishName": "Korea Baptist Theological University/Seminary_Principal university",
       "kediBaseName": "Korea Baptist Theological University/Seminary",
       "region": "Daejeon",
@@ -1684,9 +1845,15 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국침례신학대학교",
+      "totalStudents": 677,
+      "tuition": 6032,
+      "employmentRate": 51.3,
+      "dormitoryRate": 47.0,
+      "competitionRate": "1.4",
+      "fillRate": 100.0
     },
-    "_unmapped_Korea Cyber University": {
+    "고려사이버대학교": {
       "kediEnglishName": "Korea Cyber University_Principal university",
       "kediBaseName": "Korea Cyber University",
       "region": "Seoul",
@@ -1695,7 +1862,13 @@
       "dormitoryTotal": 172,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "고려사이버대학교",
+      "totalStudents": 10301,
+      "tuition": 2571,
+      "employmentRate": 79.8,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.8",
+      "fillRate": 92.4
     },
     "국립한국해양대학교": {
       "kediEnglishName": "Korea Maritime & Ocean University_Principal university",
@@ -1748,7 +1921,7 @@
       "competitionRate": "5.9",
       "fillRate": 99.8
     },
-    "_unmapped_Korea National University Of Education": {
+    "한국교원대학교": {
       "kediEnglishName": "Korea National University Of Education_Principal university",
       "kediBaseName": "Korea National University Of Education",
       "region": "Chungcheongbuk-do",
@@ -1757,9 +1930,15 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국교원대학교",
+      "totalStudents": 2342,
+      "tuition": 3350,
+      "employmentRate": 59.4,
+      "dormitoryRate": 73.9,
+      "competitionRate": "5.7",
+      "fillRate": 99.4
     },
-    "_unmapped_Korea National University Of Heritage": {
+    "한국전통문화대학교": {
       "kediEnglishName": "Korea National University Of Heritage_Principal university",
       "kediBaseName": "Korea National University Of Heritage",
       "region": "Chungcheongnam-do",
@@ -1768,9 +1947,15 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국전통문화대학교",
+      "totalStudents": 583,
+      "tuition": 3382,
+      "employmentRate": 66.7,
+      "dormitoryRate": 80.0,
+      "competitionRate": "6.2",
+      "fillRate": 100.0
     },
-    "_unmapped_Korea National University Of Transportation": {
+    "국립한국교통대학교": {
       "kediEnglishName": "Korea National University Of Transportation_Principal university",
       "kediBaseName": "Korea National University Of Transportation",
       "region": "Chungcheongbuk-do",
@@ -1779,7 +1964,13 @@
       "dormitoryTotal": 35,
       "dormitoryAccepted": 5,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국립한국교통대학교",
+      "totalStudents": 7950,
+      "tuition": 4112,
+      "employmentRate": 66.5,
+      "dormitoryRate": 26.1,
+      "competitionRate": "6.9",
+      "fillRate": 99.9
     },
     "나사렛대학교": {
       "kediEnglishName": "Korea Nazarene University_Principal university",
@@ -1798,7 +1989,7 @@
       "competitionRate": "5.1",
       "fillRate": 99.9
     },
-    "_unmapped_Korea Soongsil Cyber University": {
+    "숭실사이버대학교": {
       "kediEnglishName": "Korea Soongsil Cyber University_Principal university",
       "kediBaseName": "Korea Soongsil Cyber University",
       "region": "Seoul",
@@ -1807,7 +1998,13 @@
       "dormitoryTotal": 98,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "숭실사이버대학교",
+      "totalStudents": 7536,
+      "tuition": 2772,
+      "employmentRate": 78.5,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1",
+      "fillRate": 72.0
     },
     "고려대학교(세종)": {
       "kediEnglishName": "Korea University Sejong Campus_Branch campus",
@@ -1826,7 +2023,7 @@
       "competitionRate": "8.6",
       "fillRate": 100.0
     },
-    "_unmapped_Korea University of Technology and Education": {
+    "한국기술교육대학교": {
       "kediEnglishName": "Korea University of Technology and Education_Principal university",
       "kediBaseName": "Korea University of Technology and Education",
       "region": "Chungcheongnam-do",
@@ -1835,7 +2032,13 @@
       "dormitoryTotal": 26,
       "dormitoryAccepted": 17,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국기술교육대학교",
+      "totalStudents": 4157,
+      "tuition": 4475,
+      "employmentRate": 82.8,
+      "dormitoryRate": 56.4,
+      "competitionRate": "8.1",
+      "fillRate": 100.0
     },
     "고려대학교": {
       "kediEnglishName": "Korea University_Principal university",
@@ -1854,7 +2057,7 @@
       "competitionRate": "14.7",
       "fillRate": 98.9
     },
-    "_unmapped_Korean Bible University": {
+    "한국성서대학교": {
       "kediEnglishName": "Korean Bible University_Principal university",
       "kediBaseName": "Korean Bible University",
       "region": "Seoul",
@@ -1863,7 +2066,13 @@
       "dormitoryTotal": 20,
       "dormitoryAccepted": 3,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국성서대학교",
+      "totalStudents": 972,
+      "tuition": 7490,
+      "employmentRate": 70.0,
+      "dormitoryRate": 17.8,
+      "competitionRate": "5.4",
+      "fillRate": 100.0
     },
     "고신대학교": {
       "kediEnglishName": "Kosin University_Principal university",
@@ -1882,7 +2091,7 @@
       "competitionRate": "6.8",
       "fillRate": 98.5
     },
-    "_unmapped_Kumoh National Institute Of Technology": {
+    "국립금오공과대학교": {
       "kediEnglishName": "Kumoh National Institute Of Technology_Principal university",
       "kediBaseName": "Kumoh National Institute Of Technology",
       "region": "Gyeongsangbuk-do",
@@ -1891,7 +2100,13 @@
       "dormitoryTotal": 21,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국립금오공과대학교",
+      "totalStudents": 4895,
+      "tuition": 3770,
+      "employmentRate": 63.5,
+      "dormitoryRate": 39.5,
+      "competitionRate": "5",
+      "fillRate": 99.6
     },
     "국립군산대학교": {
       "kediEnglishName": "Kunsan National University_Principal university",
@@ -1961,17 +2176,6 @@
       "competitionRate": "14.3",
       "fillRate": 99.7
     },
-    "_unmapped_Kyonggi University": {
-      "kediEnglishName": "Kyonggi University_Campus 2",
-      "kediBaseName": "Kyonggi University",
-      "region": "Seoul",
-      "totalForeignStudents": 294,
-      "topikSatisfactionRate": 47.6,
-      "dormitoryTotal": 294,
-      "dormitoryAccepted": 5,
-      "kediAvailable": true,
-      "koreanName": null
-    },
     "경기대학교": {
       "kediEnglishName": "Kyonggi University_Principal university",
       "kediBaseName": "Kyonggi University",
@@ -1989,7 +2193,7 @@
       "competitionRate": "13.1",
       "fillRate": 99.4
     },
-    "_unmapped_Kyung Hee Cyber University": {
+    "경희사이버대학교": {
       "kediEnglishName": "Kyung Hee Cyber University_Principal university",
       "kediBaseName": "Kyung Hee Cyber University",
       "region": "Seoul",
@@ -1998,7 +2202,13 @@
       "dormitoryTotal": 229,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경희사이버대학교",
+      "totalStudents": 10615,
+      "tuition": 2914,
+      "employmentRate": 77.1,
+      "dormitoryRate": 0.0,
+      "competitionRate": ".8",
+      "fillRate": 63.8
     },
     "경희대학교": {
       "kediEnglishName": "Kyung Hee University_Principal university",
@@ -2017,7 +2227,7 @@
       "competitionRate": "16.2",
       "fillRate": 99.6
     },
-    "_unmapped_Kyungdong University": {
+    "경동대학교": {
       "kediEnglishName": "Kyungdong University_Principal university",
       "kediBaseName": "Kyungdong University",
       "region": "Gangwon-do",
@@ -2025,17 +2235,6 @@
       "topikSatisfactionRate": 97.2,
       "dormitoryTotal": 1074,
       "dormitoryAccepted": 266,
-      "kediAvailable": true,
-      "koreanName": null
-    },
-    "경동대학교": {
-      "kediEnglishName": "Kyungdong University_Campus 4",
-      "kediBaseName": "Kyungdong University",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 392,
-      "topikSatisfactionRate": 10.3,
-      "dormitoryTotal": 29,
-      "dormitoryAccepted": 2,
       "kediAvailable": true,
       "koreanName": "경동대학교",
       "totalStudents": 2453,
@@ -2062,7 +2261,7 @@
       "competitionRate": "4.9",
       "fillRate": 100.0
     },
-    "_unmapped_Kyungnam University": {
+    "경남대학교": {
       "kediEnglishName": "Kyungnam University_Principal university",
       "kediBaseName": "Kyungnam University",
       "region": "Gyeongsangnam-do",
@@ -2071,9 +2270,15 @@
       "dormitoryTotal": 341,
       "dormitoryAccepted": 197,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경남대학교",
+      "totalStudents": 8352,
+      "tuition": 6850,
+      "employmentRate": 60.4,
+      "dormitoryRate": 18.1,
+      "competitionRate": "4.8",
+      "fillRate": 96.3
     },
-    "_unmapped_Kyungpook National University": {
+    "경북대학교": {
       "kediEnglishName": "Kyungpook National University_Principal university",
       "kediBaseName": "Kyungpook National University",
       "region": "Daegu",
@@ -2082,7 +2287,13 @@
       "dormitoryTotal": 632,
       "dormitoryAccepted": 93,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경북대학교",
+      "totalStudents": 22562,
+      "tuition": 4514,
+      "employmentRate": 57.8,
+      "dormitoryRate": 23.7,
+      "competitionRate": "11.3",
+      "fillRate": 99.9
     },
     "경성대학교": {
       "kediEnglishName": "Kyungsung University_Principal university",
@@ -2118,7 +2329,7 @@
       "competitionRate": "4.1",
       "fillRate": 99.9
     },
-    "_unmapped_Methodist Theological University": {
+    "감리교신학대학교": {
       "kediEnglishName": "Methodist Theological University_Principal university",
       "kediBaseName": "Methodist Theological University",
       "region": "Seoul",
@@ -2127,7 +2338,13 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "감리교신학대학교",
+      "totalStudents": 564,
+      "tuition": 6820,
+      "employmentRate": 0.0,
+      "dormitoryRate": 23.2,
+      "competitionRate": "1.9",
+      "fillRate": 100.0
     },
     "국립목포해양대학교": {
       "kediEnglishName": "Mokpo National Maritime University_Principal university",
@@ -2146,7 +2363,7 @@
       "competitionRate": "7.2",
       "fillRate": 99.9
     },
-    "_unmapped_Mokpo National University": {
+    "국립목포대학교": {
       "kediEnglishName": "Mokpo National University_Principal university",
       "kediBaseName": "Mokpo National University",
       "region": "Jeollanam-do",
@@ -2155,7 +2372,13 @@
       "dormitoryTotal": 47,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국립목포대학교",
+      "totalStudents": 5664,
+      "tuition": 3873,
+      "employmentRate": 67.5,
+      "dormitoryRate": 20.2,
+      "competitionRate": "5.5",
+      "fillRate": 99.9
     },
     "목원대학교": {
       "kediEnglishName": "Mokwon University_Principal university",
@@ -2175,23 +2398,6 @@
       "fillRate": 100.0
     },
     "명지대학교": {
-      "kediEnglishName": "Myongji University Natural Science Campus_Principal university",
-      "kediBaseName": "Myongji University Natural Science Campus",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 301,
-      "topikSatisfactionRate": 46.2,
-      "dormitoryTotal": 156,
-      "dormitoryAccepted": 38,
-      "kediAvailable": true,
-      "koreanName": "명지대학교",
-      "totalStudents": 5741,
-      "tuition": 9592,
-      "employmentRate": 65.3,
-      "dormitoryRate": 31.4,
-      "competitionRate": "11.3",
-      "fillRate": 99.9
-    },
-    "_unmapped_Myongji University Social Science Campus": {
       "kediEnglishName": "Myongji University Social Science Campus_Campus 2",
       "kediBaseName": "Myongji University Social Science Campus",
       "region": "Seoul",
@@ -2200,7 +2406,13 @@
       "dormitoryTotal": 1204,
       "dormitoryAccepted": 96,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "명지대학교",
+      "totalStudents": 5741,
+      "tuition": 9592,
+      "employmentRate": 65.3,
+      "dormitoryRate": 31.4,
+      "competitionRate": "11.3",
+      "fillRate": 99.9
     },
     "남부대학교": {
       "kediEnglishName": "Nambu University_Principal university",
@@ -2236,7 +2448,7 @@
       "competitionRate": "7",
       "fillRate": 100.0
     },
-    "_unmapped_Open Cyber University Of Korea (OCU)": {
+    "한국열린사이버대학교": {
       "kediEnglishName": "Open Cyber University Of Korea (OCU)_Principal university",
       "kediBaseName": "Open Cyber University Of Korea (OCU)",
       "region": "Seoul",
@@ -2245,9 +2457,15 @@
       "dormitoryTotal": 30,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국열린사이버대학교",
+      "totalStudents": 5723,
+      "tuition": 2349,
+      "employmentRate": 79.6,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.6",
+      "fillRate": 96.6
     },
-    "_unmapped_Pai Chai University": {
+    "배재대학교": {
       "kediEnglishName": "Pai Chai University_Principal university",
       "kediBaseName": "Pai Chai University",
       "region": "Daejeon",
@@ -2256,9 +2474,15 @@
       "dormitoryTotal": 305,
       "dormitoryAccepted": 21,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "배재대학교",
+      "totalStudents": 7344,
+      "tuition": 7731,
+      "employmentRate": 57.2,
+      "dormitoryRate": 23.1,
+      "competitionRate": "6.6",
+      "fillRate": 100.0
     },
-    "_unmapped_Pohang University of Science and Technology (POSTECH)": {
+    "포항공과대학교": {
       "kediEnglishName": "Pohang University of Science and Technology (POSTECH)_Principal university",
       "kediBaseName": "Pohang University of Science and Technology (POSTECH)",
       "region": "Gyeongsangbuk-do",
@@ -2267,9 +2491,15 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "포항공과대학교",
+      "totalStudents": 1477,
+      "tuition": 5613,
+      "employmentRate": 79.8,
+      "dormitoryRate": 85.9,
+      "competitionRate": "9.5",
+      "fillRate": 98.8
     },
-    "_unmapped_Presbyterian University & Theological Seminary": {
+    "장로회신학대학교": {
       "kediEnglishName": "Presbyterian University & Theological Seminary_Principal university",
       "kediBaseName": "Presbyterian University & Theological Seminary",
       "region": "Seoul",
@@ -2278,7 +2508,13 @@
       "dormitoryTotal": 5,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "장로회신학대학교",
+      "totalStudents": 572,
+      "tuition": 7202,
+      "employmentRate": 0.0,
+      "dormitoryRate": 32.6,
+      "competitionRate": "3.4",
+      "fillRate": 100.0
     },
     "국립부경대학교": {
       "kediEnglishName": "Pukyong National University_Principal university",
@@ -2314,7 +2550,7 @@
       "competitionRate": "9",
       "fillRate": 99.8
     },
-    "_unmapped_Pyeongtaek University": {
+    "평택대학교": {
       "kediEnglishName": "Pyeongtaek University_Principal university",
       "kediBaseName": "Pyeongtaek University",
       "region": "Gyeonggi-do",
@@ -2323,7 +2559,13 @@
       "dormitoryTotal": 42,
       "dormitoryAccepted": 40,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "평택대학교",
+      "totalStudents": 3006,
+      "tuition": 7952,
+      "employmentRate": 58.4,
+      "dormitoryRate": 30.1,
+      "competitionRate": "8.8",
+      "fillRate": 100.0
     },
     "삼육대학교": {
       "kediEnglishName": "Sahmyook University_Principal university",
@@ -2342,7 +2584,7 @@
       "competitionRate": "13.7",
       "fillRate": 100.0
     },
-    "_unmapped_Sangji University": {
+    "상지대학교": {
       "kediEnglishName": "Sangji University_Principal university",
       "kediBaseName": "Sangji University",
       "region": "Gangwon-do",
@@ -2351,9 +2593,15 @@
       "dormitoryTotal": 69,
       "dormitoryAccepted": 13,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "상지대학교",
+      "totalStudents": 5722,
+      "tuition": 7859,
+      "employmentRate": 65.1,
+      "dormitoryRate": 29.9,
+      "competitionRate": "6.1",
+      "fillRate": 99.7
     },
-    "_unmapped_Sangmyung University (Seoul)": {
+    "상명대학교": {
       "kediEnglishName": "Sangmyung University (Seoul)_Principal university",
       "kediBaseName": "Sangmyung University (Seoul)",
       "region": "Seoul",
@@ -2362,9 +2610,15 @@
       "dormitoryTotal": 152,
       "dormitoryAccepted": 20,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "상명대학교",
+      "totalStudents": 6267,
+      "tuition": 8173,
+      "employmentRate": 63.4,
+      "dormitoryRate": 8.9,
+      "competitionRate": "15.9",
+      "fillRate": 100.2
     },
-    "_unmapped_Sehan University": {
+    "세한대학교": {
       "kediEnglishName": "Sehan University_Principal university",
       "kediBaseName": "Sehan University",
       "region": "Jeollanam-do",
@@ -2373,7 +2627,13 @@
       "dormitoryTotal": 62,
       "dormitoryAccepted": 8,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "세한대학교",
+      "totalStudents": 3139,
+      "tuition": 7766,
+      "employmentRate": 69.5,
+      "dormitoryRate": 36.9,
+      "competitionRate": "3.2",
+      "fillRate": 93.2
     },
     "세종사이버대학교": {
       "kediEnglishName": "Sejong Cyber University_Principal university",
@@ -2460,7 +2720,7 @@
       "competitionRate": "3.1",
       "fillRate": 83.9
     },
-    "_unmapped_Seoul Cyber University": {
+    "서울사이버대학교": {
       "kediEnglishName": "Seoul Cyber University_Principal university",
       "kediBaseName": "Seoul Cyber University",
       "region": "Seoul",
@@ -2469,9 +2729,15 @@
       "dormitoryTotal": 62,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울사이버대학교",
+      "totalStudents": 15803,
+      "tuition": 2849,
+      "employmentRate": 81.9,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.5",
+      "fillRate": 94.3
     },
-    "_unmapped_Seoul Digital University": {
+    "서울디지털대학교": {
       "kediEnglishName": "Seoul Digital University_Principal university",
       "kediBaseName": "Seoul Digital University",
       "region": "Seoul",
@@ -2480,7 +2746,13 @@
       "dormitoryTotal": 62,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울디지털대학교",
+      "totalStudents": 11052,
+      "tuition": 2274,
+      "employmentRate": 79.0,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.2",
+      "fillRate": 66.8
     },
     "서울한영대학교": {
       "kediEnglishName": "Seoul Hanyoung University_Principal university",
@@ -2499,7 +2771,7 @@
       "competitionRate": "7.6",
       "fillRate": 99.5
     },
-    "_unmapped_Seoul Jangsin University": {
+    "서울장신대학교": {
       "kediEnglishName": "Seoul Jangsin University_Principal university",
       "kediBaseName": "Seoul Jangsin University",
       "region": "Gyeonggi-do",
@@ -2508,9 +2780,15 @@
       "dormitoryTotal": 42,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울장신대학교",
+      "totalStudents": 331,
+      "tuition": 7728,
+      "employmentRate": 50.0,
+      "dormitoryRate": 52.7,
+      "competitionRate": "3.3",
+      "fillRate": 100.0
     },
-    "_unmapped_Seoul National University Of Education": {
+    "서울교육대학교": {
       "kediEnglishName": "Seoul National University Of Education_Principal university",
       "kediBaseName": "Seoul National University Of Education",
       "region": "Seoul",
@@ -2519,7 +2797,13 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울교육대학교",
+      "totalStudents": 1285,
+      "tuition": 3256,
+      "employmentRate": 68.7,
+      "dormitoryRate": 58.8,
+      "competitionRate": "4.3",
+      "fillRate": 99.7
     },
     "서울과학기술대학교": {
       "kediEnglishName": "Seoul National University Of Science And Technology_Principal university",
@@ -2555,7 +2839,7 @@
       "competitionRate": "7.1",
       "fillRate": 99.7
     },
-    "_unmapped_Seoul Theological University": {
+    "서울신학대학교": {
       "kediEnglishName": "Seoul Theological University_Principal university",
       "kediBaseName": "Seoul Theological University",
       "region": "Gyeonggi-do",
@@ -2564,9 +2848,15 @@
       "dormitoryTotal": 14,
       "dormitoryAccepted": 5,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울신학대학교",
+      "totalStudents": 1967,
+      "tuition": 7637,
+      "employmentRate": 68.4,
+      "dormitoryRate": 14.2,
+      "competitionRate": "5.4",
+      "fillRate": 100.0
     },
-    "_unmapped_Seoul Women's University": {
+    "서울여자대학교": {
       "kediEnglishName": "Seoul Women's University_Principal university",
       "kediBaseName": "Seoul Women's University",
       "region": "Seoul",
@@ -2575,7 +2865,13 @@
       "dormitoryTotal": 704,
       "dormitoryAccepted": 37,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울여자대학교",
+      "totalStudents": 7692,
+      "tuition": 7990,
+      "employmentRate": 62.1,
+      "dormitoryRate": 11.6,
+      "competitionRate": "13.2",
+      "fillRate": 99.9
     },
     "서원대학교": {
       "kediEnglishName": "Seowon University_Principal university",
@@ -2595,23 +2891,6 @@
       "fillRate": 100.0
     },
     "신한대학교": {
-      "kediEnglishName": "Shinhan University_Campus 2",
-      "kediBaseName": "Shinhan University",
-      "region": "Gyeonggi-do",
-      "totalForeignStudents": 1127,
-      "topikSatisfactionRate": 12.1,
-      "dormitoryTotal": 718,
-      "dormitoryAccepted": 123,
-      "kediAvailable": true,
-      "koreanName": "신한대학교",
-      "totalStudents": 5786,
-      "tuition": 9103,
-      "employmentRate": 65.9,
-      "dormitoryRate": 4.6,
-      "competitionRate": "11.3",
-      "fillRate": 100.0
-    },
-    "_unmapped_Shinhan Unvirsity": {
       "kediEnglishName": "Shinhan Unvirsity_Principal university",
       "kediBaseName": "Shinhan Unvirsity",
       "region": "Gyeonggi-do",
@@ -2620,7 +2899,13 @@
       "dormitoryTotal": 8,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "신한대학교",
+      "totalStudents": 5786,
+      "tuition": 9103,
+      "employmentRate": 65.9,
+      "dormitoryRate": 4.6,
+      "competitionRate": "11.3",
+      "fillRate": 100.0
     },
     "신라대학교": {
       "kediEnglishName": "Silla University_Principal university",
@@ -2639,7 +2924,7 @@
       "competitionRate": "5.2",
       "fillRate": 93.8
     },
-    "_unmapped_SinGyeongju University": {
+    "신경주대학교": {
       "kediEnglishName": "SinGyeongju University_Principal university",
       "kediBaseName": "SinGyeongju University",
       "region": "Gyeongsangbuk-do",
@@ -2648,7 +2933,13 @@
       "dormitoryTotal": 100,
       "dormitoryAccepted": 72,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "신경주대학교",
+      "totalStudents": 1179,
+      "tuition": 7492,
+      "employmentRate": 64.3,
+      "dormitoryRate": 18.6,
+      "competitionRate": "1.1",
+      "fillRate": 80.9
     },
     "서강대학교": {
       "kediEnglishName": "Sogang University_Principal university",
@@ -2837,7 +3128,7 @@
       "competitionRate": "12.4",
       "fillRate": 99.7
     },
-    "_unmapped_Suwon Catholic University": {
+    "수원가톨릭대학교": {
       "kediEnglishName": "Suwon Catholic University_Principal university",
       "kediBaseName": "Suwon Catholic University",
       "region": "Gyeonggi-do",
@@ -2846,9 +3137,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "수원가톨릭대학교",
+      "totalStudents": 96,
+      "tuition": 5097,
+      "employmentRate": 0.0,
+      "dormitoryRate": 171.7,
+      "competitionRate": ".4",
+      "fillRate": 30.0
     },
-    "_unmapped_TAEJAE UNIVERSITY": {
+    "태재대학교": {
       "kediEnglishName": "TAEJAE UNIVERSITY_Principal university",
       "kediBaseName": "TAEJAE UNIVERSITY",
       "region": "Seoul",
@@ -2857,7 +3154,13 @@
       "dormitoryTotal": 13,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "태재대학교",
+      "totalStudents": 46,
+      "tuition": 0,
+      "employmentRate": 0.0,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.9",
+      "fillRate": 0.0
     },
     "한국공학대학교": {
       "kediEnglishName": "Tech University of Korea_Principal university",
@@ -2876,17 +3179,6 @@
       "competitionRate": "8.7",
       "fillRate": 100.1
     },
-    "_unmapped_The Catholic University Of Korea": {
-      "kediEnglishName": "The Catholic University Of Korea_Campus 3",
-      "kediBaseName": "The Catholic University Of Korea",
-      "region": "Seoul",
-      "totalForeignStudents": 9,
-      "topikSatisfactionRate": 33.3,
-      "dormitoryTotal": 9,
-      "dormitoryAccepted": 0,
-      "kediAvailable": true,
-      "koreanName": null
-    },
     "가톨릭대학교": {
       "kediEnglishName": "The Catholic University Of Korea_Principal university",
       "kediBaseName": "The Catholic University Of Korea",
@@ -2904,7 +3196,7 @@
       "competitionRate": "15.6",
       "fillRate": 100.0
     },
-    "_unmapped_The University Of Suwon": {
+    "수원대학교": {
       "kediEnglishName": "The University Of Suwon_Principal university",
       "kediBaseName": "The University Of Suwon",
       "region": "Gyeonggi-do",
@@ -2913,7 +3205,13 @@
       "dormitoryTotal": 14,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "수원대학교",
+      "totalStudents": 8368,
+      "tuition": 7941,
+      "employmentRate": 65.4,
+      "dormitoryRate": 12.2,
+      "competitionRate": "13.9",
+      "fillRate": 99.9
     },
     "동명대학교": {
       "kediEnglishName": "Tongmyong University_Principal university",
@@ -2983,7 +3281,7 @@
       "competitionRate": "17.3",
       "fillRate": 104.3
     },
-    "_unmapped_University Of Seoul": {
+    "서울시립대학교": {
       "kediEnglishName": "University Of Seoul_Principal university",
       "kediBaseName": "University Of Seoul",
       "region": "Seoul",
@@ -2992,7 +3290,13 @@
       "dormitoryTotal": 251,
       "dormitoryAccepted": 81,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서울시립대학교",
+      "totalStudents": 8949,
+      "tuition": 2529,
+      "employmentRate": 63.6,
+      "dormitoryRate": 11.1,
+      "competitionRate": "15.5",
+      "fillRate": 99.9
     },
     "울산대학교": {
       "kediEnglishName": "University Of Ulsan_Principal university",
@@ -3011,7 +3315,7 @@
       "competitionRate": "5.1",
       "fillRate": 99.5
     },
-    "_unmapped_Wonkwang Digital University": {
+    "원광디지털대학교": {
       "kediEnglishName": "Wonkwang Digital University_Principal university",
       "kediBaseName": "Wonkwang Digital University",
       "region": "Jeollabuk-do",
@@ -3020,7 +3324,13 @@
       "dormitoryTotal": 54,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "원광디지털대학교",
+      "totalStudents": 4931,
+      "tuition": 2737,
+      "employmentRate": 71.2,
+      "dormitoryRate": 0.0,
+      "competitionRate": ".8",
+      "fillRate": 53.1
     },
     "원광대학교": {
       "kediEnglishName": "Wonkwang University_Principal university",
@@ -3192,7 +3502,7 @@
       "competitionRate": "1.8",
       "fillRate": 100.0
     },
-    "_unmapped_Youngsan University Of Seon Studies": {
+    "영산선학대학교": {
       "kediEnglishName": "Youngsan University Of Seon Studies_Principal university",
       "kediBaseName": "Youngsan University Of Seon Studies",
       "region": "Jeollanam-do",
@@ -3201,20 +3511,15 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "영산선학대학교",
+      "totalStudents": 23,
+      "tuition": 2000,
+      "employmentRate": 0.0,
+      "dormitoryRate": 513.0,
+      "competitionRate": ".1",
+      "fillRate": 6.0
     },
-    "_unmapped_Youngsan University": {
-      "kediEnglishName": "Youngsan University_Campus 2",
-      "kediBaseName": "Youngsan University",
-      "region": "Gyeongsangnam-do",
-      "totalForeignStudents": 98,
-      "topikSatisfactionRate": 31.6,
-      "dormitoryTotal": 98,
-      "dormitoryAccepted": 10,
-      "kediAvailable": true,
-      "koreanName": null
-    },
-    "영산대학교(해운대)": {
+    "영산대학교(양산)": {
       "kediEnglishName": "Youngsan University_Principal university",
       "kediBaseName": "Youngsan University",
       "region": "Busan",
@@ -3223,15 +3528,15 @@
       "dormitoryTotal": 608,
       "dormitoryAccepted": 48,
       "kediAvailable": true,
-      "koreanName": "영산대학교(해운대)",
-      "totalStudents": 2974,
-      "tuition": 7269,
-      "employmentRate": 64.6,
-      "dormitoryRate": 23.3,
-      "competitionRate": "3.8",
-      "fillRate": 99.8
+      "koreanName": "영산대학교(양산)",
+      "totalStudents": 2722,
+      "tuition": 7033,
+      "employmentRate": 68.5,
+      "dormitoryRate": 22.6,
+      "competitionRate": "4.1",
+      "fillRate": 99.7
     },
-    "_unmapped_SungWoon University": {
+    "성운대학교": {
       "kediEnglishName": "SungWoon University_Principal university",
       "kediBaseName": "SungWoon University",
       "region": "Gyeongsangbuk-do",
@@ -3240,9 +3545,15 @@
       "dormitoryTotal": 13,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "성운대학교",
+      "totalStudents": 1558,
+      "tuition": 5283,
+      "employmentRate": 75.9,
+      "dormitoryRate": 4.4,
+      "competitionRate": "1.3",
+      "fillRate": 100.0
     },
-    "_unmapped_Agricultural Cooperative University": {
+    "농협대학교": {
       "kediEnglishName": "Agricultural Cooperative University_Principal university",
       "kediBaseName": "Agricultural Cooperative University",
       "region": "Gyeonggi-do",
@@ -3251,7 +3562,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "농협대학교",
+      "totalStudents": 380,
+      "tuition": 4982,
+      "employmentRate": 90.4,
+      "dormitoryRate": 55.3,
+      "competitionRate": "11.3",
+      "fillRate": 100.0
     },
     "아주자동차대학교": {
       "kediEnglishName": "Ajou Motor College_Principal university",
@@ -3270,7 +3587,7 @@
       "competitionRate": "2.2",
       "fillRate": 87.3
     },
-    "_unmapped_Andong Science College": {
+    "안동과학대학교": {
       "kediEnglishName": "Andong Science College_Principal university",
       "kediBaseName": "Andong Science College",
       "region": "Gyeongsangbuk-do",
@@ -3279,7 +3596,13 @@
       "dormitoryTotal": 9,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "안동과학대학교",
+      "totalStudents": 2014,
+      "tuition": 5916,
+      "employmentRate": 78.3,
+      "dormitoryRate": 37.9,
+      "competitionRate": "3.1",
+      "fillRate": 90.5
     },
     "안산대학교": {
       "kediEnglishName": "Ansan University_Principal university",
@@ -3298,7 +3621,7 @@
       "competitionRate": "10.6",
       "fillRate": 99.0
     },
-    "_unmapped_Asan Campus Of Korea Polytechnic IV": {
+    "한국폴리텍 IV 대학 아산캠퍼스": {
       "kediEnglishName": "Asan Campus Of Korea Polytechnic IV_Principal university",
       "kediBaseName": "Asan Campus Of Korea Polytechnic IV",
       "region": "Chungcheongnam-do",
@@ -3307,9 +3630,15 @@
       "dormitoryTotal": 7,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 IV 대학 아산캠퍼스",
+      "totalStudents": 388,
+      "tuition": 2432,
+      "employmentRate": 77.8,
+      "dormitoryRate": 81.9,
+      "competitionRate": "1.4",
+      "fillRate": 69.9
     },
-    "_unmapped_Aviation Campus Of Korea Polytechnic": {
+    "한국폴리텍 특성화대학 항공캠퍼스": {
       "kediEnglishName": "Aviation Campus Of Korea Polytechnic_Principal university",
       "kediBaseName": "Aviation Campus Of Korea Polytechnic",
       "region": "Gyeongsangnam-do",
@@ -3318,7 +3647,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 특성화대학 항공캠퍼스",
+      "totalStudents": 248,
+      "tuition": 2433,
+      "employmentRate": 74.0,
+      "dormitoryRate": 101.6,
+      "competitionRate": "1.8",
+      "fillRate": 76.3
     },
     "백석문화대학교": {
       "kediEnglishName": "Baekseok Culture University_Principal university",
@@ -3337,7 +3672,7 @@
       "competitionRate": "5.5",
       "fillRate": 90.8
     },
-    "_unmapped_Baewha Women'S University": {
+    "배화여자대학교": {
       "kediEnglishName": "Baewha Women'S University_Principal university",
       "kediBaseName": "Baewha Women'S University",
       "region": "Seoul",
@@ -3346,7 +3681,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "배화여자대학교",
+      "totalStudents": 2646,
+      "tuition": 6634,
+      "employmentRate": 63.8,
+      "dormitoryRate": 0.0,
+      "competitionRate": "7.5",
+      "fillRate": 100.0
     },
     "부천대학교": {
       "kediEnglishName": "Bucheon University_Principal university",
@@ -3365,7 +3706,7 @@
       "competitionRate": "10.6",
       "fillRate": 100.0
     },
-    "_unmapped_Busan Arts College": {
+    "부산예술대학교": {
       "kediEnglishName": "Busan Arts College_Principal university",
       "kediBaseName": "Busan Arts College",
       "region": "Busan",
@@ -3374,7 +3715,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "부산예술대학교",
+      "totalStudents": 481,
+      "tuition": 5914,
+      "employmentRate": 56.3,
+      "dormitoryRate": 0.0,
+      "competitionRate": "2",
+      "fillRate": 39.4
     },
     "부산보건대학교": {
       "kediEnglishName": "Busan Health University_Principal university",
@@ -3410,7 +3757,7 @@
       "competitionRate": "6",
       "fillRate": 94.4
     },
-    "_unmapped_Busan Kyungsang College": {
+    "부산경상대학교": {
       "kediEnglishName": "Busan Kyungsang College_Principal university",
       "kediBaseName": "Busan Kyungsang College",
       "region": "Busan",
@@ -3419,9 +3766,15 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "부산경상대학교",
+      "totalStudents": 1517,
+      "tuition": 5653,
+      "employmentRate": 64.5,
+      "dormitoryRate": 28.6,
+      "competitionRate": "2.5",
+      "fillRate": 61.3
     },
-    "_unmapped_Busanwomenscollege": {
+    "부산여자대학교": {
       "kediEnglishName": "Busanwomenscollege_Principal university",
       "kediBaseName": "Busanwomenscollege",
       "region": "Busan",
@@ -3430,7 +3783,13 @@
       "dormitoryTotal": 26,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "부산여자대학교",
+      "totalStudents": 1774,
+      "tuition": 6309,
+      "employmentRate": 62.6,
+      "dormitoryRate": 33.3,
+      "competitionRate": "4.9",
+      "fillRate": 96.4
     },
     "춘해보건대학교": {
       "kediEnglishName": "CHOONHAE HEALTH SCIENCES UNIVERSITY_Principal university",
@@ -3466,7 +3825,7 @@
       "competitionRate": "3.8",
       "fillRate": 94.8
     },
-    "_unmapped_Cheju Halla University": {
+    "제주한라대학교": {
       "kediEnglishName": "Cheju Halla University_Principal university",
       "kediBaseName": "Cheju Halla University",
       "region": "Jeju",
@@ -3475,7 +3834,13 @@
       "dormitoryTotal": 135,
       "dormitoryAccepted": 8,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "제주한라대학교",
+      "totalStudents": 3897,
+      "tuition": 5454,
+      "employmentRate": 72.0,
+      "dormitoryRate": 18.4,
+      "competitionRate": "1.5",
+      "fillRate": 73.3
     },
     "청암대학교": {
       "kediEnglishName": "Cheongam University_Principal university",
@@ -3494,7 +3859,7 @@
       "competitionRate": "2.9",
       "fillRate": 88.8
     },
-    "_unmapped_Cheongju Campus Of Korea Polytechnic IV": {
+    "한국폴리텍 IV 대학 청주캠퍼스": {
       "kediEnglishName": "Cheongju Campus Of Korea Polytechnic IV_Principal university",
       "kediBaseName": "Cheongju Campus Of Korea Polytechnic IV",
       "region": "Chungcheongbuk-do",
@@ -3503,7 +3868,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 IV 대학 청주캠퍼스",
+      "totalStudents": 654,
+      "tuition": 2432,
+      "employmentRate": 83.0,
+      "dormitoryRate": 29.8,
+      "competitionRate": "1.9",
+      "fillRate": 95.8
     },
     "조선이공대학교": {
       "kediEnglishName": "Chosun College Of Science & Technoloy_Principal university",
@@ -3590,7 +3961,7 @@
       "competitionRate": "10.8",
       "fillRate": 100.0
     },
-    "_unmapped_Chungnam Campus Of Korea Polytechnics": {
+    "한국폴리텍 IV 대학 충남캠퍼스": {
       "kediEnglishName": "Chungnam Campus Of Korea Polytechnics_Principal university",
       "kediBaseName": "Chungnam Campus Of Korea Polytechnics",
       "region": "Chungcheongnam-do",
@@ -3599,9 +3970,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 IV 대학 충남캠퍼스",
+      "totalStudents": 189,
+      "tuition": 2164,
+      "employmentRate": 81.3,
+      "dormitoryRate": 120.1,
+      "competitionRate": ".9",
+      "fillRate": 85.7
     },
-    "_unmapped_Chungnam State University": {
+    "충남도립대학교": {
       "kediEnglishName": "Chungnam State University_Principal university",
       "kediBaseName": "Chungnam State University",
       "region": "Chungcheongnam-do",
@@ -3610,7 +3987,13 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "충남도립대학교",
+      "totalStudents": 968,
+      "tuition": 2461,
+      "employmentRate": 73.6,
+      "dormitoryRate": 77.2,
+      "competitionRate": "3.7",
+      "fillRate": 100.0
     },
     "전남과학대학교": {
       "kediEnglishName": "Chunnam Techno University_Principal university",
@@ -3629,7 +4012,7 @@
       "competitionRate": "1.8",
       "fillRate": 84.3
     },
-    "_unmapped_Corea Welfare Cyber University": {
+    "한국복지사이버대학교": {
       "kediEnglishName": "Corea Welfare Cyber University_Principal university",
       "kediBaseName": "Corea Welfare Cyber University",
       "region": "Gyeongsangbuk-do",
@@ -3638,9 +4021,15 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국복지사이버대학교",
+      "totalStudents": 2329,
+      "tuition": 2160,
+      "employmentRate": 72.5,
+      "dormitoryRate": 0.0,
+      "competitionRate": "1.2",
+      "fillRate": 90.1
     },
-    "_unmapped_DAEJEON HEALTH UNIVERSITY": {
+    "대전보건대학교": {
       "kediEnglishName": "DAEJEON HEALTH UNIVERSITY_Principal university",
       "kediBaseName": "DAEJEON HEALTH UNIVERSITY",
       "region": "Daejeon",
@@ -3649,7 +4038,13 @@
       "dormitoryTotal": 9,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대전보건대학교",
+      "totalStudents": 4116,
+      "tuition": 6312,
+      "employmentRate": 75.0,
+      "dormitoryRate": 11.5,
+      "competitionRate": "7.1",
+      "fillRate": 94.2
     },
     "대덕대학교": {
       "kediEnglishName": "Daeduk University_Principal university",
@@ -3668,7 +4063,7 @@
       "competitionRate": "2.4",
       "fillRate": 62.4
     },
-    "_unmapped_Daegu Health College": {
+    "대구보건대학교": {
       "kediEnglishName": "Daegu Health College_Principal university",
       "kediBaseName": "Daegu Health College",
       "region": "Daegu",
@@ -3677,9 +4072,15 @@
       "dormitoryTotal": 22,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대구보건대학교",
+      "totalStudents": 6580,
+      "tuition": 6600,
+      "employmentRate": 77.7,
+      "dormitoryRate": 10.6,
+      "competitionRate": "7",
+      "fillRate": 96.7
     },
-    "_unmapped_Daegutechnical University": {
+    "대구공업대학교": {
       "kediEnglishName": "Daegutechnical University_Principal university",
       "kediBaseName": "Daegutechnical University",
       "region": "Daegu",
@@ -3688,9 +4089,15 @@
       "dormitoryTotal": 6,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "대구공업대학교",
+      "totalStudents": 1278,
+      "tuition": 5858,
+      "employmentRate": 68.8,
+      "dormitoryRate": 62.0,
+      "competitionRate": "2.4",
+      "fillRate": 100.0
     },
-    "_unmapped_Daejeon Campus of Korea Polytechnic IV": {
+    "한국폴리텍 IV 대학 대전캠퍼스": {
       "kediEnglishName": "Daejeon Campus of Korea Polytechnic IV_Principal university",
       "kediBaseName": "Daejeon Campus of Korea Polytechnic IV",
       "region": "Daejeon",
@@ -3699,7 +4106,13 @@
       "dormitoryTotal": 4,
       "dormitoryAccepted": 3,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 IV 대학 대전캠퍼스",
+      "totalStudents": 628,
+      "tuition": 2432,
+      "employmentRate": 73.1,
+      "dormitoryRate": 55.3,
+      "competitionRate": "1.7",
+      "fillRate": 83.3
     },
     "대전과학기술대학교": {
       "kediEnglishName": "Daejeon Institute Of Science And Technology_Principal university",
@@ -3769,7 +4182,7 @@
       "competitionRate": "4.1",
       "fillRate": 67.9
     },
-    "_unmapped_Dong Seoul University": {
+    "동서울대학교": {
       "kediEnglishName": "Dong Seoul University_Principal university",
       "kediBaseName": "Dong Seoul University",
       "region": "Gyeonggi-do",
@@ -3778,9 +4191,15 @@
       "dormitoryTotal": 12,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "동서울대학교",
+      "totalStudents": 5754,
+      "tuition": 7152,
+      "employmentRate": 67.5,
+      "dormitoryRate": 3.4,
+      "competitionRate": "7.7",
+      "fillRate": 100.0
     },
-    "_unmapped_Dong-Ah Institute Of Media And Arts": {
+    "동아방송예술대학교": {
       "kediEnglishName": "Dong-Ah Institute Of Media And Arts_Principal university",
       "kediBaseName": "Dong-Ah Institute Of Media And Arts",
       "region": "Gyeonggi-do",
@@ -3789,7 +4208,13 @@
       "dormitoryTotal": 19,
       "dormitoryAccepted": 6,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "동아방송예술대학교",
+      "totalStudents": 3015,
+      "tuition": 7798,
+      "employmentRate": 69.4,
+      "dormitoryRate": 15.1,
+      "competitionRate": "17.5",
+      "fillRate": 100.0
     },
     "동의과학대학교": {
       "kediEnglishName": "Dong-Eui Institute of Technology_Principal university",
@@ -3876,7 +4301,7 @@
       "competitionRate": "7",
       "fillRate": 99.1
     },
-    "_unmapped_Doowon Technical University": {
+    "두원공과대학교": {
       "kediEnglishName": "Doowon Technical University_Principal university",
       "kediBaseName": "Doowon Technical University",
       "region": "Gyeonggi-do",
@@ -3885,7 +4310,13 @@
       "dormitoryTotal": 16,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "두원공과대학교",
+      "totalStudents": 2105,
+      "tuition": 6815,
+      "employmentRate": 69.7,
+      "dormitoryRate": 22.6,
+      "competitionRate": "5.1",
+      "fillRate": 58.6
     },
     "강동대학교": {
       "kediEnglishName": "Gangdong University_Principal university",
@@ -3921,7 +4352,7 @@
       "competitionRate": "2.7",
       "fillRate": 83.4
     },
-    "_unmapped_Gangwon State University": {
+    "강원도립대학교": {
       "kediEnglishName": "Gangwon State University_Principal university",
       "kediBaseName": "Gangwon State University",
       "region": "Gangwon-do",
@@ -3930,7 +4361,13 @@
       "dormitoryTotal": 19,
       "dormitoryAccepted": 8,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "강원도립대학교",
+      "totalStudents": 583,
+      "tuition": 2348,
+      "employmentRate": 63.9,
+      "dormitoryRate": 48.3,
+      "competitionRate": "3.1",
+      "fillRate": 100.0
     },
     "거제대학교": {
       "kediEnglishName": "Geoje University_Principal university",
@@ -3949,7 +4386,7 @@
       "competitionRate": "4.8",
       "fillRate": 100.0
     },
-    "_unmapped_Gimhae University": {
+    "김해대학교": {
       "kediEnglishName": "Gimhae University_Principal university",
       "kediBaseName": "Gimhae University",
       "region": "Gyeongsangnam-do",
@@ -3958,9 +4395,15 @@
       "dormitoryTotal": 10,
       "dormitoryAccepted": 4,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "김해대학교",
+      "totalStudents": 1347,
+      "tuition": 6218,
+      "employmentRate": 78.7,
+      "dormitoryRate": 33.0,
+      "competitionRate": "4.8",
+      "fillRate": 87.3
     },
-    "_unmapped_Gumi Campus Of Korea Polytechnic Vi": {
+    "한국폴리텍 VI 대학 구미캠퍼스": {
       "kediEnglishName": "Gumi Campus Of Korea Polytechnic Vi_Principal university",
       "kediBaseName": "Gumi Campus Of Korea Polytechnic Vi",
       "region": "Gyeongsangbuk-do",
@@ -3969,7 +4412,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 VI 대학 구미캠퍼스",
+      "totalStudents": 500,
+      "tuition": 2432,
+      "employmentRate": 81.3,
+      "dormitoryRate": 69.1,
+      "competitionRate": "1.5",
+      "fillRate": 94.0
     },
     "구미대학교": {
       "kediEnglishName": "Gumi University_Principal university",
@@ -3988,7 +4437,7 @@
       "competitionRate": "3.8",
       "fillRate": 100.0
     },
-    "_unmapped_Gwangju Campus Of Korea Polytechnic V": {
+    "한국폴리텍 V 대학 광주캠퍼스": {
       "kediEnglishName": "Gwangju Campus Of Korea Polytechnic V_Principal university",
       "kediBaseName": "Gwangju Campus Of Korea Polytechnic V",
       "region": "Gwangju",
@@ -3997,9 +4446,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 V 대학 광주캠퍼스",
+      "totalStudents": 771,
+      "tuition": 2432,
+      "employmentRate": 75.9,
+      "dormitoryRate": 76.1,
+      "competitionRate": "2.3",
+      "fillRate": 96.8
     },
-    "_unmapped_Gwangju Health University": {
+    "광주보건대학교": {
       "kediEnglishName": "Gwangju Health University_Principal university",
       "kediBaseName": "Gwangju Health University",
       "region": "Gwangju",
@@ -4008,9 +4463,15 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "광주보건대학교",
+      "totalStudents": 3546,
+      "tuition": 5450,
+      "employmentRate": 74.9,
+      "dormitoryRate": 14.1,
+      "competitionRate": "4.4",
+      "fillRate": 93.4
     },
-    "_unmapped_Gyeongbuk College Of Health": {
+    "경북보건대학교": {
       "kediEnglishName": "Gyeongbuk College Of Health_Principal university",
       "kediBaseName": "Gyeongbuk College Of Health",
       "region": "Gyeongsangbuk-do",
@@ -4019,7 +4480,13 @@
       "dormitoryTotal": 7,
       "dormitoryAccepted": 7,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경북보건대학교",
+      "totalStudents": 1306,
+      "tuition": 5602,
+      "employmentRate": 77.6,
+      "dormitoryRate": 54.6,
+      "competitionRate": "5",
+      "fillRate": 94.9
     },
     "경기과학기술대학교": {
       "kediEnglishName": "Gyeonggi University Of Science And Technology_Principal university",
@@ -4038,7 +4505,7 @@
       "competitionRate": "6.6",
       "fillRate": 92.7
     },
-    "_unmapped_Hallym Polytechnic University": {
+    "한림성심대학교": {
       "kediEnglishName": "Hallym Polytechnic University_Principal university",
       "kediBaseName": "Hallym Polytechnic University",
       "region": "Gangwon-do",
@@ -4047,9 +4514,15 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한림성심대학교",
+      "totalStudents": 2443,
+      "tuition": 6057,
+      "employmentRate": 76.3,
+      "dormitoryRate": 14.9,
+      "competitionRate": "5.4",
+      "fillRate": 94.3
     },
-    "_unmapped_Hanyang Women's University": {
+    "한양여자대학교": {
       "kediEnglishName": "Hanyang Women's University_Principal university",
       "kediBaseName": "Hanyang Women's University",
       "region": "Seoul",
@@ -4058,7 +4531,13 @@
       "dormitoryTotal": 22,
       "dormitoryAccepted": 9,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한양여자대학교",
+      "totalStudents": 6503,
+      "tuition": 6549,
+      "employmentRate": 65.4,
+      "dormitoryRate": 0.5,
+      "competitionRate": "11",
+      "fillRate": 100.0
     },
     "한영대학교": {
       "kediEnglishName": "Hanyeong University_Principal university",
@@ -4094,7 +4573,7 @@
       "competitionRate": "4.1",
       "fillRate": 100.0
     },
-    "_unmapped_Hwaseong Campus of KOREA POLYTECHNIC": {
+    "한국폴리텍 II 대학 화성캠퍼스": {
       "kediEnglishName": "Hwaseong Campus of KOREA POLYTECHNIC_Principal university",
       "kediBaseName": "Hwaseong Campus of KOREA POLYTECHNIC",
       "region": "Gyeonggi-do",
@@ -4103,7 +4582,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 II 대학 화성캠퍼스",
+      "totalStudents": 22,
+      "tuition": 0,
+      "employmentRate": 90.0,
+      "dormitoryRate": 0.0,
+      "competitionRate": "0",
+      "fillRate": 0.0
     },
     "혜전대학교": {
       "kediEnglishName": "Hyejeon University_Principal university",
@@ -4122,7 +4607,7 @@
       "competitionRate": "6.4",
       "fillRate": 95.9
     },
-    "_unmapped_ICT Polytech Institute of Korea": {
+    "ICT폴리텍대학": {
       "kediEnglishName": "ICT Polytech Institute of Korea_Principal university",
       "kediBaseName": "ICT Polytech Institute of Korea",
       "region": "Gyeonggi-do",
@@ -4131,9 +4616,15 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "ICT폴리텍대학",
+      "totalStudents": 260,
+      "tuition": 2500,
+      "employmentRate": 68.0,
+      "dormitoryRate": 54.6,
+      "competitionRate": "2.1",
+      "fillRate": 83.8
     },
-    "_unmapped_Iksan Campus Of Korea Polytechnic V": {
+    "한국폴리텍 V 대학 익산캠퍼스": {
       "kediEnglishName": "Iksan Campus Of Korea Polytechnic V_Principal university",
       "kediBaseName": "Iksan Campus Of Korea Polytechnic V",
       "region": "Jeollabuk-do",
@@ -4142,9 +4633,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 V 대학 익산캠퍼스",
+      "totalStudents": 105,
+      "tuition": 2432,
+      "employmentRate": 83.0,
+      "dormitoryRate": 197.2,
+      "competitionRate": "1.5",
+      "fillRate": 76.0
     },
-    "_unmapped_Incheon Campus Of Korea PolytechnicⅡ": {
+    "한국폴리텍 II 대학 인천캠퍼스": {
       "kediEnglishName": "Incheon Campus Of Korea PolytechnicⅡ_Principal university",
       "kediBaseName": "Incheon Campus Of Korea PolytechnicⅡ",
       "region": "Incheon",
@@ -4153,7 +4650,13 @@
       "dormitoryTotal": 13,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 II 대학 인천캠퍼스",
+      "totalStudents": 1342,
+      "tuition": 2494,
+      "employmentRate": 74.3,
+      "dormitoryRate": 30.7,
+      "competitionRate": "1.9",
+      "fillRate": 82.6
     },
     "인덕대학교": {
       "kediEnglishName": "Induk University_Principal university",
@@ -4172,7 +4675,7 @@
       "competitionRate": "7.8",
       "fillRate": 100.0
     },
-    "_unmapped_Inha Technical College": {
+    "인하공업전문대학": {
       "kediEnglishName": "Inha Technical College_Principal university",
       "kediBaseName": "Inha Technical College",
       "region": "Incheon",
@@ -4181,7 +4684,13 @@
       "dormitoryTotal": 87,
       "dormitoryAccepted": 34,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "인하공업전문대학",
+      "totalStudents": 7068,
+      "tuition": 7119,
+      "employmentRate": 68.1,
+      "dormitoryRate": 8.1,
+      "competitionRate": "8.7",
+      "fillRate": 100.0
     },
     "재능대학교": {
       "kediEnglishName": "JEI University_Principal university",
@@ -4217,7 +4726,7 @@
       "competitionRate": "5.3",
       "fillRate": 65.1
     },
-    "_unmapped_Jeju Campus Of Korea Polytechnic": {
+    "한국폴리텍 I 대학 제주캠퍼스": {
       "kediEnglishName": "Jeju Campus Of Korea Polytechnic_Principal university",
       "kediBaseName": "Jeju Campus Of Korea Polytechnic",
       "region": "Jeju",
@@ -4226,7 +4735,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 I 대학 제주캠퍼스",
+      "totalStudents": 52,
+      "tuition": 2164,
+      "employmentRate": 76.9,
+      "dormitoryRate": 219.6,
+      "competitionRate": "1",
+      "fillRate": 100.0
     },
     "제주관광대학교": {
       "kediEnglishName": "Jeju Tourism University_Principal university",
@@ -4245,7 +4760,7 @@
       "competitionRate": "1.9",
       "fillRate": 91.7
     },
-    "_unmapped_Jeonbuk Science College": {
+    "전북과학대학교": {
       "kediEnglishName": "Jeonbuk Science College_Principal university",
       "kediBaseName": "Jeonbuk Science College",
       "region": "Jeollabuk-do",
@@ -4254,7 +4769,13 @@
       "dormitoryTotal": 79,
       "dormitoryAccepted": 32,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "전북과학대학교",
+      "totalStudents": 1600,
+      "tuition": 5370,
+      "employmentRate": 77.8,
+      "dormitoryRate": 33.3,
+      "competitionRate": "2.6",
+      "fillRate": 96.1
     },
     "전주기전대학": {
       "kediEnglishName": "Jeonju Kijeon College_Principal university",
@@ -4273,7 +4794,7 @@
       "competitionRate": "2.1",
       "fillRate": 97.4
     },
-    "_unmapped_Jeonnam State University": {
+    "전남도립대학교": {
       "kediEnglishName": "Jeonnam State University_Principal university",
       "kediBaseName": "Jeonnam State University",
       "region": "Jeollanam-do",
@@ -4282,9 +4803,15 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "전남도립대학교",
+      "totalStudents": 885,
+      "tuition": 1961,
+      "employmentRate": 71.9,
+      "dormitoryRate": 30.1,
+      "competitionRate": "2.3",
+      "fillRate": 100.0
     },
-    "_unmapped_Jinju Health College": {
+    "진주보건대학교": {
       "kediEnglishName": "Jinju Health College_Principal university",
       "kediBaseName": "Jinju Health College",
       "region": "Gyeongsangnam-do",
@@ -4293,9 +4820,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "진주보건대학교",
+      "totalStudents": 2249,
+      "tuition": 6508,
+      "employmentRate": 73.6,
+      "dormitoryRate": 22.2,
+      "competitionRate": "4",
+      "fillRate": 80.4
     },
-    "_unmapped_Kaywon University Of Art &  Design": {
+    "계원예술대학교": {
       "kediEnglishName": "Kaywon University Of Art &  Design_Principal university",
       "kediBaseName": "Kaywon University Of Art &  Design",
       "region": "Gyeonggi-do",
@@ -4304,9 +4837,15 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "계원예술대학교",
+      "totalStudents": 2753,
+      "tuition": 8044,
+      "employmentRate": 59.9,
+      "dormitoryRate": 0.0,
+      "competitionRate": "5",
+      "fillRate": 100.0
     },
-    "_unmapped_Keimyung College University": {
+    "계명문화대학교": {
       "kediEnglishName": "Keimyung College University_Principal university",
       "kediBaseName": "Keimyung College University",
       "region": "Daegu",
@@ -4315,7 +4854,13 @@
       "dormitoryTotal": 176,
       "dormitoryAccepted": 4,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "계명문화대학교",
+      "totalStudents": 4449,
+      "tuition": 6309,
+      "employmentRate": 62.4,
+      "dormitoryRate": 9.1,
+      "competitionRate": "4.4",
+      "fillRate": 94.6
     },
     "김포대학교": {
       "kediEnglishName": "Kimpo University_Principal university",
@@ -4334,7 +4879,7 @@
       "competitionRate": "6.4",
       "fillRate": 100.0
     },
-    "_unmapped_Kookje University": {
+    "국제대학교": {
       "kediEnglishName": "Kookje University_Principal university",
       "kediBaseName": "Kookje University",
       "region": "Gyeonggi-do",
@@ -4343,9 +4888,15 @@
       "dormitoryTotal": 8,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "국제대학교",
+      "totalStudents": 2216,
+      "tuition": 7251,
+      "employmentRate": 67.7,
+      "dormitoryRate": 32.9,
+      "competitionRate": "6.1",
+      "fillRate": 67.4
     },
-    "_unmapped_Korea Golf University of Science & Technology": {
+    "한국골프과학기술대학교": {
       "kediEnglishName": "Korea Golf University of Science & Technology_Principal university",
       "kediBaseName": "Korea Golf University of Science & Technology",
       "region": "Gangwon-do",
@@ -4354,7 +4905,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국골프과학기술대학교",
+      "totalStudents": 465,
+      "tuition": 7922,
+      "employmentRate": 74.1,
+      "dormitoryRate": 43.4,
+      "competitionRate": "1.9",
+      "fillRate": 100.0
     },
     "한국승강기대학교": {
       "kediEnglishName": "Korea Lift College_Principal university",
@@ -4373,7 +4930,7 @@
       "competitionRate": "1",
       "fillRate": 96.3
     },
-    "_unmapped_Korea National University Of Agriculture And Fisheries": {
+    "한국농수산대학교": {
       "kediEnglishName": "Korea National University Of Agriculture And Fisheries_Principal university",
       "kediBaseName": "Korea National University Of Agriculture And Fisheries",
       "region": "Jeollabuk-do",
@@ -4382,9 +4939,15 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 3,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국농수산대학교",
+      "totalStudents": 1550,
+      "tuition": 0,
+      "employmentRate": 76.4,
+      "dormitoryRate": 118.5,
+      "competitionRate": "3.1",
+      "fillRate": 93.0
     },
-    "_unmapped_Korea National University Of Welfare": {
+    "한국복지대학교": {
       "kediEnglishName": "Korea National University Of Welfare_Principal university",
       "kediBaseName": "Korea National University Of Welfare",
       "region": "Gyeonggi-do",
@@ -4393,9 +4956,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국복지대학교",
+      "totalStudents": 155,
+      "tuition": 2714,
+      "employmentRate": 71.1,
+      "dormitoryRate": 0.0,
+      "competitionRate": "0",
+      "fillRate": 0.0
     },
-    "_unmapped_Korea Tourism College": {
+    "한국관광대학교": {
       "kediEnglishName": "Korea Tourism College_Principal university",
       "kediBaseName": "Korea Tourism College",
       "region": "Gyeonggi-do",
@@ -4404,9 +4973,15 @@
       "dormitoryTotal": 5,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국관광대학교",
+      "totalStudents": 1209,
+      "tuition": 6621,
+      "employmentRate": 68.8,
+      "dormitoryRate": 48.3,
+      "competitionRate": "6.1",
+      "fillRate": 66.0
     },
-    "_unmapped_Korea University Of Media Arts": {
+    "한국영상대학교": {
       "kediEnglishName": "Korea University Of Media Arts_Principal university",
       "kediBaseName": "Korea University Of Media Arts",
       "region": "Sejong",
@@ -4415,7 +4990,13 @@
       "dormitoryTotal": 52,
       "dormitoryAccepted": 39,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국영상대학교",
+      "totalStudents": 2953,
+      "tuition": 6706,
+      "employmentRate": 72.5,
+      "dormitoryRate": 34.5,
+      "competitionRate": "4",
+      "fillRate": 92.4
     },
     "군장대학교": {
       "kediEnglishName": "Kunjang University College_Principal university",
@@ -4485,7 +5066,7 @@
       "competitionRate": "9.3",
       "fillRate": 97.7
     },
-    "_unmapped_Kyungbuk College": {
+    "경북전문대학교": {
       "kediEnglishName": "Kyungbuk College_Principal university",
       "kediBaseName": "Kyungbuk College",
       "region": "Gyeongsangbuk-do",
@@ -4494,7 +5075,13 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "경북전문대학교",
+      "totalStudents": 2605,
+      "tuition": 6088,
+      "employmentRate": 81.0,
+      "dormitoryRate": 36.8,
+      "competitionRate": "3.7",
+      "fillRate": 81.2
     },
     "경민대학교": {
       "kediEnglishName": "Kyungmin University_Principal university",
@@ -4564,7 +5151,7 @@
       "competitionRate": "2",
       "fillRate": 91.6
     },
-    "_unmapped_Munkyung College": {
+    "문경대학교": {
       "kediEnglishName": "Munkyung College_Principal university",
       "kediBaseName": "Munkyung College",
       "region": "Gyeongsangbuk-do",
@@ -4573,7 +5160,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "문경대학교",
+      "totalStudents": 630,
+      "tuition": 6166,
+      "employmentRate": 78.1,
+      "dormitoryRate": 42.2,
+      "competitionRate": "3.6",
+      "fillRate": 68.0
     },
     "명지전문대학": {
       "kediEnglishName": "Myongji College_Principal university",
@@ -4592,7 +5185,7 @@
       "competitionRate": "11",
       "fillRate": 100.0
     },
-    "_unmapped_Naju College": {
+    "나주대학교": {
       "kediEnglishName": "Naju College_Principal university",
       "kediBaseName": "Naju College",
       "region": "Jeollanam-do",
@@ -4601,9 +5194,15 @@
       "dormitoryTotal": 327,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "나주대학교",
+      "totalStudents": 1605,
+      "tuition": 4616,
+      "employmentRate": 82.4,
+      "dormitoryRate": 18.4,
+      "competitionRate": "1.1",
+      "fillRate": 91.1
     },
-    "_unmapped_Namincheon Campus Of Korea Polytechnin Ⅱ": {
+    "한국폴리텍 II 대학 남인천캠퍼스": {
       "kediEnglishName": "Namincheon Campus Of Korea Polytechnin Ⅱ_Principal university",
       "kediBaseName": "Namincheon Campus Of Korea Polytechnin Ⅱ",
       "region": "Incheon",
@@ -4612,7 +5211,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 II 대학 남인천캠퍼스",
+      "totalStudents": 85,
+      "tuition": 2494,
+      "employmentRate": 95.3,
+      "dormitoryRate": 81.6,
+      "competitionRate": "2",
+      "fillRate": 84.0
     },
     "오산대학교": {
       "kediEnglishName": "Osan University_Principal university",
@@ -4631,7 +5236,7 @@
       "competitionRate": "8.6",
       "fillRate": 94.2
     },
-    "_unmapped_Pohang University": {
+    "포항대학교": {
       "kediEnglishName": "Pohang University_Principal university",
       "kediBaseName": "Pohang University",
       "region": "Gyeongsangbuk-do",
@@ -4640,7 +5245,13 @@
       "dormitoryTotal": 19,
       "dormitoryAccepted": 11,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "포항대학교",
+      "totalStudents": 1423,
+      "tuition": 6395,
+      "employmentRate": 73.0,
+      "dormitoryRate": 38.3,
+      "competitionRate": "2.3",
+      "fillRate": 81.2
     },
     "세경대학교": {
       "kediEnglishName": "Saekyung University_Principal university",
@@ -4676,7 +5287,7 @@
       "competitionRate": "15.8",
       "fillRate": 100.0
     },
-    "_unmapped_Semiconductor Covergence Of Korea Polytechnic": {
+    "한국폴리텍 특성화대학 반도체융합캠퍼스": {
       "kediEnglishName": "Semiconductor Covergence Of Korea Polytechnic_Principal university",
       "kediBaseName": "Semiconductor Covergence Of Korea Polytechnic",
       "region": "Gyeonggi-do",
@@ -4685,7 +5296,13 @@
       "dormitoryTotal": 5,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 특성화대학 반도체융합캠퍼스",
+      "totalStudents": 370,
+      "tuition": 2432,
+      "employmentRate": 78.8,
+      "dormitoryRate": 101.6,
+      "competitionRate": "1.2",
+      "fillRate": 59.6
     },
     "서일대학교": {
       "kediEnglishName": "Seoil University_Principal university",
@@ -4721,7 +5338,7 @@
       "competitionRate": "3.8",
       "fillRate": 100.0
     },
-    "_unmapped_Seong Nam Campus Of Korea PolytechnicⅠ": {
+    "한국폴리텍 I 대학 성남캠퍼스": {
       "kediEnglishName": "Seong Nam Campus Of Korea PolytechnicⅠ_Principal university",
       "kediBaseName": "Seong Nam Campus Of Korea PolytechnicⅠ",
       "region": "Gyeonggi-do",
@@ -4730,7 +5347,13 @@
       "dormitoryTotal": 9,
       "dormitoryAccepted": 4,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 I 대학 성남캠퍼스",
+      "totalStudents": 558,
+      "tuition": 2432,
+      "employmentRate": 75.7,
+      "dormitoryRate": 44.4,
+      "competitionRate": "1.8",
+      "fillRate": 83.3
     },
     "서울예술대학교": {
       "kediEnglishName": "Seoul Institute Of The Arts_Principal university",
@@ -4749,7 +5372,7 @@
       "competitionRate": "37.4",
       "fillRate": 100.0
     },
-    "_unmapped_Seoul Jungsu Campus Of Korea PolytechnicⅠ": {
+    "한국폴리텍 I 대학 서울정수캠퍼스": {
       "kediEnglishName": "Seoul Jungsu Campus Of Korea PolytechnicⅠ_Principal university",
       "kediBaseName": "Seoul Jungsu Campus Of Korea PolytechnicⅠ",
       "region": "Seoul",
@@ -4758,7 +5381,13 @@
       "dormitoryTotal": 5,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 I 대학 서울정수캠퍼스",
+      "totalStudents": 1051,
+      "tuition": 2494,
+      "employmentRate": 77.8,
+      "dormitoryRate": 15.0,
+      "competitionRate": "2.5",
+      "fillRate": 90.9
     },
     "서영대학교": {
       "kediEnglishName": "Seoyeong University_Principal university",
@@ -4811,7 +5440,7 @@
       "competitionRate": "6.9",
       "fillRate": 99.3
     },
-    "_unmapped_Shinsung University": {
+    "신성대학교": {
       "kediEnglishName": "Shinsung University_Principal university",
       "kediBaseName": "Shinsung University",
       "region": "Chungcheongnam-do",
@@ -4820,7 +5449,13 @@
       "dormitoryTotal": 305,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "신성대학교",
+      "totalStudents": 2700,
+      "tuition": 6702,
+      "employmentRate": 76.4,
+      "dormitoryRate": 38.1,
+      "competitionRate": "4.1",
+      "fillRate": 93.7
     },
     "송곡대학교": {
       "kediEnglishName": "Songgok University_Principal university",
@@ -4839,7 +5474,7 @@
       "competitionRate": "3.9",
       "fillRate": 100.0
     },
-    "_unmapped_Songho University": {
+    "송호대학교": {
       "kediEnglishName": "Songho University_Principal university",
       "kediBaseName": "Songho University",
       "region": "Gangwon-do",
@@ -4848,9 +5483,15 @@
       "dormitoryTotal": 131,
       "dormitoryAccepted": 54,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "송호대학교",
+      "totalStudents": 963,
+      "tuition": 6003,
+      "employmentRate": 76.4,
+      "dormitoryRate": 44.4,
+      "competitionRate": "4.5",
+      "fillRate": 94.4
     },
-    "_unmapped_Soongeui Women's University": {
+    "숭의여자대학교": {
       "kediEnglishName": "Soongeui Women's University_Principal university",
       "kediBaseName": "Soongeui Women's University",
       "region": "Seoul",
@@ -4859,9 +5500,15 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "숭의여자대학교",
+      "totalStudents": 2999,
+      "tuition": 6384,
+      "employmentRate": 67.3,
+      "dormitoryRate": 0.0,
+      "competitionRate": "6.7",
+      "fillRate": 100.0
     },
-    "_unmapped_Sorabol University": {
+    "서라벌대학교": {
       "kediEnglishName": "Sorabol University_Principal university",
       "kediBaseName": "Sorabol University",
       "region": "Gyeongsangbuk-do",
@@ -4870,9 +5517,15 @@
       "dormitoryTotal": 9,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "서라벌대학교",
+      "totalStudents": 203,
+      "tuition": 6116,
+      "employmentRate": 72.8,
+      "dormitoryRate": 18.6,
+      "competitionRate": "0",
+      "fillRate": 0.0
     },
-    "_unmapped_Suncheon Jeil College": {
+    "순천제일대학교": {
       "kediEnglishName": "Suncheon Jeil College_Principal university",
       "kediBaseName": "Suncheon Jeil College",
       "region": "Jeollanam-do",
@@ -4881,9 +5534,15 @@
       "dormitoryTotal": 104,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "순천제일대학교",
+      "totalStudents": 2602,
+      "tuition": 5750,
+      "employmentRate": 72.4,
+      "dormitoryRate": 9.0,
+      "competitionRate": "2.5",
+      "fillRate": 99.7
     },
-    "_unmapped_Sunlin  University": {
+    "선린대학교": {
       "kediEnglishName": "Sunlin  University_Principal university",
       "kediBaseName": "Sunlin  University",
       "region": "Gyeongsangbuk-do",
@@ -4892,9 +5551,15 @@
       "dormitoryTotal": 6,
       "dormitoryAccepted": 2,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "선린대학교",
+      "totalStudents": 1985,
+      "tuition": 6145,
+      "employmentRate": 79.5,
+      "dormitoryRate": 19.8,
+      "competitionRate": "2.7",
+      "fillRate": 97.0
     },
-    "_unmapped_Suseong University": {
+    "수성대학교": {
       "kediEnglishName": "Suseong University_Principal university",
       "kediBaseName": "Suseong University",
       "region": "Daegu",
@@ -4903,9 +5568,15 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "수성대학교",
+      "totalStudents": 3411,
+      "tuition": 6203,
+      "employmentRate": 73.7,
+      "dormitoryRate": 12.3,
+      "competitionRate": "4.4",
+      "fillRate": 100.0
     },
-    "_unmapped_Suwon Science College": {
+    "수원과학대학교": {
       "kediEnglishName": "Suwon Science College_Principal university",
       "kediBaseName": "Suwon Science College",
       "region": "Gyeonggi-do",
@@ -4914,7 +5585,30 @@
       "dormitoryTotal": 5,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "수원과학대학교",
+      "totalStudents": 3020,
+      "tuition": 5826,
+      "employmentRate": 66.5,
+      "dormitoryRate": 0.0,
+      "competitionRate": "6.3",
+      "fillRate": 60.5
+    },
+    "수원여자대학교": {
+      "kediEnglishName": "Suwon Women'S University_Principal university",
+      "kediBaseName": "Suwon Women'S University",
+      "region": "Gyeonggi-do",
+      "totalForeignStudents": 18,
+      "topikSatisfactionRate": 0.0,
+      "dormitoryTotal": 5,
+      "dormitoryAccepted": 0,
+      "kediAvailable": true,
+      "koreanName": "수원여자대학교",
+      "totalStudents": 3672,
+      "tuition": 6998,
+      "employmentRate": 72.3,
+      "dormitoryRate": 0.0,
+      "competitionRate": "7.4",
+      "fillRate": 93.7
     },
     "대구과학대학교": {
       "kediEnglishName": "Taegu Science University_Principal university",
@@ -4950,7 +5644,7 @@
       "competitionRate": "5",
       "fillRate": 100.0
     },
-    "_unmapped_Ulsan Campus Of Korea Polytechnic": {
+    "한국폴리텍 VII 대학 울산캠퍼스": {
       "kediEnglishName": "Ulsan Campus Of Korea Polytechnic_Principal university",
       "kediBaseName": "Ulsan Campus Of Korea Polytechnic",
       "region": "Ulsan",
@@ -4959,7 +5653,13 @@
       "dormitoryTotal": 2,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 VII 대학 울산캠퍼스",
+      "totalStudents": 629,
+      "tuition": 2432,
+      "employmentRate": 82.6,
+      "dormitoryRate": 27.4,
+      "competitionRate": "2.2",
+      "fillRate": 100.0
     },
     "울산과학대학교": {
       "kediEnglishName": "Ulsan College_Principal university",
@@ -5029,7 +5729,7 @@
       "competitionRate": "5.3",
       "fillRate": 83.0
     },
-    "_unmapped_Wonju Campus Of Korea Polytechnic": {
+    "한국폴리텍 III 대학 원주캠퍼스": {
       "kediEnglishName": "Wonju Campus Of Korea Polytechnic_Principal university",
       "kediBaseName": "Wonju Campus Of Korea Polytechnic",
       "region": "Gangwon-do",
@@ -5038,7 +5738,13 @@
       "dormitoryTotal": 3,
       "dormitoryAccepted": 3,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "한국폴리텍 III 대학 원주캠퍼스",
+      "totalStudents": 113,
+      "tuition": 2174,
+      "employmentRate": 80.0,
+      "dormitoryRate": 244.8,
+      "competitionRate": "2",
+      "fillRate": 86.0
     },
     "원광보건대학교": {
       "kediEnglishName": "Wonkwang Health Science University_Principal university",
@@ -5057,7 +5763,7 @@
       "competitionRate": "4.8",
       "fillRate": 92.7
     },
-    "_unmapped_Woongji Accounting & Tax College": {
+    "웅지세무대학교": {
       "kediEnglishName": "Woongji Accounting & Tax College_Principal university",
       "kediBaseName": "Woongji Accounting & Tax College",
       "region": "Gyeonggi-do",
@@ -5066,9 +5772,15 @@
       "dormitoryTotal": 0,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "웅지세무대학교",
+      "totalStudents": 166,
+      "tuition": 6960,
+      "employmentRate": 42.0,
+      "dormitoryRate": 226.5,
+      "competitionRate": ".3",
+      "fillRate": 7.2
     },
-    "_unmapped_Woosong College": {
+    "우송정보대학": {
       "kediEnglishName": "Woosong College_Principal university",
       "kediBaseName": "Woosong College",
       "region": "Daejeon",
@@ -5077,9 +5789,15 @@
       "dormitoryTotal": 31,
       "dormitoryAccepted": 1,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "우송정보대학",
+      "totalStudents": 2904,
+      "tuition": 6446,
+      "employmentRate": 69.8,
+      "dormitoryRate": 10.9,
+      "competitionRate": "4.3",
+      "fillRate": 97.9
     },
-    "_unmapped_YEUNGJIN CYBER UNIVERSITY": {
+    "영진사이버대학교": {
       "kediEnglishName": "YEUNGJIN CYBER UNIVERSITY_Principal university",
       "kediBaseName": "YEUNGJIN CYBER UNIVERSITY",
       "region": "Daegu",
@@ -5088,7 +5806,13 @@
       "dormitoryTotal": 54,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "영진사이버대학교",
+      "totalStudents": 3300,
+      "tuition": 2427,
+      "employmentRate": 79.3,
+      "dormitoryRate": 0.0,
+      "competitionRate": ".8",
+      "fillRate": 82.5
     },
     "여주대학교": {
       "kediEnglishName": "Yeoju Institute Of Technology_Principal university",
@@ -5158,7 +5882,7 @@
       "competitionRate": "6.9",
       "fillRate": 100.0
     },
-    "_unmapped_Yonam College": {
+    "연암대학교": {
       "kediEnglishName": "Yonam College_Principal university",
       "kediBaseName": "Yonam College",
       "region": "Chungcheongnam-do",
@@ -5167,7 +5891,13 @@
       "dormitoryTotal": 1,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "연암대학교",
+      "totalStudents": 1119,
+      "tuition": 6283,
+      "employmentRate": 77.4,
+      "dormitoryRate": 35.0,
+      "competitionRate": "4",
+      "fillRate": 100.0
     },
     "용인예술과학대학교": {
       "kediEnglishName": "Yong-In Arts & Science University_Principal university",
@@ -5186,7 +5916,7 @@
       "competitionRate": "7.1",
       "fillRate": 88.2
     },
-    "_unmapped_Yuhan University": {
+    "유한대학교": {
       "kediEnglishName": "Yuhan University_Principal university",
       "kediBaseName": "Yuhan University",
       "region": "Gyeonggi-do",
@@ -5195,13 +5925,19 @@
       "dormitoryTotal": 12,
       "dormitoryAccepted": 0,
       "kediAvailable": true,
-      "koreanName": null
+      "koreanName": "유한대학교",
+      "totalStudents": 4685,
+      "tuition": 6547,
+      "employmentRate": 67.4,
+      "dormitoryRate": 0.0,
+      "competitionRate": "7.8",
+      "fillRate": 100.0
     }
   },
   "meta": {
     "totalKedi": 367,
-    "mapped": 212,
-    "unmapped": 155,
-    "mappingRate": 57.8
+    "mapped": 367,
+    "unmapped": 0,
+    "mappingRate": 100.0
   }
 }

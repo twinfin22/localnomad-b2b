@@ -760,7 +760,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 33.3,
+      "dormitoryRate": 23.2,
+      "dormitoryTotal": 3,
+      "dormitoryAccepted": 0,
+      "totalStudents": 564,
+      "tuition": 6820,
+      "employmentRate": 0.0,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 564
   },
   "강남대학교": {
     "total": 564,
@@ -1274,7 +1285,18 @@
         "universityCount": 3
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 52.7,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 731,
+      "dormitoryAccepted": 133,
+      "totalStudents": 0,
+      "tuition": 0,
+      "employmentRate": 0.0,
+      "region": "Gangwon-do"
+    },
+    "totalEnrollment": 0
   },
   "강원대학교 삼척산학협력단": {
     "total": 1,
@@ -2187,7 +2209,18 @@
         "universityCount": 5
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 80.4,
+      "dormitoryRate": 32.3,
+      "dormitoryTotal": 92,
+      "dormitoryAccepted": 48,
+      "totalStudents": 3841,
+      "tuition": 7641,
+      "employmentRate": 78.2,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 3841
   },
   "겐트대학교": {
     "total": 4,
@@ -2536,7 +2569,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 5.9,
+      "dormitoryRate": 18.1,
+      "dormitoryTotal": 341,
+      "dormitoryAccepted": 197,
+      "totalStudents": 8352,
+      "tuition": 6850,
+      "employmentRate": 60.4,
+      "region": "Gyeongsangnam-do"
+    },
+    "totalEnrollment": 8352
   },
   "경남도립거창대학": {
     "total": 23,
@@ -2830,14 +2874,14 @@
     ],
     "kediAvailable": true,
     "kedi": {
-      "topikSatisfactionRate": 10.3,
+      "topikSatisfactionRate": 97.2,
       "dormitoryRate": 20.3,
-      "dormitoryTotal": 29,
-      "dormitoryAccepted": 2,
+      "dormitoryTotal": 1074,
+      "dormitoryAccepted": 266,
       "totalStudents": 2453,
       "tuition": 8137,
       "employmentRate": 67.9,
-      "region": "Gyeonggi-do"
+      "region": "Gangwon-do"
     },
     "totalEnrollment": 2453
   },
@@ -3287,7 +3331,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 69.8,
+      "dormitoryRate": 23.7,
+      "dormitoryTotal": 632,
+      "dormitoryAccepted": 93,
+      "totalStudents": 22562,
+      "tuition": 4514,
+      "employmentRate": 57.8,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 22562
   },
   "경북대학교 건설환경에너지융합기술원": {
     "total": 1,
@@ -3638,7 +3693,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 28.6,
+      "dormitoryRate": 54.6,
+      "dormitoryTotal": 7,
+      "dormitoryAccepted": 7,
+      "totalStudents": 1306,
+      "tuition": 5602,
+      "employmentRate": 77.6,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1306
   },
   "경북전문대학": {
     "total": 69,
@@ -4266,7 +4332,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 62.5,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1161,
+      "tuition": 0,
+      "employmentRate": 59.1,
+      "region": "Incheon"
+    },
+    "totalEnrollment": 1161
   },
   "경인여자대학교": {
     "total": 345,
@@ -4822,7 +4899,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 229,
+      "dormitoryAccepted": 0,
+      "totalStudents": 10615,
+      "tuition": 2914,
+      "employmentRate": 77.1,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 10615
   },
   "계명대학교": {
     "total": 3746,
@@ -5008,7 +5096,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 48.9,
+      "dormitoryRate": 9.1,
+      "dormitoryTotal": 176,
+      "dormitoryAccepted": 4,
+      "totalStudents": 4449,
+      "tuition": 6309,
+      "employmentRate": 62.4,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 4449
   },
   "계원예술대학교": {
     "total": 1,
@@ -5062,7 +5161,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2753,
+      "tuition": 8044,
+      "employmentRate": 59.9,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 2753
   },
   "고려대학교": {
     "total": 5420,
@@ -6424,7 +6534,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 66.7,
+      "dormitoryRate": 14.1,
+      "dormitoryTotal": 3,
+      "dormitoryAccepted": 0,
+      "totalStudents": 3546,
+      "tuition": 5450,
+      "employmentRate": 74.9,
+      "region": "Gwangju"
+    },
+    "totalEnrollment": 3546
   },
   "광주여자대학교": {
     "total": 671,
@@ -6952,7 +7073,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 40.0,
+      "dormitoryRate": 31.3,
+      "dormitoryTotal": 25,
+      "dormitoryAccepted": 1,
+      "totalStudents": 4602,
+      "tuition": 3787,
+      "employmentRate": 56.9,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 4602
   },
   "국립공주대학교": {
     "total": 495,
@@ -7880,7 +8012,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 32.9,
+      "dormitoryTotal": 8,
+      "dormitoryAccepted": 1,
+      "totalStudents": 2216,
+      "tuition": 7251,
+      "employmentRate": 67.7,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 2216
   },
   "국제법률경영대학원대학교": {
     "total": 178,
@@ -9095,7 +9238,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 3.4,
+      "dormitoryRate": 18.4,
+      "dormitoryTotal": 327,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1605,
+      "tuition": 4616,
+      "employmentRate": 82.4,
+      "region": "Jeollanam-do"
+    },
+    "totalEnrollment": 1605
   },
   "남부대학교": {
     "total": 383,
@@ -9694,14 +9848,14 @@
     ],
     "kediAvailable": true,
     "kedi": {
-      "topikSatisfactionRate": 40.6,
+      "topikSatisfactionRate": 31.6,
       "dormitoryRate": 20.3,
-      "dormitoryTotal": 96,
-      "dormitoryAccepted": 29,
+      "dormitoryTotal": 713,
+      "dormitoryAccepted": 387,
       "totalStudents": 10548,
       "tuition": 8658,
       "employmentRate": 63.1,
-      "region": "Chungcheongnam-do"
+      "region": "Gyeonggi-do"
     },
     "totalEnrollment": 10548
   },
@@ -10046,7 +10200,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 62.0,
+      "dormitoryTotal": 6,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1278,
+      "tuition": 5858,
+      "employmentRate": 68.8,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 1278
   },
   "대구과학대학교": {
     "total": 241,
@@ -10171,7 +10336,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 28.5,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1514,
+      "tuition": 3896,
+      "employmentRate": 62.6,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 1514
   },
   "대구대학교": {
     "total": 2433,
@@ -10262,7 +10438,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 13.4,
+      "dormitoryRate": 26.4,
+      "dormitoryTotal": 1446,
+      "dormitoryAccepted": 309,
+      "totalStudents": 15459,
+      "tuition": 7324,
+      "employmentRate": 55.3,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 15459
   },
   "대구대학교 산학협력단": {
     "total": 1,
@@ -10485,7 +10672,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 45.5,
+      "dormitoryRate": 10.6,
+      "dormitoryTotal": 22,
+      "dormitoryAccepted": 0,
+      "totalStudents": 6580,
+      "tuition": 6600,
+      "employmentRate": 77.7,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 6580
   },
   "대구예술대학교": {
     "total": 308,
@@ -12746,7 +12944,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 16.7,
+      "dormitoryRate": 3.4,
+      "dormitoryTotal": 12,
+      "dormitoryAccepted": 1,
+      "totalStudents": 5754,
+      "tuition": 7152,
+      "employmentRate": 67.5,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 5754
   },
   "동신대학교": {
     "total": 1872,
@@ -13127,7 +13336,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 29.1,
+      "dormitoryRate": 33.4,
+      "dormitoryTotal": 416,
+      "dormitoryAccepted": 52,
+      "totalStudents": 4241,
+      "tuition": 7706,
+      "employmentRate": 65.3,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 4241
   },
   "동양대학교 동두천캠퍼스": {
     "total": 369,
@@ -13545,7 +13765,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 91.1,
+      "dormitoryRate": 20.9,
+      "dormitoryTotal": 541,
+      "dormitoryAccepted": 13,
+      "totalStudents": 14302,
+      "tuition": 7346,
+      "employmentRate": 59.5,
+      "region": "Busan"
+    },
+    "totalEnrollment": 14302
   },
   "동주대학": {
     "total": 1,
@@ -14145,14 +14376,14 @@
     ],
     "kediAvailable": true,
     "kedi": {
-      "topikSatisfactionRate": 46.2,
+      "topikSatisfactionRate": 39.5,
       "dormitoryRate": 31.4,
-      "dormitoryTotal": 156,
-      "dormitoryAccepted": 38,
+      "dormitoryTotal": 1204,
+      "dormitoryAccepted": 96,
       "totalStudents": 5741,
       "tuition": 9592,
       "employmentRate": 65.3,
-      "region": "Gyeonggi-do"
+      "region": "Seoul"
     },
     "totalEnrollment": 5741
   },
@@ -14950,7 +15181,18 @@
         "universityCount": 3
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 29.2,
+      "dormitoryRate": 23.1,
+      "dormitoryTotal": 305,
+      "dormitoryAccepted": 21,
+      "totalStudents": 7344,
+      "tuition": 7731,
+      "employmentRate": 57.2,
+      "region": "Daejeon"
+    },
+    "totalEnrollment": 7344
   },
   "백석대학교": {
     "total": 1092,
@@ -16860,7 +17102,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 23.0,
+      "dormitoryRate": 8.9,
+      "dormitoryTotal": 152,
+      "dormitoryAccepted": 20,
+      "totalStudents": 6267,
+      "tuition": 8173,
+      "employmentRate": 63.4,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 6267
   },
   "상명대학교 한국언어문화교육원": {
     "total": 2,
@@ -17032,7 +17285,18 @@
         "universityCount": 5
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 15.9,
+      "dormitoryRate": 29.9,
+      "dormitoryTotal": 69,
+      "dormitoryAccepted": 13,
+      "totalStudents": 5722,
+      "tuition": 7859,
+      "employmentRate": 65.1,
+      "region": "Gangwon-do"
+    },
+    "totalEnrollment": 5722
   },
   "상지영서대학": {
     "total": 2,
@@ -17496,7 +17760,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 22.2,
+      "dormitoryRate": 18.6,
+      "dormitoryTotal": 9,
+      "dormitoryAccepted": 0,
+      "totalStudents": 203,
+      "tuition": 6116,
+      "employmentRate": 72.8,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 203
   },
   "서영대학교": {
     "total": 806,
@@ -17875,7 +18150,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 58.8,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1285,
+      "tuition": 3256,
+      "employmentRate": 68.7,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 1285
   },
   "서울기독대학교": {
     "total": 472,
@@ -19669,7 +19955,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 95.2,
+      "dormitoryRate": 11.1,
+      "dormitoryTotal": 251,
+      "dormitoryAccepted": 81,
+      "totalStudents": 8949,
+      "tuition": 2529,
+      "employmentRate": 63.6,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 8949
   },
   "서울신학대학교": {
     "total": 508,
@@ -19734,7 +20031,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 50.0,
+      "dormitoryRate": 14.2,
+      "dormitoryTotal": 14,
+      "dormitoryAccepted": 5,
+      "totalStudents": 1967,
+      "tuition": 7637,
+      "employmentRate": 68.4,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 1967
   },
   "서울여자대학교": {
     "total": 950,
@@ -19810,7 +20118,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 34.1,
+      "dormitoryRate": 11.6,
+      "dormitoryTotal": 704,
+      "dormitoryAccepted": 37,
+      "totalStudents": 7692,
+      "tuition": 7990,
+      "employmentRate": 62.1,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 7692
   },
   "서울예술대학교": {
     "total": 21,
@@ -20067,7 +20386,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 100.0,
+      "dormitoryRate": 52.7,
+      "dormitoryTotal": 42,
+      "dormitoryAccepted": 0,
+      "totalStudents": 331,
+      "tuition": 7728,
+      "employmentRate": 50.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 331
   },
   "서울한영대학교": {
     "total": 528,
@@ -20506,7 +20836,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 19.8,
+      "dormitoryTotal": 6,
+      "dormitoryAccepted": 2,
+      "totalStudents": 1985,
+      "tuition": 6145,
+      "employmentRate": 79.5,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1985
   },
   "선문대학교": {
     "total": 2727,
@@ -21675,7 +22016,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 84.6,
+      "dormitoryRate": 4.4,
+      "dormitoryTotal": 13,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1558,
+      "tuition": 5283,
+      "employmentRate": 75.9,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1558
   },
   "세경대학교": {
     "total": 106,
@@ -22396,7 +22748,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 3.2,
+      "dormitoryRate": 36.9,
+      "dormitoryTotal": 62,
+      "dormitoryAccepted": 8,
+      "totalStudents": 3139,
+      "tuition": 7766,
+      "employmentRate": 69.5,
+      "region": "Jeollanam-do"
+    },
+    "totalEnrollment": 3139
   },
   "세한대학교산학협력단": {
     "total": 2,
@@ -22653,7 +23016,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 42.0,
+      "dormitoryRate": 44.4,
+      "dormitoryTotal": 131,
+      "dormitoryAccepted": 54,
+      "totalStudents": 963,
+      "tuition": 6003,
+      "employmentRate": 76.4,
+      "region": "Gangwon-do"
+    },
+    "totalEnrollment": 963
   },
   "수도국제대학원대학교": {
     "total": 370,
@@ -22793,7 +23167,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 12.3,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 0,
+      "totalStudents": 3411,
+      "tuition": 6203,
+      "employmentRate": 73.7,
+      "region": "Daegu"
+    },
+    "totalEnrollment": 3411
   },
   "수원가톨릭대학교": {
     "total": 3,
@@ -22848,7 +23233,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 100.0,
+      "dormitoryRate": 171.7,
+      "dormitoryTotal": 1,
+      "dormitoryAccepted": 0,
+      "totalStudents": 96,
+      "tuition": 5097,
+      "employmentRate": 0.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 96
   },
   "수원대학교": {
     "total": 201,
@@ -22918,7 +23314,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 35.7,
+      "dormitoryRate": 12.2,
+      "dormitoryTotal": 14,
+      "dormitoryAccepted": 1,
+      "totalStudents": 8368,
+      "tuition": 7941,
+      "employmentRate": 65.4,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 8368
   },
   "수원여자대학교": {
     "total": 33,
@@ -23245,7 +23652,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 15.4,
+      "dormitoryRate": 9.0,
+      "dormitoryTotal": 104,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2602,
+      "tuition": 5750,
+      "employmentRate": 72.4,
+      "region": "Jeollanam-do"
+    },
+    "totalEnrollment": 2602
   },
   "순천향대학교": {
     "total": 958,
@@ -23594,7 +24012,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 1,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2999,
+      "tuition": 6384,
+      "employmentRate": 67.3,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 2999
   },
   "스텔라떡볶이 서울대학동점": {
     "total": 1,
@@ -23714,7 +24143,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 96.0,
+      "dormitoryRate": 18.6,
+      "dormitoryTotal": 100,
+      "dormitoryAccepted": 72,
+      "totalStudents": 1179,
+      "tuition": 7492,
+      "employmentRate": 64.3,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1179
   },
   "신구대학교": {
     "total": 38,
@@ -24150,10 +24590,10 @@
     ],
     "kediAvailable": true,
     "kedi": {
-      "topikSatisfactionRate": 12.1,
+      "topikSatisfactionRate": 25.0,
       "dormitoryRate": 4.6,
-      "dormitoryTotal": 718,
-      "dormitoryAccepted": 123,
+      "dormitoryTotal": 8,
+      "dormitoryAccepted": 2,
       "totalStudents": 5786,
       "tuition": 9103,
       "employmentRate": 65.9,
@@ -24448,7 +24888,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 47.4,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 0,
+      "totalStudents": 236,
+      "tuition": 6900,
+      "employmentRate": 0.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 236
   },
   "아주대학교": {
     "total": 2090,
@@ -24818,7 +25269,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 33.3,
+      "dormitoryRate": 37.9,
+      "dormitoryTotal": 9,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2014,
+      "tuition": 5916,
+      "employmentRate": 78.3,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 2014
   },
   "안산대학교": {
     "total": 235,
@@ -26279,7 +26741,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 100.0,
+      "dormitoryRate": 513.0,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 2,
+      "totalStudents": 23,
+      "tuition": 2000,
+      "employmentRate": 0.0,
+      "region": "Jeollanam-do"
+    },
+    "totalEnrollment": 23
   },
   "영진전문대학": {
     "total": 733,
@@ -27363,7 +27836,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 22.6,
+      "dormitoryRate": 10.9,
+      "dormitoryTotal": 31,
+      "dormitoryAccepted": 1,
+      "totalStudents": 2904,
+      "tuition": 6446,
+      "employmentRate": 69.8,
+      "region": "Daejeon"
+    },
+    "totalEnrollment": 2904
   },
   "울산과학기술원": {
     "total": 256,
@@ -27716,7 +28200,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 226.5,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 166,
+      "tuition": 6960,
+      "employmentRate": 42.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 166
   },
   "원광대학교": {
     "total": 885,
@@ -29519,7 +30014,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 100.0,
+      "dormitoryRate": 33.6,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 0,
+      "totalStudents": 357,
+      "tuition": 10969,
+      "employmentRate": 69.7,
+      "region": "Daejeon"
+    },
+    "totalEnrollment": 357
   },
   "을지대학교(의정부캠퍼스)": {
     "total": 30,
@@ -30240,7 +30746,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 33.3,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 6,
+      "dormitoryAccepted": 6,
+      "totalStudents": 657,
+      "tuition": 8842,
+      "employmentRate": 57.1,
+      "region": "Incheon"
+    },
+    "totalEnrollment": 657
   },
   "인천가톨릭학원 가톨릭관동대학교": {
     "total": 309,
@@ -30411,14 +30928,14 @@
     ],
     "kediAvailable": true,
     "kedi": {
-      "topikSatisfactionRate": 80.4,
+      "topikSatisfactionRate": 84.8,
       "dormitoryRate": 22.2,
-      "dormitoryTotal": 92,
-      "dormitoryAccepted": 48,
+      "dormitoryTotal": 210,
+      "dormitoryAccepted": 54,
       "totalStudents": 11247,
       "tuition": 4651,
       "employmentRate": 63.5,
-      "region": "Chungcheongnam-do"
+      "region": "Incheon"
     },
     "totalEnrollment": 11247
   },
@@ -30536,7 +31053,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 40.2,
+      "dormitoryRate": 8.1,
+      "dormitoryTotal": 87,
+      "dormitoryAccepted": 34,
+      "totalStudents": 7068,
+      "tuition": 7119,
+      "employmentRate": 68.1,
+      "region": "Incheon"
+    },
+    "totalEnrollment": 7068
   },
   "인하대학교": {
     "total": 2393,
@@ -30789,7 +31317,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 40.0,
+      "dormitoryRate": 32.6,
+      "dormitoryTotal": 5,
+      "dormitoryAccepted": 0,
+      "totalStudents": 572,
+      "tuition": 7202,
+      "employmentRate": 0.0,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 572
   },
   "장안대학": {
     "total": 1052,
@@ -31597,7 +32136,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 44.3,
+      "dormitoryRate": 33.3,
+      "dormitoryTotal": 79,
+      "dormitoryAccepted": 32,
+      "totalStudents": 1600,
+      "tuition": 5370,
+      "employmentRate": 77.8,
+      "region": "Jeollabuk-do"
+    },
+    "totalEnrollment": 1600
   },
   "전북대학교": {
     "total": 2043,
@@ -32030,7 +32580,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 42.7,
+      "dormitoryRate": 18.1,
+      "dormitoryTotal": 234,
+      "dormitoryAccepted": 15,
+      "totalStudents": 10147,
+      "tuition": 7326,
+      "employmentRate": 60.1,
+      "region": "Jeollabuk-do"
+    },
+    "totalEnrollment": 10147
   },
   "전주비전대학교": {
     "total": 822,
@@ -32231,7 +32792,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 48.8,
+      "dormitoryRate": 45.6,
+      "dormitoryTotal": 164,
+      "dormitoryAccepted": 0,
+      "totalStudents": 263,
+      "tuition": 5824,
+      "employmentRate": 72.2,
+      "region": "Jeju"
+    },
+    "totalEnrollment": 263
   },
   "제주대학교": {
     "total": 541,
@@ -32511,7 +33083,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 37.0,
+      "dormitoryRate": 18.4,
+      "dormitoryTotal": 135,
+      "dormitoryAccepted": 8,
+      "totalStudents": 3897,
+      "tuition": 5454,
+      "employmentRate": 72.0,
+      "region": "Jeju"
+    },
+    "totalEnrollment": 3897
   },
   "조선대학교": {
     "total": 638,
@@ -33293,7 +33876,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 300.9,
+      "dormitoryTotal": 4,
+      "dormitoryAccepted": 4,
+      "totalStudents": 53,
+      "tuition": 1820,
+      "employmentRate": 0.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 53
   },
   "중앙신학대학원대학교": {
     "total": 2,
@@ -33410,7 +34004,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 37.0,
+      "dormitoryRate": 60.8,
+      "dormitoryTotal": 154,
+      "dormitoryAccepted": 51,
+      "totalStudents": 3324,
+      "tuition": 7423,
+      "employmentRate": 68.7,
+      "region": "Chungcheongbuk-do"
+    },
+    "totalEnrollment": 3324
   },
   "지에스25 중대학사": {
     "total": 7,
@@ -33588,7 +34193,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 100.0,
+      "dormitoryRate": 24.1,
+      "dormitoryTotal": 29,
+      "dormitoryAccepted": 28,
+      "totalStudents": 2154,
+      "tuition": 7622,
+      "employmentRate": 72.5,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 2154
   },
   "창신대학교": {
     "total": 516,
@@ -33652,7 +34268,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 6.3,
+      "dormitoryRate": 52.4,
+      "dormitoryTotal": 158,
+      "dormitoryAccepted": 77,
+      "totalStudents": 1582,
+      "tuition": 6752,
+      "employmentRate": 71.6,
+      "region": "Gyeongsangnam-do"
+    },
+    "totalEnrollment": 1582
   },
   "창원대학교": {
     "total": 364,
@@ -34474,7 +35101,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 71.4,
+      "dormitoryRate": 45.8,
+      "dormitoryTotal": 7,
+      "dormitoryAccepted": 2,
+      "totalStudents": 1398,
+      "tuition": 7336,
+      "employmentRate": 58.3,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 1398
   },
   "추계예술대학교": {
     "total": 259,
@@ -34900,7 +35538,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 25.0,
+      "dormitoryRate": 77.2,
+      "dormitoryTotal": 4,
+      "dormitoryAccepted": 2,
+      "totalStudents": 968,
+      "tuition": 2461,
+      "employmentRate": 73.6,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 968
   },
   "충북대학교": {
     "total": 1326,
@@ -35822,7 +36471,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 0.0,
+      "dormitoryTotal": 13,
+      "dormitoryAccepted": 0,
+      "totalStudents": 46,
+      "tuition": 0,
+      "employmentRate": 0.0,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 46
   },
   "평택대학교": {
     "total": 469,
@@ -35884,7 +36544,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 97.6,
+      "dormitoryRate": 30.1,
+      "dormitoryTotal": 42,
+      "dormitoryAccepted": 40,
+      "totalStudents": 3006,
+      "tuition": 7952,
+      "employmentRate": 58.4,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 3006
   },
   "포항공과대학교": {
     "total": 117,
@@ -35972,7 +36643,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 85.9,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 1477,
+      "tuition": 5613,
+      "employmentRate": 79.8,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1477
   },
   "포항공과대학교 산학협력단": {
     "total": 8,
@@ -36084,7 +36766,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 21.1,
+      "dormitoryRate": 38.3,
+      "dormitoryTotal": 19,
+      "dormitoryAccepted": 11,
+      "totalStudents": 1423,
+      "tuition": 6395,
+      "employmentRate": 73.0,
+      "region": "Gyeongsangbuk-do"
+    },
+    "totalEnrollment": 1423
   },
   "플로어칠주식회사 대학로점": {
     "total": 1,
@@ -37022,7 +37715,18 @@
         "universityCount": 1
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 73.9,
+      "dormitoryTotal": 0,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2342,
+      "tuition": 3350,
+      "employmentRate": 59.4,
+      "region": "Chungcheongbuk-do"
+    },
+    "totalEnrollment": 2342
   },
   "한국교원대학교산학협력단": {
     "total": 1,
@@ -37402,7 +38106,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 88.5,
+      "dormitoryRate": 56.4,
+      "dormitoryTotal": 26,
+      "dormitoryAccepted": 17,
+      "totalStudents": 4157,
+      "tuition": 4475,
+      "employmentRate": 82.8,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 4157
   },
   "한국기술교육대학교 산학협력단": {
     "total": 2,
@@ -37573,7 +38288,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 118.5,
+      "dormitoryTotal": 3,
+      "dormitoryAccepted": 3,
+      "totalStudents": 1550,
+      "tuition": 0,
+      "employmentRate": 76.4,
+      "region": "Jeollabuk-do"
+    },
+    "totalEnrollment": 1550
   },
   "한국뉴욕주립대학교": {
     "total": 63,
@@ -37946,7 +38672,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 30.0,
+      "dormitoryRate": 17.8,
+      "dormitoryTotal": 20,
+      "dormitoryAccepted": 3,
+      "totalStudents": 972,
+      "tuition": 7490,
+      "employmentRate": 70.0,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 972
   },
   "한국승강기대학": {
     "total": 42,
@@ -38185,7 +38922,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 90.4,
+      "dormitoryRate": 34.5,
+      "dormitoryTotal": 52,
+      "dormitoryAccepted": 39,
+      "totalStudents": 2953,
+      "tuition": 6706,
+      "employmentRate": 72.5,
+      "region": "Sejong"
+    },
+    "totalEnrollment": 2953
   },
   "한국예술종합학교": {
     "total": 73,
@@ -38911,7 +39659,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 80.0,
+      "dormitoryTotal": 4,
+      "dormitoryAccepted": 1,
+      "totalStudents": 583,
+      "tuition": 3382,
+      "employmentRate": 66.7,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 583
   },
   "한국조지메이슨대학교": {
     "total": 40,
@@ -39206,7 +39965,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 47.0,
+      "dormitoryTotal": 4,
+      "dormitoryAccepted": 2,
+      "totalStudents": 677,
+      "tuition": 6032,
+      "employmentRate": 51.3,
+      "region": "Daejeon"
+    },
+    "totalEnrollment": 677
   },
   "한국폴리텍 IV 대학 아산캠퍼스": {
     "total": 1,
@@ -39260,7 +40030,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 14.3,
+      "dormitoryRate": 81.9,
+      "dormitoryTotal": 7,
+      "dormitoryAccepted": 1,
+      "totalStudents": 388,
+      "tuition": 2432,
+      "employmentRate": 77.8,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 388
   },
   "한국폴리텍2 대학": {
     "total": 1,
@@ -39894,7 +40675,18 @@
         "universityCount": 2
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 56.5,
+      "dormitoryRate": 16.4,
+      "dormitoryTotal": 191,
+      "dormitoryAccepted": 94,
+      "totalStudents": 4255,
+      "tuition": 8935,
+      "employmentRate": 69.2,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 4255
   },
   "한국해양과학기술원": {
     "total": 5,
@@ -40731,7 +41523,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 24.8,
+      "dormitoryRate": 33.1,
+      "dormitoryTotal": 113,
+      "dormitoryAccepted": 33,
+      "totalStudents": 7575,
+      "tuition": 7971,
+      "employmentRate": 62.6,
+      "region": "Gangwon-do"
+    },
+    "totalEnrollment": 7575
   },
   "한림대학교산학협력단": {
     "total": 1,
@@ -40842,7 +41645,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 33.3,
+      "dormitoryRate": 14.9,
+      "dormitoryTotal": 3,
+      "dormitoryAccepted": 0,
+      "totalStudents": 2443,
+      "tuition": 6057,
+      "employmentRate": 76.3,
+      "region": "Gangwon-do"
+    },
+    "totalEnrollment": 2443
   },
   "한민대학": {
     "total": 1,
@@ -41107,7 +41921,18 @@
         "universityCount": 8
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 32.8,
+      "dormitoryRate": 29.4,
+      "dormitoryTotal": 119,
+      "dormitoryAccepted": 18,
+      "totalStudents": 6117,
+      "tuition": 8366,
+      "employmentRate": 70.0,
+      "region": "Chungcheongnam-do"
+    },
+    "totalEnrollment": 6117
   },
   "한성대학교": {
     "total": 836,
@@ -41262,7 +42087,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 35.7,
+      "dormitoryRate": 12.2,
+      "dormitoryTotal": 14,
+      "dormitoryAccepted": 6,
+      "totalStudents": 2509,
+      "tuition": 8598,
+      "employmentRate": 71.0,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 2509
   },
   "한신대학교": {
     "total": 144,
@@ -41788,7 +42624,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 63.6,
+      "dormitoryRate": 0.5,
+      "dormitoryTotal": 22,
+      "dormitoryAccepted": 9,
+      "totalStudents": 6503,
+      "tuition": 6549,
+      "employmentRate": 65.4,
+      "region": "Seoul"
+    },
+    "totalEnrollment": 6503
   },
   "한영대학": {
     "total": 476,
@@ -42323,7 +43170,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 0.0,
+      "dormitoryRate": 12.5,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 0,
+      "totalStudents": 3773,
+      "tuition": 7896,
+      "employmentRate": 58.1,
+      "region": "Gyeonggi-do"
+    },
+    "totalEnrollment": 3773
   },
   "혜전대학교": {
     "total": 1332,
@@ -42539,7 +43397,18 @@
         "universityCount": 0
       }
     ],
-    "kediAvailable": false
+    "kediAvailable": true,
+    "kedi": {
+      "topikSatisfactionRate": 50.0,
+      "dormitoryRate": 40.2,
+      "dormitoryTotal": 2,
+      "dormitoryAccepted": 2,
+      "totalStudents": 396,
+      "tuition": 6938,
+      "employmentRate": 62.2,
+      "region": "Gwangju"
+    },
+    "totalEnrollment": 396
   },
   "호산대학교": {
     "total": 577,
