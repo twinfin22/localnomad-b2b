@@ -124,7 +124,7 @@ function GrowthPanel({ profile, universityName, onCtaClick }: Props) {
         ) : (
           <TrendLineChart series={trendSeries} />
         )}
-        <p className="text-xs text-gray-400 mt-2 text-center">
+        <p className="text-xs text-gray-500 mt-2 text-center">
           출처: 법무부 출입국외국인정책본부 · D2(유학) + D4(어학연수) 기준
         </p>
       </div>
@@ -154,8 +154,8 @@ function GrowthPanel({ profile, universityName, onCtaClick }: Props) {
                   return (
                     <tr key={nat} className="border-b border-gray-50 hover:bg-gray-50">
                       <td className="py-2 px-3 text-gray-800">{nat}</td>
-                      <td className="py-2 px-3 text-right text-gray-600">{formatNumber(info.jan2022)}</td>
-                      <td className="py-2 px-3 text-right text-gray-600">{formatNumber(info.jan2026)}</td>
+                      <td className="py-2 px-3 text-right text-gray-600 tabular-nums">{formatNumber(info.jan2022)}</td>
+                      <td className="py-2 px-3 text-right text-gray-600 tabular-nums">{formatNumber(info.jan2026)}</td>
                       <td className="py-2 px-3 text-right font-semibold text-emerald-600">
                         +{formatPercent(info.growthPct, 0)}
                       </td>
@@ -179,8 +179,8 @@ function GrowthPanel({ profile, universityName, onCtaClick }: Props) {
             trackCtaClick(universityName, 'panel-b');
             onCtaClick();
           }}
-          className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold
-                     hover:bg-indigo-700 transition-colors"
+          className="px-6 py-3 bg-amber-500 text-white rounded-xl font-semibold
+                     hover:bg-amber-600 transition-colors"
         >
           파일럿 신청하기
         </button>

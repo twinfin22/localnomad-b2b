@@ -3,15 +3,11 @@
 import { useEffect, useRef, memo } from 'react';
 import type { UniversityProfile } from '../lib/types';
 import {
-  getHHILevel, getHHIColor, getHHIEmoji,
+  getHHILevel, getHHIColor, getHHIDotColor,
   getConcentrationMessage, formatNumber, formatPercent,
 } from '../lib/calculations';
 import { trackPanelView, trackCtaClick } from '../lib/analytics';
-import dynamic from 'next/dynamic';
-const NationalityDonut = dynamic(() => import('./charts/NationalityDonut'), {
-  loading: () => <div className="h-[300px] bg-gray-50 rounded-xl animate-pulse" />,
-  ssr: false,
-});
+import NationalityWaffle from './charts/NationalityWaffle';
 
 interface Props {
   profile: UniversityProfile;
@@ -51,7 +47,7 @@ function NationalityPanel({ profile, universityName, onCtaClick }: Props) {
 
       {/* HHI Badge + Message */}
       <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-4 ${hhiColor}`}>
-        <span>{getHHIEmoji(hhiLevel)}</span>
+        <span className={`inline-block w-3 h-3 rounded-full shrink-0 ${getHHIDotColor(hhiLevel)}`} />
         <span className="font-semibold">편중도: {hhiLevel}</span>
         <span className="text-sm">(HHI {profile.hhi.toFixed(3)})</span>
       </div>
@@ -63,10 +59,7 @@ function NationalityPanel({ profile, universityName, onCtaClick }: Props) {
           <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
             국적 분포
           </h3>
-          <NationalityDonut nationalities={profile.nationalities} total={profile.total} />
-          <p className="text-center text-sm text-gray-500 mt-2">
-            총 {formatNumber(profile.total)}명 · {profile.nNationalities}개국
-          </p>
+          <NationalityWaffle nationalities={profile.nationalities} total={profile.total} />
         </div>
 
         {/* Details */}
@@ -153,8 +146,8 @@ function NationalityPanel({ profile, universityName, onCtaClick }: Props) {
             trackCtaClick(universityName, 'panel-a');
             onCtaClick();
           }}
-          className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold
-                     hover:bg-indigo-700 transition-colors"
+          className="px-6 py-3 bg-amber-500 text-white rounded-xl font-semibold
+                     hover:bg-amber-600 transition-colors"
         >
           파일럿 신청하기
         </button>

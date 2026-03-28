@@ -2,7 +2,7 @@ import XRayContent from './components/XRayContent';
 
 export default function XRayPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 [font-variant-numeric:tabular-nums]">
       {/* Header — server-rendered branding */}
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-6 md:py-8">
@@ -38,7 +38,7 @@ export default function XRayPage() {
               교육부 대학알리미 - 대학주요정보 ·
               법무부 - 체류외국인 통계
             </p>
-            <p className="mt-4 text-gray-300">
+            <p className="mt-4 text-gray-400">
               &copy; 2026 VisaCampus. 데이터 기준일: 2025.12.31
             </p>
           </div>

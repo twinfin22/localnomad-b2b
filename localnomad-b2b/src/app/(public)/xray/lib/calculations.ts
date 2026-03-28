@@ -22,6 +22,14 @@ export function getHHIEmoji(level: HHILevel): string {
   }
 }
 
+export function getHHIDotColor(level: HHILevel): string {
+  switch (level) {
+    case '위험': return 'bg-red-500';
+    case '주의': return 'bg-amber-500';
+    case '분산': return 'bg-emerald-500';
+  }
+}
+
 export function getConcentrationMessage(profile: UniversityProfile): string {
   const topNat = Object.keys(profile.nationalities)[0];
   const pct = profile.topNationPct;

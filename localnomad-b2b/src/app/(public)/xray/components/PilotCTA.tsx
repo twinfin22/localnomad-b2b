@@ -67,7 +67,7 @@ export default function PilotCTA({ universityName, isOpen, onClose }: Props) {
       <div className="relative bg-white rounded-2xl shadow-xl w-full max-w-md p-6 md:p-8">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1 text-gray-400 hover:text-gray-600"
+          className="absolute top-4 right-4 p-1 text-gray-500 hover:text-gray-600"
           aria-label="닫기"
         >
           <X className="h-5 w-5" />
@@ -165,8 +165,8 @@ export default function PilotCTA({ universityName, isOpen, onClose }: Props) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold
-                       hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed
+            className="w-full py-3 bg-amber-500 text-white rounded-xl font-semibold
+                       hover:bg-amber-600 disabled:opacity-50 disabled:cursor-not-allowed
                        transition-colors"
           >
             {isSubmitting ? '제출 중...' : '파일럿 신청하기'}

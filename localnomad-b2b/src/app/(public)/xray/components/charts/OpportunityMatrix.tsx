@@ -40,7 +40,7 @@ export default function OpportunityMatrix({ opportunities, universityName }: Pro
           </div>
           <div className="flex-shrink-0 text-right">
             <p className="text-lg font-bold text-indigo-600">{opp.universityCount}명</p>
-            <p className="text-xs text-gray-400">{universityName}</p>
+            <p className="text-xs text-gray-500">{universityName}</p>
           </div>
         </div>
       ))}

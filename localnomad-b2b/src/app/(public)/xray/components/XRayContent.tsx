@@ -130,8 +130,8 @@ function XRayInner() {
               </p>
               <button
                 onClick={handleCtaOpen}
-                className="px-5 py-2 bg-indigo-600 text-white text-sm rounded-lg font-semibold
-                           hover:bg-indigo-700 transition-colors whitespace-nowrap"
+                className="px-5 py-2 bg-amber-500 text-white text-sm rounded-lg font-semibold
+                           hover:bg-amber-600 transition-colors whitespace-nowrap"
               >
                 파일럿 신청
               </button>
@@ -154,7 +154,7 @@ export default function XRayContent() {
   return (
     <Suspense fallback={
       <div className="flex items-center justify-center py-16">
-        <p className="text-gray-400">로딩 중...</p>
+        <p className="text-gray-500">로딩 중...</p>
       </div>
     }>
       <XRayInner />

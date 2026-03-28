@@ -22,50 +22,58 @@ interface BarProps {
   lowerIsBetter?: boolean;
 }
 
-function ComparisonBar({ label, unit, selected, peerAvg, nationalAvg, maxValue, lowerIsBetter }: BarProps) {
-  const max = maxValue ?? Math.max(selected, peerAvg, nationalAvg, 1) * 1.2;
-  const pct = (v: number) => Math.min((v / max) * 100, 100);
+function BulletChart({ label, unit, selected, peerAvg, nationalAvg, maxValue, lowerIsBetter }: BarProps) {
+  const max = maxValue ?? Math.max(selected, peerAvg, nationalAvg, 1) * 1.3;
+  const scale = (v: number) => Math.min((v / max) * 100, 100);
+
+  const displayVal = lowerIsBetter
+    ? Math.round(selected).toLocaleString('ko-KR')
+    : selected.toFixed(1);
 
   return (
-    <div className="space-y-2">
-      <p className="text-sm font-semibold text-gray-700">{label}</p>
-      {/* Selected */}
-      <div className="flex items-center gap-3">
-        <span className="text-xs text-gray-500 w-16 shrink-0">귀교</span>
-        <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-indigo-500 rounded-full transition-all duration-500"
-            style={{ width: `${pct(selected)}%` }}
-          />
-        </div>
-        <span className="text-sm font-semibold text-indigo-600 w-20 text-right shrink-0">
-          {lowerIsBetter ? formatNumber(selected) : formatPercent(selected)}{unit}
+    <div className="space-y-1.5">
+      <div className="flex justify-between items-baseline">
+        <span className="text-sm font-semibold text-gray-700">{label}</span>
+        <span className="text-sm font-bold tabular-nums text-blue-800">
+          {displayVal}{unit}
         </span>
       </div>
-      {/* Peer avg */}
-      <div className="flex items-center gap-3">
-        <span className="text-xs text-gray-500 w-16 shrink-0">Peer</span>
-        <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-gray-400 rounded-full transition-all duration-500"
-            style={{ width: `${pct(peerAvg)}%` }}
-          />
-        </div>
-        <span className="text-sm text-gray-600 w-20 text-right shrink-0">
-          {lowerIsBetter ? formatNumber(peerAvg) : formatPercent(peerAvg)}{unit}
-        </span>
+      {/* Bullet bar */}
+      <div className="relative h-8 bg-gray-100 rounded overflow-hidden">
+        {/* National avg range background */}
+        <div
+          className="absolute inset-y-0 left-0 bg-gray-200 rounded"
+          style={{ width: `${scale(Math.max(nationalAvg, peerAvg) * 1.15)}%` }}
+        />
+        {/* Peer avg range */}
+        <div
+          className="absolute inset-y-1 left-0 bg-gray-300/70 rounded"
+          style={{ width: `${scale(peerAvg)}%` }}
+        />
+        {/* Selected university (primary bar) */}
+        <div
+          className="absolute inset-y-2 left-0 bg-blue-600 rounded"
+          style={{ width: `${scale(selected)}%` }}
+        />
+        {/* National avg marker line */}
+        <div
+          className="absolute inset-y-0 w-0.5 bg-emerald-600"
+          style={{ left: `${scale(nationalAvg)}%` }}
+          title={`전국 평균: ${nationalAvg.toFixed(1)}${unit}`}
+        />
       </div>
-      {/* National avg */}
-      <div className="flex items-center gap-3">
-        <span className="text-xs text-gray-500 w-16 shrink-0">전국</span>
-        <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-emerald-400 rounded-full transition-all duration-500"
-            style={{ width: `${pct(nationalAvg)}%` }}
-          />
+      {/* Legend row */}
+      <div className="flex justify-between text-xs text-gray-500">
+        <div className="flex items-center gap-3">
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-3 h-2 bg-blue-600 rounded" /> 귀교
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-3 h-2 bg-gray-300 rounded" /> Peer {peerAvg.toFixed(1)}{unit}
+          </span>
         </div>
-        <span className="text-sm text-emerald-600 w-20 text-right shrink-0">
-          {lowerIsBetter ? formatNumber(nationalAvg) : formatPercent(nationalAvg)}{unit}
+        <span className="flex items-center gap-1 text-emerald-600">
+          <span className="inline-block w-2 h-3 bg-emerald-600 rounded" /> 전국 {nationalAvg.toFixed(1)}{unit}
         </span>
       </div>
     </div>
@@ -145,7 +153,7 @@ function ComparisonPanel({ profile, universityName, onCtaClick }: Props) {
 
           {/* 4 comparison bars */}
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <ComparisonBar
+            <BulletChart
               label="TOPIK 충족률"
               unit=""
               selected={profile.kedi!.topikSatisfactionRate}
@@ -153,7 +161,7 @@ function ComparisonPanel({ profile, universityName, onCtaClick }: Props) {
               nationalAvg={data.nationalAvg.topikSatisfactionRate}
               maxValue={100}
             />
-            <ComparisonBar
+            <BulletChart
               label="기숙사 수용률"
               unit=""
               selected={profile.kedi!.dormitoryRate}
@@ -161,7 +169,7 @@ function ComparisonPanel({ profile, universityName, onCtaClick }: Props) {
               nationalAvg={data.nationalAvg.dormitoryRate}
               maxValue={100}
             />
-            <ComparisonBar
+            <BulletChart
               label="외국인 비율"
               unit=""
               selected={selectedForeignRatio}
@@ -169,7 +177,7 @@ function ComparisonPanel({ profile, universityName, onCtaClick }: Props) {
               nationalAvg={data.nationalAvg.foreignRatio}
               maxValue={Math.max(selectedForeignRatio, data.peerAvg.foreignRatio, data.nationalAvg.foreignRatio, 1) * 1.5}
             />
-            <ComparisonBar
+            <BulletChart
               label="평균 등록금"
               unit="만원"
               selected={selectedTuition}
@@ -229,8 +237,8 @@ function ComparisonPanel({ profile, universityName, onCtaClick }: Props) {
                 trackCtaClick(universityName, 'panel-c');
                 onCtaClick();
               }}
-              className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold
-                         hover:bg-indigo-700 transition-colors"
+              className="px-6 py-3 bg-amber-500 text-white rounded-xl font-semibold
+                         hover:bg-amber-600 transition-colors"
             >
               파일럿 신청하기
             </button>
